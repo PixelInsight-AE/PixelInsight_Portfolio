@@ -32,5 +32,9 @@
 // ? starters and templates need to be imported last
 @import "styles/_starter.scss";
 
+@import "pages/_Home.scss";
 @import "shared/_Header.scss";
+
 @import "components/home/_Hero.scss";
+@import "components/home/_WhatWeDo.scss";
+@import "components/home/_WhatWeDoCards.scss";

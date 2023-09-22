@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import { Header } from "../shared/Header";
 import Hero from "../components/home/Hero";
+import WhatWeDo from "../components/home/WhatWeDo";
+import WhatWeDoCards from "../components/home/WhatWeDoCards";
 const Home = () => {
   return (
     <>
@@ -30,6 +32,8 @@ const Home = () => {
       </Helmet>
       <Header />
       <Hero />
+      <WhatWeDo />
+      <WhatWeDoCards />
     </>
   );
 };
