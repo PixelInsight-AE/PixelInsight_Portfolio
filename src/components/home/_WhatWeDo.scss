@@ -1,0 +1,45 @@
+.what-we-do {
+  @include flex(column, center, center);
+  padding-top: 3.2rem;
+  &__header-image {
+    &--medium {
+      display: none;
+    }
+    &--large {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .what-we-do {
+    padding-top: 4rem;
+    &__header-image {
+      &--mobile {
+        display: none;
+      }
+      &--medium {
+        display: block;
+      }
+      &--large {
+        display: none;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .what-we-do {
+    padding-top: 6rem;
+    &__header-image {
+      &--mobile {
+        display: none;
+      }
+      &--medium {
+        display: none;
+      }
+      &--large {
+        display: block;
+      }
+    }
+  }
+}
