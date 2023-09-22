@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-
+import Header from "../shared/Header";
 const Home = () => {
   return (
     <>
@@ -27,7 +27,7 @@ const Home = () => {
         <meta name="twitter:image" content="https://i.imgur.com/ewHutRa.png" />
         <title>Pixel Insight</title>
       </Helmet>
-      <h1>Home</h1>
+      <Header />
     </>
   );
 };

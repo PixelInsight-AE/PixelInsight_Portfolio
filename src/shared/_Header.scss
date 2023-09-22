@@ -1,0 +1,60 @@
+.header {
+  max-height: 40px;
+  background-color: #28233b;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  nav {
+    @include flex(row, flex-start, center);
+  }
+  &__logo {
+    padding: 0.8rem 1.2rem 0.8rem 1.6rem;
+  }
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding-bottom: 0.6rem;
+  }
+
+  &__hamburger-menu {
+    cursor: pointer;
+    margin-left: auto;
+    padding-right: 1.6rem;
+    padding-bottom: 0.8rem;
+  }
+  &__navigation {
+    display: none;
+    &--contact {
+      margin-right: 1.6rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .header {
+    &__hamburger-menu {
+      display: none;
+    }
+    &__navigation {
+      margin-left: auto;
+      display: block;
+      ul {
+        @include flex(row, flex-end, center);
+        font-size: $f-size-4;
+        li {
+          margin-left: 2.8rem;
+          background: linear-gradient(
+            180deg,
+            #ef913c 0%,
+            rgba(249, 69, 188, 0.99) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
