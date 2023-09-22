@@ -5,7 +5,7 @@ const Header = () => {
       <nav>
         <img
           className="header__logo"
-          src="/assets/svg/header_logo.svg"
+          src="/assets/svg/logo-test.svg"
           alt="Pixel insight logo,  Where Creativity Meets Technology. We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference."
         />
         <h1 className="header__title">Pixel Insight</h1>

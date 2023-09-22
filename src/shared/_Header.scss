@@ -1,12 +1,12 @@
 .header {
-  max-height: 40px;
+  // max-height: 40px;
   background-color: #28233b;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
   nav {
-    @include flex(row, flex-start, center);
+    @include flex(row, flex-start, flex-end);
   }
   &__logo {
-    padding: 0.8rem 1.2rem 0.8rem 1.6rem;
+    margin: 0.8rem 1.2rem 0rem 1.6rem;
   }
   &__title {
     font-size: 2.4rem;
@@ -36,7 +36,7 @@
     &__navigation {
       margin-left: auto;
       display: block;
-      padding-bottom: 0.8rem;
+      @include padding-y(0.8rem);
       ul {
         @include flex(row, flex-end, center);
         font-size: 2.4rem;
