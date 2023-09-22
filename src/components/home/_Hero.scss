@@ -19,8 +19,10 @@
     font-weight: 400;
     @include padding-x(4rem);
     padding-bottom: 2.4rem;
+    max-width: 240px;
   }
   &__footer {
+    max-width: 250px;
     padding-top: 2.4rem;
     font-size: 2.4rem;
     letter-spacing: -0.12rem;
