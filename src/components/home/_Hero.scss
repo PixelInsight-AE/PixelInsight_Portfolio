@@ -1,0 +1,41 @@
+.hero {
+  @include flex(column, center, center);
+
+  &__slogan {
+    padding-top: 4rem;
+
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 2.4rem;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: -0.12rem;
+    padding-bottom: 2.4rem;
+  }
+  &__text {
+    letter-spacing: -0.12rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    @include padding-x(4rem);
+    padding-bottom: 2.4rem;
+  }
+  &__footer {
+    padding-top: 2.4rem;
+    font-size: 2.4rem;
+    letter-spacing: -0.12rem;
+    text-align: center;
+    @include padding-x(3.5rem);
+    font-weight: 400;
+    padding-bottom: 2.4rem;
+    font-style: italic;
+  }
+
+  button {
+    @include button(#f2446e);
+    @include size(250px, 44px);
+    border-radius: 8px;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+}
