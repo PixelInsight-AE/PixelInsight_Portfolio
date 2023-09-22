@@ -36,12 +36,13 @@
     &__navigation {
       margin-left: auto;
       display: block;
+      padding-bottom: 0.8rem;
       ul {
         @include flex(row, flex-end, center);
         font-size: 2.4rem;
         li {
-          letter-spacing: -0.192rem;
-          margin-left: 2.8rem;
+          letter-spacing: -0.152rem;
+          padding-left: 2.8rem;
           background: linear-gradient(
             180deg,
             #ef913c 0%,
