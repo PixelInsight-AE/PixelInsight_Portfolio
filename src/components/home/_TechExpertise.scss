@@ -1,0 +1,40 @@
+.tech-expertise {
+  @include flex(column, flex-start, flex-start);
+  h2 {
+    font-size: 2.8rem;
+    margin-left: 1.2rem;
+    padding-bottom: 5rem;
+    letter-spacing: -8%;
+    font-weight: 600;
+  }
+  &__wrapper {
+    @include flex(column, flex-start, flex-start);
+  }
+  &__card {
+    padding-bottom: 3.2rem;
+    max-width: 250px;
+    margin-left: 1.6rem;
+  }
+  &__title {
+    @include flex(row, flex-start, center);
+    font-size: 2.8rem;
+    padding-bottom: 1.2rem;
+    h3 {
+      font-weight: 400;
+      letter-spacing: -0.192rem;
+    }
+  }
+  &__icon {
+    margin-left: 10px;
+  }
+  p {
+    max-width: 220px;
+    padding-bottom: 1.2rem;
+    font-size: 1.6rem;
+  }
+  i {
+    color: #a79c9c;
+    display: inline-block;
+    max-width: 200px;
+  }
+}

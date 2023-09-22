@@ -32,6 +32,9 @@
       @include margin-y(1rem);
       position: relative;
       padding-left: 3.2rem;
+      &:hover {
+        color: $c-primary;
+      }
       &::before {
         content: "\2022";
         background-size: contain;

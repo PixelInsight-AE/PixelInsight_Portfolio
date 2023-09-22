@@ -1,67 +1,44 @@
 .hero {
-  @include flex(column, center, center);
-  &__large {
-    display: none;
-  }
-  &__slogan {
-    padding-top: 4rem;
+  @include flex(row, center, center);
+  color: $c-text;
+  font-family: Work Sans;
+  font-size: 2.4rem;
+  text-align: center;
 
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 2.4rem;
-    font-style: italic;
-    font-weight: 600;
-    letter-spacing: -0.12rem;
-    padding-bottom: 2.4rem;
-  }
-  &__text {
-    letter-spacing: -0.12rem;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 400;
-    @include padding-x(4rem);
-    padding-bottom: 2.4rem;
-    max-width: 240px;
-  }
-  &__footer {
-    max-width: 250px;
-    padding-top: 2.4rem;
-    font-size: 2.4rem;
-    letter-spacing: -0.12rem;
-    text-align: center;
-    @include padding-x(3.5rem);
-    font-weight: 400;
-    padding-bottom: 2.4rem;
-    font-style: italic;
-  }
+  &__left-wrapper {
+    @include flex(column, center, center);
+    max-width: 266px;
+    margin-top: 4.2rem;
+    padding: 0.8rem;
 
-  button {
-    @include button(#f2446e);
-    @include size(250px, 44px);
-    border-radius: 8px;
-    font-size: 2.4rem;
-    font-weight: 400;
-  }
-}
-@include media-breakpoint-up(lg) {
-  .hero-wrapper {
-    @include flex(row, center, center);
-  }
-  .hero {
-    &__large {
-      display: inline-block;
-      padding-left: 12.5rem;
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: -0.12rem;
+      padding-bottom: 2.4rem;
+    }
+    button {
+      background-color: #f2446e;
+      padding: 0.8rem 1.8rem;
+      @include size(250px, 44px);
+      box-shadow: 0 0 5px 0 rgba(8, 7, 7, 0.8);
+      border: none;
+    }
+    img {
+      padding-bottom: 2.4rem;
     }
   }
-}
-@include media-breakpoint-up(xl) {
-  .hero-wrapper {
-    @include flex(row, center, center);
+
+  &__hero-img {
+    display: none;
   }
+}
+
+@include media-breakpoint-up(lg) {
   .hero {
-    &__large {
-      display: inline-block;
-      padding-left: 25rem;
+    &__hero-img {
+      display: block;
+      padding-left: 12.5rem;
     }
   }
 }

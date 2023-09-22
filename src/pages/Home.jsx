@@ -5,6 +5,7 @@ import WhatWeDo from "../components/home/WhatWeDo";
 import WhatWeDoCards from "../components/home/WhatWeDoCards";
 import OurMissionMobile from "../components/home/OurMissionMobile";
 import Scrollbar from "../components/home/ScrollBar";
+import TechExpertise from "../components/home/TechExpertise";
 const Home = () => {
   return (
     <>
@@ -38,9 +39,8 @@ const Home = () => {
         <WhatWeDo />
         <WhatWeDoCards />
         <div className="sub-hero-divider"></div>
-        <Scrollbar />
-
         <OurMissionMobile />
+        <TechExpertise />
       </div>
     </>
   );

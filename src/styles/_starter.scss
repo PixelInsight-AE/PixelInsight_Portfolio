@@ -53,8 +53,16 @@ img {
 }
 
 button {
+  font-size: 2.4rem;
   padding: 0.4rem 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
-  border-radius: 1.6rem;
+  border-radius: 8px;
+}
+
+blockquote {
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -0.12rem;
+  padding-bottom: 2.4rem;
 }
