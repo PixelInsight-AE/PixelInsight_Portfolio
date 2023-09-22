@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 // Font sizes 8 - 96px
 $f-size-1: 0.8rem; // 8px
@@ -15,8 +15,8 @@ $f-size-11: 6.4rem; // 64px
 $f-size-12: 7rem; // 70px
 $f-size-huge: 9.6rem; // 96px
 
-$f-family-heading: 'Nunito', sans-serif;
-$f-family-body: 'PT Sans', sans-serif;
+$f-family-heading: "Nunito", sans-serif;
+$f-family-body: "PT Sans", sans-serif;
 
 /* Breakpoints */
 $breakpoint-xs: 350px;
@@ -27,99 +27,17 @@ $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1600px;
 
 // Todo: create definitive color scheme for tmd website [DONE]
-$c-primary: #60d0fa;
-$c-secondary: #f5acba;
-$c-accent: #74279d;
+$c-primary: #ef913c;
+$c-secondary: #f2446e;
+$c-accent: #28233b;
 
-$c-text: #535558;
-$c-body: #f5f5f5;
+$c-text: #f5f5f5;
+$c-body: #111;
 
 $c-error: #d32752;
 $c-warning: #f6c31c;
 $c-info: #17a2b8;
 $c-success: #28a745;
-
-$c-h1: #314157;
-
-$c-primary-100: #d4f4ff;
-$c-primary-200: #b2eaff;
-$c-primary-300: #9be0fa;
-$c-primary-400: #7ad8fb;
-$c-primary-500: $c-primary;
-$c-primary-600: #31a5d0;
-$c-primary-700: #198cb7;
-$c-primary-800: #023d53;
-$c-primary-900: #003245;
-
-$c-secondary-100: #fce3e8;
-$c-secondary-200: #f9d4db;
-$c-secondary-300: #f9d0d8;
-$c-secondary-400: #f5bac6;
-$c-secondary-500: $c-secondary;
-$c-secondary-600: #d75a72;
-$c-secondary-700: #9a283f;
-$c-secondary-800: #640a1c;
-$c-secondary-900: #47151f;
-
-$c-accent-100: #e6c6f6;
-$c-accent-200: #c48de1;
-$c-accent-300: #b170d4;
-$c-accent-400: #9043b9;
-$c-accent-500: $c-accent;
-$c-accent-600: #57127b;
-$c-accent-700: #460b66;
-$c-accent-800: #2b0142;
-$c-accent-900: #220134;
-
-$c-text-100: #d8dde5;
-$c-text-200: #cacfd6;
-$c-text-300: #aeb3ba;
-$c-text-400: #7d8086;
-$c-text-500: $c-text;
-$c-text-600: #46484b;
-$c-text-700: #2a2b2d;
-$c-text-800: #1a1b1c;
-$c-text-900: #0d0d0e;
-
-$c-error-100: #e2b2be;
-$c-error-200: #d98ea6;
-$c-error-300: #d16b8e;
-$c-error-400: #c94776;
-$c-error-500: $c-error;
-$c-error-600: #a13a60;
-$c-error-700: #6c2a42;
-$c-error-800: #3a1a25;
-$c-error-900: #2b131d;
-
-$c-warning-100: #fdf2c2;
-$c-warning-200: #fceb9e;
-$c-warning-300: #fbe47a;
-$c-warning-400: #f9dd56;
-$c-warning-500: $c-warning;
-$c-warning-600: #d4b13f;
-$c-warning-700: #8f752d;
-$c-warning-800: #594a1b;
-$c-warning-900: #3f3413;
-
-$c-info-100: #c9e9f0;
-$c-info-200: #a8e0e9;
-$c-info-300: #87d7e2;
-$c-info-400: #66cedb;
-$c-info-500: $c-info;
-$c-info-600: #4f9fb0;
-$c-info-700: #357b7d;
-$c-info-800: #1f4d4f;
-$c-info-900: #163a3c;
-
-$c-success-100: #c9e9d9;
-$c-success-200: #a8e0c2;
-$c-success-300: #87d7ab;
-$c-success-400: #66ce94;
-$c-success-500: $c-success;
-$c-success-600: #4f9f73;
-$c-success-700: #357b52;
-$c-success-800: #1f4d31;
-$c-success-900: #163a24;
 
 $gradient-dark: linear-gradient(136deg, #535558 0%, #1a222e 100%);
 $gradient-primary: linear-gradient(90deg, #535558 0%, #1e2633 100%);
