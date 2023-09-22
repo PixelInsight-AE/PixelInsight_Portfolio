@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header">
@@ -15,9 +16,15 @@ const Header = () => {
         />
         <section className="header__navigation">
           <ul>
-            <li>Portfolio</li>
-            <li>About</li>
-            <li className="header__navigation--contact">Contact</li>
+            <Link to="/">
+              <li>Portfolio</li>
+            </Link>
+            <Link to="/">
+              <li>About</li>
+            </Link>
+            <Link to="/contact">
+              <li className="header__navigation--contact">Contact</li>
+            </Link>
           </ul>
         </section>
       </nav>
