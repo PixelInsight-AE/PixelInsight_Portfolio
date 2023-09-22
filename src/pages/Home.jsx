@@ -3,6 +3,9 @@ import { Header } from "../shared/Header";
 import Hero from "../components/home/Hero";
 import WhatWeDo from "../components/home/WhatWeDo";
 import WhatWeDoCards from "../components/home/WhatWeDoCards";
+import OurMissionMobile from "../components/home/OurMissionMobile";
+import Scrollbar from "../components/home/ScrollBar";
+import TechExpertise from "../components/home/TechExpertise";
 const Home = () => {
   return (
     <>
@@ -31,9 +34,14 @@ const Home = () => {
         <title>Pixel Insight</title>
       </Helmet>
       <Header />
-      <Hero />
-      <WhatWeDo />
-      <WhatWeDoCards />
+      <div className="home">
+        <Hero />
+        <WhatWeDo />
+        <WhatWeDoCards />
+        <div className="sub-hero-divider"></div>
+        <OurMissionMobile />
+        <TechExpertise />
+      </div>
     </>
   );
 };

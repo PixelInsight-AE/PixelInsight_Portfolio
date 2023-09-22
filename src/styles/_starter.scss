@@ -5,11 +5,11 @@
 }
 html {
   font-size: 62.5%;
-  //box-sizing: border-box;
+  background-color: #111111;
+  box-sizing: border-box;
 }
 body {
   font-family: "Work Sans", sans-serif;
-  background-color: #1d1f1f;
 }
 
 h1,
@@ -31,6 +31,17 @@ ul {
   padding: 0;
   list-style-type: none;
 }
+
+li {
+  font-size: 2.4rem;
+  color: $c-text;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -42,8 +53,16 @@ img {
 }
 
 button {
+  font-size: 2.4rem;
   padding: 0.4rem 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
-  border-radius: 1.6rem;
+  border-radius: 8px;
+}
+
+blockquote {
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -0.12rem;
+  padding-bottom: 2.4rem;
 }

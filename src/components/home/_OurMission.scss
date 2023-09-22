@@ -1,0 +1,90 @@
+.our-mission {
+  @include flex(column, center, center);
+  padding-bottom: 3.6rem;
+  &__header-card {
+    @include flex(column, center, center);
+    background-color: #1d1f1f;
+    border-radius: 8px;
+    box-shadow: 0px 4px 40px 0px rgba(255, 255, 255, 0.8);
+    h2 {
+      padding-top: 1.6rem;
+      font-size: 2.8rem;
+    }
+    h4 {
+      font-weight: 400;
+      letter-spacing: -0.08rem;
+      font-size: 16px;
+      max-width: 256px;
+      @include padding-x(1.6rem);
+      padding-top: 2rem;
+      padding-bottom: 1.6rem;
+    }
+  }
+  h2 {
+    font-size: 2.8rem;
+    padding-bottom: 1.2rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+    max-width: 208px;
+    font-weight: 400;
+    @include padding-x(1.6rem);
+  }
+  .main-wrapper {
+    height: 210px;
+    position: relative;
+    &--color {
+      position: absolute;
+      width: 95%;
+      height: 150px;
+      border-radius: 16px;
+      z-index: 1;
+    }
+    &--content {
+      border-radius: 16px;
+      @include flex(column, center, center);
+      height: 150px;
+      position: relative;
+      background-color: #1d1f1f;
+      z-index: 2;
+      box-shadow: 0 0 10px 0 rgba(8, 7, 7, 0.8);
+    }
+  }
+  &__discover {
+    margin-top: 3.4rem;
+    padding-top: 3.7rem;
+    &--color {
+      background-color: #ef913c;
+      left: 22px;
+      top: 28px;
+    }
+  }
+  &__design {
+    &--color {
+      background-color: #f2446e;
+      left: 22px;
+      top: -8px;
+    }
+  }
+  &__build {
+    &--color {
+      background-color: #28233b;
+      left: 22px;
+      top: -8px;
+    }
+  }
+  &__launch {
+    &--color {
+      background-color: #ef913c;
+      left: 22px;
+      top: -8px;
+    }
+  }
+  &__enjoy {
+    &--color {
+      background-color: #f2446e;
+      left: 22px;
+      top: -8px;
+    }
+  }
+}

@@ -32,9 +32,14 @@
 // ? starters and templates need to be imported last
 @import "styles/_starter.scss";
 
-@import "pages/_Home.scss";
+// ? single page styles for all pages go here: pages rarely have their own styles and are usually just a collection of components
+@import "pages/_Pages.scss";
+
 @import "shared/_Header.scss";
 
 @import "components/home/_Hero.scss";
 @import "components/home/_WhatWeDo.scss";
 @import "components/home/_WhatWeDoCards.scss";
+@import "components/home/_Scrollbar.scss";
+@import "components/home/_OurMission.scss";
+@import "components/home/_TechExpertise.scss";

@@ -1,0 +1,35 @@
+.home {
+  max-width: 1200px;
+  margin: auto;
+  .sub-hero-divider {
+    width: 288px;
+    margin: auto;
+    height: 9px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #ef913c 0%, #f2446e 100%);
+    margin-top: 4.8rem;
+    margin-bottom: 3.6rem;
+  }
+}
+@include media-breakpoint-up(md) {
+  .home {
+    .sub-hero-divider {
+      width: 644px;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .home {
+    .sub-hero-divider {
+      width: 750px;
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .home {
+    .sub-hero-divider {
+      width: 800px;
+    }
+  }
+}
