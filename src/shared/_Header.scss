@@ -1,5 +1,10 @@
+@mixin fixed-top-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .header {
-  // max-height: 40px;
   background-color: #28233b;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
   nav {
@@ -28,6 +33,63 @@
   }
 }
 
+#backdrop-hook {
+  .backdrop {
+    @include fixed-top-left;
+    @include size(100%, 100vh);
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+  }
+}
+
+#sidenav-hook {
+  .side-drawer {
+    @include flex(column, center, center);
+    @include font($color-secondary, 1.5rem, 400);
+    @include size(200px, 100vh);
+    @include fixed-top-left;
+    z-index: 100;
+    background: #1c1d21;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    #mobile-nav {
+      ul {
+        list-style: none;
+        @include flex(column, center, flex-start);
+        li {
+          padding-left: 3.4rem;
+          @include margin-y(1rem);
+          font-size: 2.4rem;
+          color: white;
+          position: relative; // Add this line
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+          &::before {
+            content: "\2022";
+            background-size: contain;
+            color: white;
+            margin-right: 0.75rem;
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile-nav__title-wrapper {
+  @include flex(row, center, center);
+  position: fixed;
+  top: 16px;
+  left: 16px;
+}
+.mobile-nav__title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-bottom: 0.6rem;
+}
 @include media-breakpoint-up(md) {
   .header {
     &__hamburger-menu {

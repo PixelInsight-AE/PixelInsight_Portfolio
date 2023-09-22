@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import Header from "../shared/Header";
+import { Header } from "../shared/Header";
 const Home = () => {
   return (
     <>
