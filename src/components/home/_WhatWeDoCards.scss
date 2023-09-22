@@ -52,15 +52,35 @@
   .what-we-do-cards {
     grid-template-columns: repeat(2, 1fr);
     @include margin-x(8rem);
+
+    .design {
+      order: 1;
+    }
+    .webdev {
+      order: 2;
+    }
   }
 }
 @include media-breakpoint-up(lg) {
   .what-we-do-cards {
-    margin: auto;
+    @include margin-x(18rem);
+    // margin: auto;
     &__card {
       max-width: 350px;
       &--odd {
         max-width: 350px;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .what-we-do-cards {
+    @include margin-x(22rem);
+
+    &__card {
+      width: 450px;
+      &--odd {
+        width: 450px;
       }
     }
   }

@@ -1,7 +1,7 @@
 const WhatWeDoCards = () => {
   return (
     <div className="what-we-do-cards">
-      <div className="what-we-do-cards__card">
+      <div className="what-we-do-cards__card webdev">
         <h2>WebDevelopment</h2>
         <p>
           Unlocking the Power of Web Development: Crafting Digital Experiences
@@ -10,7 +10,7 @@ const WhatWeDoCards = () => {
         </p>
         <img src="assets/images/web_dev_pic.webp" alt="" />
       </div>
-      <div className="what-we-do-cards__card--odd">
+      <div className="what-we-do-cards__card--odd design">
         <h2>Design</h2>
         <p>
           Bringing Your App Ideas to Life. From Concept to Download, We're Your

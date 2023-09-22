@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactDOM from "react-dom";
+
 const Backdrop = ({ isOpen, onClick }) => {
   return ReactDOM.createPortal(
     <AnimatePresence>
@@ -29,14 +30,14 @@ const SideNavigation = ({ isOpen, onClick }) => {
           initial={{ x: "-100%" }}
           animate={{ x: 0 }}
           exit={{ x: "-100%" }}
-          transition={{ duration: 0.3 }}
-          className="side-drawer"
+          transition={{ duration: 0.3, type: "tween" }}
+          className="side-navigation"
           onClick={onClick}
         >
-          <nav id="mobile-nav">
-            <div className="mobile-nav__title-wrapper">
+          <nav className="side-navigation__nav">
+            <div className="side-navigation__title-wrapper">
               <img src="/assets/svg/logo-test.svg" alt="" />
-              <h1 className="mobile-nav__title">Pixel Insight</h1>
+              <h1 className="side-navigation__title">Pixel Insight</h1>
             </div>
             <ul>
               <Link to="/">
@@ -49,7 +50,7 @@ const SideNavigation = ({ isOpen, onClick }) => {
                 <li>About</li>
               </Link>
               <Link to="/contact">
-                <li className="header__navigation--contact">Contact</li>
+                <li>Contact</li>
               </Link>
             </ul>
           </nav>

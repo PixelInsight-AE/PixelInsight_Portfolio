@@ -1,0 +1,19 @@
+.scrollbar {
+  @include flex(column, center, center);
+  position: absolute;
+  left: 10px;
+  bottom: -199%;
+  .hex {
+    @include size(24px, 24px);
+    padding-bottom: 4px;
+    //border: 1px solid #fff;
+  }
+  @media screen and (min-width: 475px) {
+    left: 75px;
+    bottom: -199%;
+  }
+  @media screen and (min-width: 650px) {
+    left: 150px;
+    bottom: -199%;
+  }
+}
