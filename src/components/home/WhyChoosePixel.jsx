@@ -5,7 +5,7 @@ const WhyChoosePixel = () => {
       <div>
         <article className="why-choose-pixel__card">
           <section className="why-choose-pixel__card--header">
-            <img src="/assets/svg/creativity_meets.svg" alt="" />
+            <img src="/assets/svg/creative_tech.svg" alt="" />
             <h2 className="why-choose-pixel__card--title">
               Creativity Meets Technology
             </h2>
@@ -48,7 +48,7 @@ const WhyChoosePixel = () => {
         <article className="why-choose-pixel__card">
           <section className="why-choose-pixel__card--header">
             <h2 className="why-choose-pixel__card--title">Results Driven</h2>
-            <img src="/assets/svg/results.svg" alt="" />
+            <img src="/assets/svg/results_driven.svg" alt="" />
           </section>
           <p>
             We're a dynamic duo, blending the talents of designers, developers,
