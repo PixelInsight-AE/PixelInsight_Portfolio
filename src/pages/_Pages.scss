@@ -12,10 +12,73 @@
     margin-bottom: 3.6rem;
   }
 }
+
+.contact {
+  &__top-wrapper {
+    @include flex(row, center, center);
+    margin-bottom: 3.2rem;
+    h1 {
+      font-size: 2.4rem;
+      padding-top: 3.2rem;
+      max-width: 200px;
+      text-align: center;
+      margin-right: 0.8rem;
+    }
+    img {
+      @include size(68px, 68px);
+    }
+  }
+  &__phone-desktop {
+    display: none;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 3.2rem;
+    max-width: 286px;
+    text-align: center;
+    margin: auto;
+    padding-top: 4.8rem;
+    margin-bottom: 6rem;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .home {
     .sub-hero-divider {
       width: 644px;
+    }
+  }
+
+  .contact {
+    &__top-wrapper {
+      h1 {
+        font-size: 3.2rem;
+        font-weight: 600;
+        letter-spacing: -0.256rem;
+        max-width: 350px;
+      }
+    }
+
+    input,
+    textarea {
+      max-width: 300px;
+    }
+    &__phone-mobile {
+      display: none;
+    }
+    &__phone-desktop {
+      display: inline-block;
+      margin-left: 1.6rem;
+      padding: 5.2rem;
+    }
+    &__form-wrapper {
+      @include flex(row, center, center);
+      margin-bottom: 3.2rem;
+    }
+    &__text {
+      max-width: 520px;
     }
   }
 }
