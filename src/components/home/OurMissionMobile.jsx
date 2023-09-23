@@ -1,19 +1,19 @@
 import React from "react";
-import Scrollbar from "./ScrollBar";
+import { Scrollbar } from "./ScrollBar";
 
 const OurMissionMobile = () => {
   return (
     <>
       <div className="our-mission">
         <Scrollbar />
-        <div className="our-mission__header-card">
+        {/*   <div className="our-mission__header-card">
           <h2>Our Mission</h2>
           <h4>
             We're on a mission to bring your digital dreams to life. Whether
             you're seeking web development wizardry, marketing magic, or design
             that dazzles, we've got you covered.
           </h4>
-        </div>
+        </div> */}
         <div className="our-mission__discover main-wrapper">
           <div className="our-mission__discover--color main-wrapper--color"></div>
           <div className=" main-wrapper--content">
