@@ -11,7 +11,7 @@
     h2 {
       font-size: 2.8rem;
     }
-    h4 {
+    p {
       font-weight: 400;
       letter-spacing: -0.08rem;
       font-size: 16px;
@@ -20,9 +20,9 @@
   }
   h2 {
     font-size: 2.8rem;
-    padding-bottom: 1.2rem;
+    padding-bottom: 1.6rem;
   }
-  h4 {
+  p {
     font-size: 1.2rem;
     max-width: 208px;
     font-weight: 400;
@@ -50,7 +50,7 @@
   }
   &__discover {
     margin-top: 3.4rem;
-    padding-top: 3.7rem;
+    padding-top: 3.6rem;
     &--color {
       background-color: #ef913c;
       left: 22px;
@@ -83,6 +83,46 @@
       background-color: #f2446e;
       left: 22px;
       top: -8px;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .our-mission {
+    max-width: 650px;
+    margin: auto;
+    .main-wrapper {
+      &--content {
+        @include padding-y(2.4rem);
+      }
+    }
+    h2 {
+      font-size: 3.6rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    &__discover {
+      width: 275px;
+      align-self: flex-start;
+    }
+    &__design {
+      align-self: flex-end;
+      width: 300px;
+    }
+    &__build {
+      width: 300px;
+
+      align-self: flex-start;
+    }
+    &__launch {
+      width: 300px;
+
+      align-self: flex-end;
+    }
+    &__enjoy {
+      width: 300px;
+
+      align-self: flex-start;
     }
   }
 }

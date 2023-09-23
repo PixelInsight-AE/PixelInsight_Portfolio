@@ -52,10 +52,7 @@
     text-decoration: underline;
   }
   @include flex(column, center, center);
-  img {
-    border-radius: 50%;
-    @include size(80px, 80px);
-  }
+
   blockquote {
     padding-top: 1.2rem;
     width: 290px;
@@ -122,6 +119,7 @@
   }
 
   &__team {
+    height: 524px;
     P {
       font-size: 1.2rem;
     }
@@ -142,8 +140,16 @@
     &--emily {
       border: 3px solid #f2446e;
     }
+    img {
+      border-radius: 50%;
+      @include size(80px, 80px);
+    }
     &--arno {
       border: 3px solid #0071b9;
+      img {
+        border-radius: 50%;
+        @include size(80px, 80px);
+      }
     }
   }
   &__story {

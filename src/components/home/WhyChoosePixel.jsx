@@ -2,7 +2,7 @@ const WhyChoosePixel = () => {
   return (
     <div className="why-choose-pixel">
       <h2 className="why-choose-pixel__title">Why Choose Pixel Insight?</h2>
-      <div>
+      <div className="why-choose">
         <article className="why-choose-pixel__card">
           <section className="why-choose-pixel__card--header">
             <img src="/assets/svg/creative_tech.svg" alt="" />
@@ -17,7 +17,7 @@ const WhyChoosePixel = () => {
             results.
           </p>
         </article>
-        <article className="why-choose-pixel__card">
+        <article className="why-choose-pixel__card right-card">
           <section className="why-choose-pixel__card--header">
             <h2 className="why-choose-pixel__card--title">
               Client-Centric Approach
@@ -41,7 +41,7 @@ const WhyChoosePixel = () => {
             drive innovation in every project.
           </p>
         </article>
-        <article className="why-choose-pixel__card">
+        <article className="why-choose-pixel__card right">
           <section className="why-choose-pixel__card--header">
             <h2 className="why-choose-pixel__card--title">Results Driven</h2>
             <img src="/assets/svg/results_driven.svg" alt="" />

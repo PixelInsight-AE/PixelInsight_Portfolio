@@ -18,54 +18,54 @@ const OurMissionMobile = () => {
           <div className="our-mission__discover--color main-wrapper--color"></div>
           <div className=" main-wrapper--content">
             <h2>Discover</h2>
-            <h4>
+            <p>
               Uncover the essence of your vision and project goals. We will be
               your compass in the digital landscape.
-            </h4>
+            </p>
           </div>
         </div>
         <div className="our-mission__design main-wrapper">
           <div className="our-mission__design--color main-wrapper--color"></div>
           <div className="main-wrapper--content">
             <h2>Design</h2>
-            <h4>
+            <p>
               Crafting engaging and visually stunning experiences. Our designs
               captivate and convert, turning concepts into pixel-perfect
               realities.
-            </h4>
+            </p>
           </div>
         </div>
         <div className="our-mission__build main-wrapper">
           <div className="our-mission__build--color main-wrapper--color"></div>
           <div className=" main-wrapper--content">
             <h2>Build</h2>
-            <h4>
+            <p>
               Bringing your concepts to life with cutting-edge technology.
               Coding, testing, and refining for flawless functionality – one
               line of code at a time.
-            </h4>
+            </p>
           </div>
         </div>
         <div className="our-mission__launch main-wrapper">
           <div className="our-mission__launch--color main-wrapper--color"></div>
           <div className=" main-wrapper--content">
             <h2>Launch</h2>
-            <h4>
+            <p>
               Prepare for liftoff: the world is about to meet your project. We
               ensure a seamless and confident project launch, as your journey
               begins.
-            </h4>
+            </p>
           </div>
         </div>
         <div className="our-mission__enjoy main-wrapper">
           <div className="our-mission__enjoy--color main-wrapper--color"></div>
           <div className="main-wrapper--content">
             <h2>Enjoy</h2>
-            <h4>
+            <p>
               Sit back, relax, and watch your project shine. Embrace the
               results, celebrate success, and make your journey a memorable
               experience.
-            </h4>
+            </p>
           </div>
         </div>
       </div>

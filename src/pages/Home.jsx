@@ -35,7 +35,7 @@ const Home = () => {
           name="twitter:description"
           content="Pixel Insight: Where Creativity Meets Technology. We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference."
         />
-        <meta name="twitter:image" content="/assets/images/new_log.png" />
+        <meta name="twitter:image" content="/assets/images/new_logo.png" />
         <title>Pixel Insight</title>
       </Helmet>
       <Header />

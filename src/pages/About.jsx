@@ -164,8 +164,8 @@ const About = () => {
           </p>
         </article>
         <ContactForm />
-        <GetAQuote />
       </div>
+      <GetAQuote />
       <Footer />
     </>
   );

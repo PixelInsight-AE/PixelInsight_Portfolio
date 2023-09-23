@@ -139,20 +139,15 @@ const SmallDots = () => {
 };
 
 const Scrollbar = () => {
-  // const ref = useRef(null);
-  /*   const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["end top", "end bottom"],
-  }); */
-
   return (
     <div className="scrollbar">
       <motion.img
         initial={{ rotate: 0, scale: 1 }}
         whileInView={{
           scale: [1.25, 1],
-          filter: "hue-rotate(180deg)",
+          filter: "hue-rotate(280deg)",
         }}
+        viewport={{ once: true }}
         transition={{ duration: 2, delay: 0.3, type: "spring", bounce: 0.5 }}
         src="/assets/svg/unlit_hex.svg"
         className="hex"
@@ -160,7 +155,8 @@ const Scrollbar = () => {
       <SmallDots />
       <motion.img
         initial={{ rotate: 0, scale: 1 }}
-        whileInView={{ scale: [1.25, 1] }}
+        whileInView={{ scale: [1.25, 1], filter: "hue-rotate(280deg)" }}
+        viewport={{ once: true }}
         transition={{ duration: 3, delay: 0.5, type: "spring", bounce: 0.5 }}
         src="/assets/svg/unlit_hex.svg"
         className="hex"
@@ -169,7 +165,8 @@ const Scrollbar = () => {
 
       <motion.img
         initial={{ rotate: 0, scale: 1 }}
-        whileInView={{ scale: [1.25, 1] }}
+        whileInView={{ scale: [1.25, 1], filter: "hue-rotate(280deg)" }}
+        viewport={{ once: true }}
         transition={{ duration: 3, delay: 0.5, type: "spring", bounce: 0.5 }}
         src="/assets/svg/unlit_hex.svg"
         className="hex"
@@ -177,7 +174,8 @@ const Scrollbar = () => {
       <SmallDots />
       <motion.img
         initial={{ rotate: 0, scale: 1 }}
-        whileInView={{ scale: [1.25, 1] }}
+        whileInView={{ scale: [1.25, 1], filter: "hue-rotate(280deg)" }}
+        viewport={{ once: true }}
         transition={{ duration: 3, delay: 0.5, type: "spring", bounce: 0.5 }}
         src="/assets/svg/unlit_hex.svg"
         className="hex"
@@ -185,7 +183,8 @@ const Scrollbar = () => {
       <SmallDots />
       <motion.img
         initial={{ rotate: 0, scale: 1 }}
-        whileInView={{ scale: [1.25, 1] }}
+        whileInView={{ scale: [1.25, 1], filter: "hue-rotate(280deg)" }}
+        viewport={{ once: true }}
         transition={{ duration: 3, delay: 0.5, type: "spring", bounce: 0.5 }}
         src="/assets/svg/unlit_hex.svg"
         className="hex"

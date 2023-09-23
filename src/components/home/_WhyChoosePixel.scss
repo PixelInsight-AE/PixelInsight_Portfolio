@@ -1,5 +1,6 @@
 .why-choose-pixel {
-  text-align: center;
+  @include flex(column, center, center);
+
   &__title {
     font-size: 3.2rem;
     max-width: 224px;
@@ -24,6 +25,14 @@
     }
     p {
       @include padding-y(1.6rem);
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .why-choose-pixel {
+    &__title {
+      font-size: 4rem;
+      max-width: 288px;
     }
   }
 }
