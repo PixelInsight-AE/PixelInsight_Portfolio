@@ -1,0 +1,29 @@
+.why-choose-pixel {
+  text-align: center;
+  &__title {
+    font-size: 3.2rem;
+    max-width: 224px;
+    margin: 0 auto;
+    padding-bottom: 1.6rem;
+  }
+  &__card {
+    max-width: 288px;
+    margin: 0 auto;
+    &--header {
+      @include flex(row, space-around, center);
+      border-radius: 8px;
+      background-color: #28233b;
+      img {
+        padding: 0.8rem;
+      }
+    }
+    &--title {
+      font-size: 2rem;
+      letter-spacing: -0.115rem;
+      font-weight: 400;
+    }
+    p {
+      @include padding-y(1.6rem);
+    }
+  }
+}

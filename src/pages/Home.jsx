@@ -6,6 +6,11 @@ import WhatWeDoCards from "../components/home/WhatWeDoCards";
 import OurMissionMobile from "../components/home/OurMissionMobile";
 import Scrollbar from "../components/home/ScrollBar";
 import TechExpertise from "../components/home/TechExpertise";
+import FAQ from "../components/home/FAQ";
+import WhyChoosePixel from "../components/home/WhyChoosePixel";
+import ContactForm from "../shared/ContactForm";
+import GetAQuote from "../shared/GetAQuote";
+import Footer from "../shared/Footer";
 const Home = () => {
   return (
     <>
@@ -41,7 +46,12 @@ const Home = () => {
         <div className="sub-hero-divider"></div>
         <OurMissionMobile />
         <TechExpertise />
+        <FAQ />
+        <WhyChoosePixel />
+        <ContactForm />
+        <GetAQuote />
       </div>
+      <Footer />
     </>
   );
 };

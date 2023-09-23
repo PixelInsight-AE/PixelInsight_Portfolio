@@ -1,0 +1,35 @@
+.contact-form {
+  @include flex(column, center, center);
+
+  form {
+    @include flex(column, flex-start, flex-start);
+
+    h2 {
+      font-size: 2.8rem;
+      padding-bottom: 1.6rem;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 2rem;
+      width: 280px;
+      background-color: #111111;
+      border: none;
+      color: #ffffff;
+      border-bottom: 1px solid #ffffff;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+    button {
+      background-color: #111111;
+      color: #ffffff;
+      border: 1.5px solid #f2446e;
+      padding: 0.8rem 1.6rem;
+      margin: auto;
+      @include margin-y(2rem);
+      @include size(230px, 44px);
+    }
+  }
+}

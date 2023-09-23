@@ -1,21 +1,33 @@
 .tech-expertise {
-  @include flex(column, flex-start, flex-start);
-  h2 {
+  @include flex(column, center, center);
+  &__title {
+    width: 100%;
     font-size: 2.8rem;
-    margin-left: 1.2rem;
-    padding-bottom: 5rem;
-    letter-spacing: -8%;
     font-weight: 600;
+    letter-spacing: -0.192rem;
+    text-align: center;
+    margin-bottom: 5.2rem;
   }
   &__wrapper {
-    @include flex(column, flex-start, flex-start);
+    @include flex(column, center, center);
+    width: 100%;
   }
   &__card {
-    padding-bottom: 3.2rem;
-    max-width: 250px;
-    margin-left: 1.6rem;
+    @include flex(column, space-between, flex-start);
+    padding: 0 1.6rem 3.2rem 3.2rem;
+    margin-bottom: 3.2rem;
+    max-width: 220px;
+    p {
+      padding-bottom: 1.2rem;
+      font-size: 1.6rem;
+    }
+    i {
+      color: #a79c9c;
+      display: inline-block;
+      max-width: 200px;
+    }
   }
-  &__title {
+  &__card-header {
     @include flex(row, flex-start, center);
     font-size: 2.8rem;
     padding-bottom: 1.2rem;
@@ -23,18 +35,45 @@
       font-weight: 400;
       letter-spacing: -0.192rem;
     }
+    img {
+      margin-left: 1.2rem;
+    }
   }
-  &__icon {
-    margin-left: 10px;
+}
+
+@include media-breakpoint-up(sm) {
+  .tech-expertise {
+    @include flex(column, flex-start, center);
+    margin: 0 auto;
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      row-gap: 3.2rem;
+      column-gap: 3.2rem;
+      padding-bottom: 5.2rem;
+    }
+    .left {
+      margin-left: auto;
+    }
+    .right {
+      margin-right: auto;
+    }
   }
-  p {
-    max-width: 220px;
-    padding-bottom: 1.2rem;
-    font-size: 1.6rem;
-  }
-  i {
-    color: #a79c9c;
-    display: inline-block;
-    max-width: 200px;
+}
+@include media-breakpoint-up(xl) {
+  .tech-expertise {
+    &__wrapper {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &__card {
+      padding: 3.2rem;
+      border-radius: 1.6rem;
+      box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.25);
+      height: 325px;
+      width: 300px;
+      background-color: #1d1f1f;
+    }
   }
 }

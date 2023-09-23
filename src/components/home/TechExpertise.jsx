@@ -1,16 +1,12 @@
 const TechExpertise = () => {
   return (
     <section className="tech-expertise">
-      <h2>Technology Expertise</h2>
+      <h2 className="tech-expertise__title">Technology Expertise</h2>
       <div className="tech-expertise__wrapper">
-        <section className="tech-expertise__card">
-          <section className="tech-expertise__title">
+        <article className="tech-expertise__card left">
+          <section className="tech-expertise__card-header">
             <h3>Front-end</h3>
-            <img
-              className="tech-expertise__icon"
-              src="/assets/svg/circle.svg"
-              alt=""
-            />
+            <img src="/assets/svg/circle.svg" alt="" />
           </section>
           <p>
             Elevate your online presence with our expert front-end design
@@ -21,34 +17,26 @@ const TechExpertise = () => {
             HTML, CSS, Sass, React, Redux, JavaScript, Bootstrap, FrameWorks,
             Responsive Designs, PWA, API Integration, Testing & Debugging
           </i>
-        </section>
-        <section className="tech-expertise__card">
-          <section className="tech-expertise__title">
+        </article>
+        <article className="tech-expertise__card right">
+          <section className="tech-expertise__card-header">
             <h3>Back-end</h3>
-            <img
-              className="tech-expertise__icon"
-              src="/assets/svg/triangle.svg"
-              alt=""
-            />
+            <img src="/assets/svg/triangle.svg" alt="" />
           </section>
           <p>
-            Powerful backend solutions for seamless performance and security.
-            Elevate your digital presence with us.
+            Elevate your digital presence with our powerful backend solutions
+            for seamless performance and security.
           </p>
           <i>
             Database Management, API Development, Authentication Systems, Server
             Management, RESTful API’s, Dev Ops, Ruby/Rails, Node, Python,
             SQL/Postgres
           </i>
-        </section>
-        <section className="tech-expertise__card">
-          <section className="tech-expertise__title">
+        </article>
+        <article className="tech-expertise__card left">
+          <section className="tech-expertise__card-header">
             <h3>Design</h3>
-            <img
-              className="tech-expertise__icon"
-              src="/assets/svg/square.svg"
-              alt=""
-            />
+            <img src="/assets/svg/square.svg" alt="" />
           </section>
           <p>
             At Pixel Insight, we blend creativity and functionality to craft
@@ -57,15 +45,11 @@ const TechExpertise = () => {
             purposeful, making your digital presence memorable and effective.
           </p>
           <i>Figma, Illustrator, Photoshop</i>
-        </section>
-        <section className="tech-expertise__card">
-          <section className="tech-expertise__title">
+        </article>
+        <article className="tech-expertise__card right">
+          <section className="tech-expertise__card-header">
             <h3>App Development</h3>
-            <img
-              className="tech-expertise__icon"
-              src="/assets/svg/star.svg"
-              alt=""
-            />
+            <img src="/assets/svg/star.svg" alt="" />
           </section>
           <p>
             We're your mobile app maestros, transforming your unique concepts
@@ -74,7 +58,7 @@ const TechExpertise = () => {
             one download at a time.
           </p>
           <i>React Native, Flutter</i>
-        </section>
+        </article>
       </div>
     </section>
   );
