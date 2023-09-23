@@ -45,6 +45,12 @@
 }
 
 .about {
+  &__header {
+    @include flex(column, center, center);
+  }
+  h3 {
+    text-decoration: underline;
+  }
   @include flex(column, center, center);
   img {
     border-radius: 50%;
@@ -104,13 +110,13 @@
   }
   &__mission {
     p {
-      max-width: 200px;
+      max-width: 220px;
       font-size: 1.2rem;
     }
   }
   &__vision {
     p {
-      max-width: 200px;
+      max-width: 220px;
       font-size: 1.2rem;
     }
   }
@@ -141,14 +147,19 @@
     }
   }
   &__story {
+    h2 {
+      text-decoration: underline;
+    }
     P {
       font-size: 1.2rem;
+      max-width: 280px;
     }
     @include margin-x(1.6rem);
   }
   &__conclusion {
     p {
       font-size: 1.2rem;
+      max-width: 280px;
     }
     @include margin-x(1.6rem);
   }
@@ -158,6 +169,34 @@
   .home {
     .sub-hero-divider {
       width: 644px;
+    }
+  }
+  .about {
+    margin-top: 3.6rem;
+    h1 {
+      blockquote {
+        width: 350px;
+        margin-right: 2.4rem;
+      }
+    }
+    &__header {
+      flex-direction: row;
+      margin-bottom: 3.2rem;
+    }
+    &__meet-us-wrapper {
+      @include flex(row, space-between, center);
+    }
+    &__mission,
+    &__vision {
+      p {
+        max-width: 340px;
+      }
+    }
+    &__conclusion,
+    &__story {
+      p {
+        max-width: 500px;
+      }
     }
   }
 

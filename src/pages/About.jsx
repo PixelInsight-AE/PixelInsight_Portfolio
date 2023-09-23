@@ -15,18 +15,20 @@ const About = () => {
       </Helmet>
       <Header />
       <div className="about">
-        <h1>
-          <blockquote>"The pixel Insight Journey."</blockquote>
-        </h1>
-        <article className="about__about">
-          <h2>About Us:</h2>
-          <p>
-            At Pixel Insight, we're passionate about crafting digital
-            experiences that leave a lasting impact. Our journey began with a
-            simple yet powerful idea: that pixels have the potential to
-            transform the way we interact with the digital world.
-          </p>
-        </article>
+        <section className="about__header">
+          <h1>
+            <blockquote>"The pixel Insight Journey."</blockquote>
+          </h1>
+          <article className="about__about">
+            <h2>About Us:</h2>
+            <p>
+              At Pixel Insight, we're passionate about crafting digital
+              experiences that leave a lasting impact. Our journey began with a
+              simple yet powerful idea: that pixels have the potential to
+              transform the way we interact with the digital world.
+            </p>
+          </article>
+        </section>
         <article className="about__mission dark">
           <h2>Our Mission:</h2>
           <p>
@@ -45,82 +47,85 @@ const About = () => {
             tell yours.
           </p>
         </article>
-        <article className="about__team">
-          <section className="about__team--wrapper">
-            <img
-              className="about__team--emily"
-              src="/assets/images/hottt.webp"
-              alt=""
-            />
-            <h3>Emily L</h3>
-          </section>
-          <p>
-            Meet Emily, the dynamic co-founder of Pixel Insight, who is the
-            perfect blend of professional prowess and a cheerful spirit! With
-            her, the world of digital creativity becomes a joyous journey.
-          </p>
-          <br />
-          <p>
-            Emily, brings a wealth of back-end logic and hard programming skills
-            to the team. Her proficiency shines in areas like databases, writing
-            functions, and crafting intricate logic.
-          </p>
-          <br />
-          <p>
-            But what truly sets Emily apart is her contagious enthusiasm and
-            dedication to delivering exceptional results. She infuses every
-            project with a jolly, can-do attitude that energizes the entire
-            team. Whether it's diving into complex programming challenges or
-            spreading positivity, Emily is the heart and soul of Pixel Insight's
-            success.
-          </p>
-          <br />
-          <p>
-            When you're in need of a developer expert who not only delivers
-            professionalism but also radiates infectious cheer, Emily is your
-            go-to partner. She's the driving force behind our technical
-            excellence and the sunshine in our office.
-          </p>
-        </article>
+        <section className="about__meet-us-wrapper">
+          <article className="about__team">
+            <section className="about__team--wrapper">
+              <img
+                className="about__team--emily"
+                src="/assets/images/hottt.webp"
+                alt=""
+              />
+              <h3>Emily L</h3>
+            </section>
+            <p>
+              Meet Emily, the dynamic co-founder of Pixel Insight, who is the
+              perfect blend of professional prowess and a cheerful spirit! With
+              her, the world of digital creativity becomes a joyous journey.
+            </p>
+            <br />
+            <p>
+              Emily, brings a wealth of back-end logic and hard programming
+              skills to the team. Her proficiency shines in areas like
+              databases, writing functions, and crafting intricate logic.
+            </p>
+            <br />
+            <p>
+              But what truly sets Emily apart is her contagious enthusiasm and
+              dedication to delivering exceptional results. She infuses every
+              project with a jolly, can-do attitude that energizes the entire
+              team. Whether it's diving into complex programming challenges or
+              spreading positivity, Emily is the heart and soul of Pixel
+              Insight's success.
+            </p>
+            <br />
+            <p>
+              When you're in need of a developer expert who not only delivers
+              professionalism but also radiates infectious cheer, Emily is your
+              go-to partner. She's the driving force behind our technical
+              excellence and the sunshine in our office.
+            </p>
+          </article>
 
-        <article className="about__team">
-          <section className="about__team--wrapper">
-            <img
-              className="about__team--arno"
-              src="/assets/images/arnoo.webp"
-              alt=""
-            />
-            <h3>Arno L</h3>
-          </section>
-          <p>
-            With a deep passion for culture, adventure, and a sharp eye for
-            aesthetics, Arno is the visionary force behind our projects. He
-            captures the world's beauty through various lenses - be it through
-            the lens of a camera, lines of code in web applications, or his keen
-            eye for breathtaking views.
-          </p>
-          <br />
-          <p>
-            Arno specializes in design and is our creative UI/UX maestro. His
-            knack for crafting visually stunning and user-friendly digital
-            experiences sets our projects apart. When you experience seamless
-            navigation, captivating visuals, and an intuitive interface in our
-            creations, you're witnessing Arno's artistic touch at play.
-          </p>
-          <br />
-          <p>
-            But Arno's talents go beyond pixels and screens. His true purpose is
-            to make a positive impact through his creative endeavors, whether
-            it's through striking visual designs or innovative web solutions.
-          </p>
-          <br />
-          <p>
-            When you collaborate with Arno, you're partnering with the creative
-            heart of Pixel Insight. He's not just a designer; he's the driving
-            force behind turning ideas into visually captivating digital
-            realities."
-          </p>
-        </article>
+          <article className="about__team">
+            <section className="about__team--wrapper">
+              <img
+                className="about__team--arno"
+                src="/assets/images/arnoo.webp"
+                alt=""
+              />
+              <h3>Arno L</h3>
+            </section>
+            <p>
+              With a deep passion for culture, adventure, and a sharp eye for
+              aesthetics, Arno is the visionary force behind our projects. He
+              captures the world's beauty through various lenses - be it through
+              the lens of a camera, lines of code in web applications, or his
+              keen eye for breathtaking views.
+            </p>
+            <br />
+            <p>
+              Arno specializes in design and is our creative UI/UX maestro. His
+              knack for crafting visually stunning and user-friendly digital
+              experiences sets our projects apart. When you experience seamless
+              navigation, captivating visuals, and an intuitive interface in our
+              creations, you're witnessing Arno's artistic touch at play.
+            </p>
+            <br />
+            <p>
+              But Arno's talents go beyond pixels and screens. His true purpose
+              is to make a positive impact through his creative endeavors,
+              whether it's through striking visual designs or innovative web
+              solutions.
+            </p>
+            <br />
+            <p>
+              When you collaborate with Arno, you're partnering with the
+              creative heart of Pixel Insight. He's not just a designer; he's
+              the driving force behind turning ideas into visually captivating
+              digital realities."
+            </p>
+          </article>
+        </section>
 
         <article className="about__story light">
           <h2>Our Story</h2>
@@ -155,7 +160,7 @@ const About = () => {
             exciting adventure, blending creativity, innovation, and technology.
             With your unique perspective and our technical prowess, there's no
             limit to what we can achieve. So, let's join forces, dream big, and
-            craft digital wonders that leave a lasting impact. boobs
+            craft digital wonders that leave a lasting impact.
           </p>
         </article>
         <ContactForm />
