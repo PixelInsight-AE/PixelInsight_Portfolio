@@ -4,7 +4,7 @@ import Hero from "../components/home/Hero";
 import WhatWeDo from "../components/home/WhatWeDo";
 import WhatWeDoCards from "../components/home/WhatWeDoCards";
 import OurMissionMobile from "../components/home/OurMissionMobile";
-import Scrollbar from "../components/home/ScrollBar";
+import { Scrollbar } from "../components/home/ScrollBar";
 import TechExpertise from "../components/home/TechExpertise";
 import FAQ from "../components/home/FAQ";
 import WhyChoosePixel from "../components/home/WhyChoosePixel";
@@ -35,7 +35,7 @@ const Home = () => {
           name="twitter:description"
           content="Pixel Insight: Where Creativity Meets Technology. We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference."
         />
-        <meta name="twitter:image" content="https://i.imgur.com/ewHutRa.png" />
+        <meta name="twitter:image" content="/assets/images/new_logo.png" />
         <title>Pixel Insight</title>
       </Helmet>
       <Header />

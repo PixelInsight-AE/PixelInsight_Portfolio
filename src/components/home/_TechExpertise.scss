@@ -51,7 +51,7 @@
       justify-content: center;
       align-items: center;
       row-gap: 3.2rem;
-      column-gap: 3.2rem;
+      column-gap: 1.5rem;
       padding-bottom: 5.2rem;
     }
     .left {
@@ -66,6 +66,7 @@
   .tech-expertise {
     &__wrapper {
       grid-template-columns: repeat(4, 1fr);
+      row-gap: 3.2rem;
     }
     &__card {
       padding: 3.2rem;

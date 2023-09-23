@@ -2,7 +2,10 @@
   @include flex(column, center, center);
 
   .duo {
-    @include flex(row, space-between, center);
+    max-width: 256px;
+    @include media-breakpoint-up(md) {
+      max-width: 600px;
+    }
   }
   p {
     max-width: 230px;

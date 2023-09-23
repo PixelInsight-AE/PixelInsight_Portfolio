@@ -1,7 +1,8 @@
 const GetAQuote = () => {
   return (
     <div className="get-a-quote">
-      <section className="duo">
+      <img className="duo" src="/assets/images/glasses.webp" alt="" />
+      {/* <section className="duo">
         <img
           style={{
             borderRadius: "50%",
@@ -23,7 +24,7 @@ const GetAQuote = () => {
           src="/assets/images/arnoo.webp"
           alt=""
         />
-      </section>
+      </section> */}
       <p>
         Ready to dive in? Join us on this pixelated journey and let's make the
         digital world yours.
