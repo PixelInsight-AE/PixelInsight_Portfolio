@@ -30,11 +30,14 @@ export const AccordionItem = ({ index, title, children }) => {
       <motion.div
         onClick={handleClick}
         initial={false}
-        animate={{ backgroundColor: activeIndex === index ? "#eee" : "#fff" }}
+        animate={{
+          backgroundColor: activeIndex === index ? "#1d1f1f" : "#1d1f1f",
+        }}
         transition={{ duration: 0.2 }}
         className="accordion-title"
       >
-        <h2>{title}</h2>
+        <img src="/assets/svg/plus.svg" alt="" />
+        <h2 className="accordion-text">{title}</h2>
       </motion.div>
 
       <AnimatePresence initial={false}>

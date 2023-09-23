@@ -1,0 +1,17 @@
+.footer {
+  @include flex(row, space-between, center);
+  background-color: #28233b;
+  &__logo {
+    @include size(16px, 16px);
+    padding: 0.8rem;
+    margin-top: 4px;
+  }
+  p {
+    margin-right: auto;
+  }
+  section {
+    img {
+      @include margin-x(8px);
+    }
+  }
+}

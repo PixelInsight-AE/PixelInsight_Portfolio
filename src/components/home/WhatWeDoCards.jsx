@@ -9,7 +9,7 @@ const WhatWeDoCards = () => {
             That Inspire. At Pixel Insight, we're all about turning your unique
             ideas into captivating websites and applications.
           </p>
-          <img src="assets/images/web_dev_pic.webp" alt="" />
+          <img src="assets/images/design_light.webp" alt="" />
         </article>
         <article className="what-we-do-cards__card odd design">
           <h2>Design</h2>
@@ -20,7 +20,7 @@ const WhatWeDoCards = () => {
             that cater to your unique needs. Our team is dedicated to turning
             your mobile app dreams into reality, one line of code at a time.
           </p>
-          <img src="assets/images/design_pic.webp" alt="" />
+          <img src="assets/images/backend_pic.webp" alt="" />
         </article>
         <article className="what-we-do-cards__card">
           <h2>Mobile Development</h2>
@@ -31,7 +31,7 @@ const WhatWeDoCards = () => {
             concept to download, we craft digital magic that resonates with your
             audience, one download at a time.
           </p>
-          <img src="assets/images/mobile_pic.webp" alt="" />
+          <img src="assets/images/web_apps.webp" alt="" />
         </article>
         <article className="what-we-do-cards__card odd">
           <h2>Back-end Development</h2>
@@ -44,7 +44,7 @@ const WhatWeDoCards = () => {
             logic, we enhance the performance and reliability of your online
             solutions.
           </p>
-          <img src="assets/images/backend_pic.webp" alt="" />
+          <img src="assets/images/backend_code.webp" alt="" />
         </article>
       </div>
     </section>
