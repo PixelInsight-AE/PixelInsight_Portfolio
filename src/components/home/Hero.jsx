@@ -13,7 +13,15 @@ const Hero = () => {
           "At Pixel Insight, we don't just see pixels, We envision
           possibilities"
         </blockquote>
-        <button>Get a free quote!</button>
+        <button
+          onClick={() => {
+            document
+              .getElementById("contact-form")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Get a free quote!
+        </button>
       </div>
       <img
         className="hero__hero-img"

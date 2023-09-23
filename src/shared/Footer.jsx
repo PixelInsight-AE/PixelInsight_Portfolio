@@ -4,10 +4,18 @@ const Footer = () => {
       <img className="footer__logo" src="/assets/svg/logo-test.svg" alt="" />
       <p>Pixel Insight ©2023</p>
       <section>
-        <img src="/assets/svg/github.svg" alt="" />
-        <img src="/assets/svg/twitter.svg" alt="" />
-        <img src="/assets/svg/facebook.svg" alt="" />
-        <img src="/assets/svg/linknin.svg" alt="" />
+        <a href="https://github.com/PixelInsight-AE" target="_blank">
+          <img src="/assets/svg/github.svg" alt="" />
+        </a>
+        <a href="https://twitter.com/pixel_insight" target="_blank">
+          <img src="/assets/svg/twitter.svg" alt="" />
+        </a>
+        <a href="https://www.facebook.com/PixelInsightAE/" target="_blank">
+          <img src="/assets/svg/facebook.svg" alt="" />
+        </a>
+        {/* <a href="https://github.com/PixelInsight-AE" target="_blank">
+          <img src="/assets/svg/linknin.svg" alt="" />
+        </a> */}
       </section>
     </footer>
   );

@@ -10,7 +10,15 @@ const GetAQuote = () => {
         Ready to dive in? Join us on this pixelated journey and let's make the
         digital world yours.
       </p>
-      <button>Get a free quote!</button>
+      <button
+        onClick={() => {
+          document
+            .getElementById("contact-form")
+            .scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        Get a free quote!
+      </button>
     </div>
   );
 };

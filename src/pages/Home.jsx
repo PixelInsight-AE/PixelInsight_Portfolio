@@ -18,14 +18,14 @@ const Home = () => {
         <meta name="description" content="Pixel Insight" />
 
         <meta name="author" content="Pixel Insight" />
-        <meta property="og:image" content="assets/images/new_logo.png" />
+        <meta property="og:image" content="assets/images/logo-test.svg" />
         <meta property="og:title" content="Pixel Insight" />
         <meta
           name="description"
           content="Pixel Insight: Where Creativity Meets Technology. We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference."
         />
 
-        <meta property="og:url" content="https://trans-me-downs.com" />
+        <meta property="og:url" content="https://pixel-insight.com" />
         <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="twitter:card" content="/assets/images/new_logo.png" />
