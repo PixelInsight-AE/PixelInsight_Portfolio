@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const FAQ = () => {
   return (
-    <div className="faq">
+    <section className="faq">
       <h2 className="faq__title">Frequently Asked Questions</h2>
       <Accordion>
         <AccordionItem index={0} title="What do you offer?">
@@ -76,7 +76,7 @@ const FAQ = () => {
           </motion.p>
         </AccordionItem>
       </Accordion>
-    </div>
+    </section>
   );
 };
 export default FAQ;

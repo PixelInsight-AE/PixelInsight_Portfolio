@@ -1,9 +1,12 @@
+import { ScrollAnimationWhyChoose } from "./ScrollAnimationWhyChoose";
+
 const WhyChoosePixel = () => {
   return (
-    <div className="why-choose-pixel">
+    <section className="why-choose-pixel">
+      <ScrollAnimationWhyChoose />
       <h2 className="why-choose-pixel__title">Why Choose Pixel Insight?</h2>
-      <div className="why-choose">
-        <article className="why-choose-pixel__card">
+      <div className="why-choose-pixel__stagger-box">
+        <article className="why-choose-pixel__card left">
           <section className="why-choose-pixel__card--header">
             <img src="/assets/svg/creative_tech.svg" alt="" />
             <h2 className="why-choose-pixel__card--title">
@@ -17,7 +20,7 @@ const WhyChoosePixel = () => {
             results.
           </p>
         </article>
-        <article className="why-choose-pixel__card right-card">
+        <article className="why-choose-pixel__card right">
           <section className="why-choose-pixel__card--header">
             <h2 className="why-choose-pixel__card--title">
               Client-Centric Approach
@@ -29,7 +32,7 @@ const WhyChoosePixel = () => {
             our top priorities.
           </p>
         </article>
-        <article className="why-choose-pixel__card">
+        <article className="why-choose-pixel__card left">
           <section className="why-choose-pixel__card--header">
             <img src="/assets/svg/expertise.svg" alt="" />
             <h2 className="why-choose-pixel__card--title">
@@ -51,7 +54,7 @@ const WhyChoosePixel = () => {
             our solutions bring
           </p>
         </article>
-        <article className="why-choose-pixel__card">
+        <article className="why-choose-pixel__card left">
           <section className="why-choose-pixel__card--header">
             <img src="/assets/svg/collaborative.svg" alt="" />
             <h2 className="why-choose-pixel__card--title">
@@ -64,7 +67,7 @@ const WhyChoosePixel = () => {
           </p>
         </article>
       </div>
-    </div>
+    </section>
   );
 };
 export default WhyChoosePixel;

@@ -3,7 +3,10 @@ import { Header } from "../shared/Header";
 import Hero from "../components/home/Hero";
 import WhatWeDo from "../components/home/WhatWeDo";
 import WhatWeDoCards from "../components/home/WhatWeDoCards";
-import OurMissionMobile from "../components/home/OurMissionMobile";
+import {
+  DiscoverDesignBuildLaunchEnjoy,
+  OurMissionCard,
+} from "../components/home/DiscoverDesignBuildLaunchEnjoy";
 import { Scrollbar } from "../components/home/ScrollBar";
 import TechExpertise from "../components/home/TechExpertise";
 import FAQ from "../components/home/FAQ";
@@ -18,7 +21,7 @@ const Home = () => {
         <meta name="description" content="Pixel Insight" />
 
         <meta name="author" content="Pixel Insight" />
-        <meta property="og:image" content="assets/images/logo-test.svg" />
+        <meta property="og:image" content="assets/images/new_logo.png" />
         <meta property="og:title" content="Pixel Insight" />
         <meta
           name="description"
@@ -44,7 +47,8 @@ const Home = () => {
         <WhatWeDo />
         <WhatWeDoCards />
         <div className="sub-hero-divider"></div>
-        <OurMissionMobile />
+        <OurMissionCard />
+        <DiscoverDesignBuildLaunchEnjoy />
         <TechExpertise />
         <FAQ />
         <WhyChoosePixel />
