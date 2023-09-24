@@ -14,6 +14,7 @@
 }
 
 .contact {
+  padding-top: 4.2rem;
   &__top-wrapper {
     @include flex(row, center, center);
     margin-bottom: 3.2rem;
@@ -45,6 +46,7 @@
 }
 
 .about {
+  padding-top: 4.2rem;
   &__header {
     @include flex(column, center, center);
   }
@@ -178,7 +180,7 @@
     }
   }
   .about {
-    margin-top: 3.6rem;
+    padding-top: 5.6rem;
     h1 {
       blockquote {
         width: 350px;
