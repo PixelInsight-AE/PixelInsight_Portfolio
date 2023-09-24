@@ -52,6 +52,9 @@ const SideNavigation = ({ isOpen, onClick }) => {
               <Link to="/contact">
                 <li>Contact</li>
               </Link>
+              <Link to="/quote">
+                <li>Get a Quote</li>
+              </Link>
             </ul>
           </nav>
         </motion.aside>

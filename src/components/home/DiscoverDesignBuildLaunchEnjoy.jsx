@@ -1,20 +1,25 @@
 import React from "react";
 import { Scrollbar } from "./ScrollBar";
 
-const OurMissionMobile = () => {
+const OurMissionCard = () => {
+  return (
+    <article className="our-mission-card">
+      <h2>Our Mission</h2>
+      <p>
+        We're on a mission to bring your digital dreams to life. Whether you're
+        seeking web development wizardry, marketing magic, or design that
+        dazzles, we've got you covered.
+      </p>
+    </article>
+  );
+};
+
+const DiscoverDesignBuildLaunchEnjoy = () => {
   return (
     <>
-      <div className="our-mission">
+      <section className="our-mission">
         <Scrollbar />
-        {/*   <div className="our-mission__header-card">
-          <h2>Our Mission</h2>
-          <h4>
-            We're on a mission to bring your digital dreams to life. Whether
-            you're seeking web development wizardry, marketing magic, or design
-            that dazzles, we've got you covered.
-          </h4>
-        </div> */}
-        <div className="our-mission__discover main-wrapper">
+        <article className="our-mission__discover main-wrapper">
           <div className="our-mission__discover--color main-wrapper--color"></div>
           <div className=" main-wrapper--content">
             <h2>Discover</h2>
@@ -23,8 +28,8 @@ const OurMissionMobile = () => {
               your compass in the digital landscape.
             </p>
           </div>
-        </div>
-        <div className="our-mission__design main-wrapper">
+        </article>
+        <article className="our-mission__design main-wrapper">
           <div className="our-mission__design--color main-wrapper--color"></div>
           <div className="main-wrapper--content">
             <h2>Design</h2>
@@ -34,8 +39,8 @@ const OurMissionMobile = () => {
               realities.
             </p>
           </div>
-        </div>
-        <div className="our-mission__build main-wrapper">
+        </article>
+        <article className="our-mission__build main-wrapper">
           <div className="our-mission__build--color main-wrapper--color"></div>
           <div className=" main-wrapper--content">
             <h2>Build</h2>
@@ -45,8 +50,8 @@ const OurMissionMobile = () => {
               line of code at a time.
             </p>
           </div>
-        </div>
-        <div className="our-mission__launch main-wrapper">
+        </article>
+        <article className="our-mission__launch main-wrapper">
           <div className="our-mission__launch--color main-wrapper--color"></div>
           <div className=" main-wrapper--content">
             <h2>Launch</h2>
@@ -56,8 +61,8 @@ const OurMissionMobile = () => {
               begins.
             </p>
           </div>
-        </div>
-        <div className="our-mission__enjoy main-wrapper">
+        </article>
+        <article className="our-mission__enjoy main-wrapper">
           <div className="our-mission__enjoy--color main-wrapper--color"></div>
           <div className="main-wrapper--content">
             <h2>Enjoy</h2>
@@ -67,9 +72,9 @@ const OurMissionMobile = () => {
               experience.
             </p>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
     </>
   );
 };
-export default OurMissionMobile;
+export { DiscoverDesignBuildLaunchEnjoy, OurMissionCard };

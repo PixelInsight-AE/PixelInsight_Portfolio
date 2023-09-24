@@ -3,13 +3,15 @@
 
   &__title {
     font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: -0.18rem;
     max-width: 224px;
     margin: 0 auto;
     padding-bottom: 1.6rem;
   }
   &__card {
     max-width: 288px;
-    margin: 0 auto;
+    //margin: 0 auto;
     &--header {
       @include flex(row, space-around, center);
       border-radius: 8px;
@@ -28,11 +30,29 @@
     }
   }
 }
+
 @include media-breakpoint-up(md) {
   .why-choose-pixel {
+    max-width: 680px;
+    margin: auto;
+    .scrollbar {
+      margin-top: 8rem;
+    }
+
     &__title {
       font-size: 4rem;
       max-width: 288px;
+    }
+
+    &__stagger-box {
+      @include flex(column, center, center);
+      width: 100%;
+      .left {
+        align-self: flex-start;
+      }
+      .right {
+        align-self: flex-end;
+      }
     }
   }
 }

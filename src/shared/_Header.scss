@@ -55,6 +55,8 @@
 }
 
 .header {
+  @include fixed-top-left(0, 0);
+  width: 100vw;
   background: linear-gradient(91deg, #28233b 0%, #150f2f 100%);
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
 
