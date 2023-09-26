@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-
-import Home from "./pages/Home";
 import { useLocation, Route, Routes } from "react-router-dom";
 import "./App.scss";
+import Home from "./pages/Home";
 import About from "./pages/About";
+import Quote from "./pages/Quote";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/quote" element={<Home />} />
+        <Route path="/quote" element={<Quote />} />
         <Route path="/*" element={<Home />} />
       </Routes>
     </>

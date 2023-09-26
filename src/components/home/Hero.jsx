@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <section className="hero">
@@ -13,15 +15,9 @@ const Hero = () => {
           "At Pixel Insight, we don't just see pixels, We envision
           possibilities"
         </blockquote>
-        <button
-          onClick={() => {
-            document
-              .getElementById("contact-form")
-              .scrollIntoView({ behavior: "smooth" });
-          }}
-        >
-          Get a free quote!
-        </button>
+        <Link to="/quote">
+          <button>Get a free quote!</button>
+        </Link>
       </div>
       <img
         className="hero__hero-img"

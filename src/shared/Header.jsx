@@ -99,6 +99,9 @@ const Header = () => {
         />
         <section className="header__navigation">
           <ul>
+            <Link to="/quote">
+              <li>Get a Quote</li>
+            </Link>
             <Link to="/portfolio">
               <li>Portfolio</li>
             </Link>

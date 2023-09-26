@@ -69,7 +69,7 @@ const ContactForm = () => {
           handleSubmit(e);
           document.querySelector(".contact-form").reset();
         }}
-        netlify
+        netlify="true"
       >
         {formError && <p className="form-error">{formError}</p>}
         <h2>Contact Us</h2>
