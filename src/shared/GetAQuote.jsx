@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const GetAQuote = () => {
   return (
     <div className="get-a-quote">
@@ -29,15 +31,9 @@ const GetAQuote = () => {
         Ready to dive in? Join us on this pixelated journey and let's make the
         digital world yours.
       </p>
-      <button
-        onClick={() => {
-          document
-            .getElementById("contact-form")
-            .scrollIntoView({ behavior: "smooth" });
-        }}
-      >
-        Get a free quote!
-      </button>
+      <Link to="/quote">
+        <button>Get a free quote!</button>
+      </Link>
     </div>
   );
 };
