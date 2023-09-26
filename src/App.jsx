@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useEffect } from "react";
+
 import Home from "./pages/Home";
-import { Route, Routes } from "react-router-dom";
+import { useLocation, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <>
       <Routes>
