@@ -45,9 +45,11 @@ const ContactForm = () => {
       .select("*");
     if (error) {
       console.log(error);
+      return;
     }
 
     setFormError("");
+    navigate("/quote-success");
 
     console.log(data);
   };
@@ -59,14 +61,6 @@ const ContactForm = () => {
         onSubmit={(e) => {
           e.preventDefault();
           handleSubmit(e);
-          setFormData({
-            name: "",
-            email: "",
-            phone: "",
-            message: "",
-            newsletter: "",
-          });
-          navigate("/quote-success");
         }}
       >
         {formError && <p className="form-error">{formError}</p>}
@@ -106,7 +100,9 @@ const ContactForm = () => {
             type="checkbox"
             placeholder="Sign up"
             name="newsletter"
-            onChange={(e) => handleChange(e)}
+            onChange={(e) => {
+              setFormData({ ...formData, newsletter: e.target.value });
+            }}
           />
           <label htmlFor="">Sign up for our newsletter</label>
         </section>
