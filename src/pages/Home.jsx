@@ -18,10 +18,8 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <meta name="description" content="Pixel Insight" />
-
         <meta name="author" content="Pixel Insight" />
-        <meta property="og:image" content="assets/images/med_logo.webp" />
+        <meta property="og:image" content="https://i.imgur.com/LOFe11P.png" />
         <meta property="og:title" content="Pixel Insight" />
         <meta
           name="description"
@@ -31,14 +29,14 @@ const Home = () => {
         <meta property="og:url" content="https://pixel-insight.com" />
         <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="twitter:card" content="/assets/images/med_logo.webp" />
+        <meta name="twitter:card" content="https://i.imgur.com/LOFe11P.png" />
         <meta name="twitter:site" content="@Pixel-Insight" />
         <meta name="twitter:title" content="Pixel Insight" />
         <meta
           name="twitter:description"
           content="Pixel Insight: Where Creativity Meets Technology. We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference."
         />
-        <meta name="twitter:image" content="/assets/images/med_logo.webp" />
+        <meta name="twitter:image" content="https://i.imgur.com/LOFe11P.png" />
         <title>Pixel Insight</title>
       </Helmet>
       <Header />
