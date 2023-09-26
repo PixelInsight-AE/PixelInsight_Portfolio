@@ -55,6 +55,7 @@
 }
 
 .header {
+  z-index: 5;
   @include fixed-top-left(0, 0);
   width: 100vw;
   background: linear-gradient(91deg, #28233b 0%, #150f2f 100%);
