@@ -85,7 +85,12 @@ const ContactForm = () => {
           placeholder="Your Email*"
           required={true}
         />
-        <input name="phone" type="text" placeholder="Phone" />
+        <input
+          onChange={(e) => handleChange(e)}
+          name="phone"
+          type="text"
+          placeholder="Phone"
+        />
         <textarea
           name="message"
           id=""
