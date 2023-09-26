@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Quote from "./pages/Quote";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+import QuoteSuccess from "./pages/QuoteSuccess";
 function App() {
   const location = useLocation();
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/quote" element={<Quote />} />
+        <Route path="/quote-success" element={<QuoteSuccess />} />
         <Route path="/*" element={<Home />} />
       </Routes>
     </>
