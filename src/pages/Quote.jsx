@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { validateEmail } from "../utilitys/utilitys";
 import supabase from "../config/supabase";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 const QuoteForm = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -49,6 +50,9 @@ const QuoteForm = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Get a Free Quote</title>
+      </Helmet>
       <form
         onSubmit={(e) => {
           e.preventDefault();
