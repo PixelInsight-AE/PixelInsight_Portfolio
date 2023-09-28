@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sanity/client": "^6.4.12",
     "@supabase/supabase-js": "^2.36.0",
     "framer-motion": "^10.16.4",
     "prettier": "^3.0.3",
