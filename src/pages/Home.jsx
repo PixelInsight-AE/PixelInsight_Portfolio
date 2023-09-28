@@ -14,6 +14,7 @@ import WhyChoosePixel from "../components/home/WhyChoosePixel";
 import ContactForm from "../shared/ContactForm";
 import GetAQuote from "../shared/GetAQuote";
 import Footer from "../shared/Footer";
+
 const Home = () => {
   return (
     <>
