@@ -3,7 +3,9 @@ const validateEmail = (email) => {
   return re.test(email);
 };
 
-const emailValidation = (email) => {
+const emailValidation = async (email) => {
+  let emailValid = false;
+
   const options = { method: "GET" };
 
   fetch(
@@ -13,11 +15,7 @@ const emailValidation = (email) => {
     .then((response) => response.json())
     .then((response) => console.log(response))
     .catch((err) => console.error(err));
-  if (response.deliverability === "DELIVERABLE") {
-    return true;
-  } else {
-    return false;
-  }
+  return emailValid;
 };
 
 export { validateEmail, emailValidation };
