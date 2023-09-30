@@ -1,7 +1,7 @@
 import Footer from "../shared/Footer";
 import { Header } from "../shared/Header";
 import { useState, useEffect } from "react";
-import { validateEmail } from "../utilitys/utilitys";
+import { emailValidation, validateEmail } from "../utilitys/utilitys";
 import supabase from "../config/supabase";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -23,6 +23,11 @@ const QuoteForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   const handleSubmit = async (e) => {
+    const isVaid = await emailValidation(formData.email);
+    if (!isVaid) {
+      alert("Please enter a valid email");
+      return;
+    }
     e.preventDefault();
     console.log(formData);
     const { data, error } = await supabase
