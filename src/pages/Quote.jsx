@@ -1,11 +1,13 @@
 import Footer from "../shared/Footer";
 import { Header } from "../shared/Header";
 import { useState, useEffect } from "react";
-import { validateEmail } from "../utilitys/utilitys";
+import { emailValidation } from "../utilitys/utilitys";
 import supabase from "../config/supabase";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 const QuoteForm = () => {
+  const [isValid, setIsValid] = useState(false);
+  const [formError, setFormError] = useState(null); // [1
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
@@ -22,30 +24,48 @@ const QuoteForm = () => {
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log(formData);
+  const handleInsert = async () => {
+    const isValidEmail = await validateEmail();
+    if (!isValidEmail) {
+      return;
+    }
     const { data, error } = await supabase
       .from("pixel_quotes")
-      .insert({ quote_form: formData })
+      .insert(formData)
       .select("*");
     if (error) {
       console.log(error);
     }
     console.log(data);
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      services: "",
-      timeline: "",
-      description: "",
-      goals: "",
-      contactMethod: "",
-      additionalInfo: "",
-      howDidYouHear: "",
-    });
     navigate("/quote-success");
+  };
+  const validateEmail = async () => {
+    const options = { method: "GET" };
+    const { email } = formData;
+    try {
+      const response = await fetch(
+        `https://emailvalidation.abstractapi.com/v1?api_key=542f3202b0b5453486ba8ab9447c1c1f&email=${email}`,
+        options
+      );
+      const result = await response.json();
+      console.log(result);
+      if (result.deliverability === "DELIVERABLE") {
+        setIsValid(true);
+        return true;
+      } else {
+        setFormError("Please enter a valid email");
+        alert("Please enter a valid email");
+        setIsValid(false);
+        return false;
+      }
+    } catch (err) {
+      console.error(err);
+      return false;
+    }
+  };
+
+  const handleSubmit = async () => {
+    await handleInsert();
   };
 
   return (
@@ -75,7 +95,7 @@ const QuoteForm = () => {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          handleSubmit(e);
+          handleSubmit();
         }}
       >
         <section className="general-info">
