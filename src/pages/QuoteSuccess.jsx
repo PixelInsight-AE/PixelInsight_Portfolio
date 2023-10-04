@@ -33,6 +33,7 @@ const QuoteSuccess = () => {
       <Header />
       <div className="quote-success">
         <h1>Thank You, We will be in contact soon!</h1>
+        <p>Please Check your Email for confirmation.</p>
         <Link to="/">
           <button>Return Home</button>
         </Link>
