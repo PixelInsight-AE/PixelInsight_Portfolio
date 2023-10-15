@@ -1,33 +1,7 @@
 // ! Config needs to be imported first
-@import "styles/config/_pixelstyles.config.scss";
-@import "styles/config/_variables.scss";
-@import "styles/config/_maps.scss";
-@import "styles/_mixins.scss";
-
-// ! Pixel Mixins
-@import "styles/Pixel_Mixins/_utils.scss";
-@import "styles/Pixel_Mixins/_typography.scss";
-@import "styles/Pixel_Mixins/_backgrounds.scss";
-@import "styles/Pixel_Mixins/_buttons.scss";
-@import "styles/Pixel_Mixins/_forms.scss";
-@import "styles/Pixel_Mixins/_colors.scss";
-@import "styles/Pixel_Mixins/_borders.scss";
-@import "styles/Pixel_Mixins/_shadows.scss";
-@import "styles/Pixel_Mixins/_misc.scss";
-@import "styles/Pixel_Mixins/_responsive.scss";
-
-// ! Pixel Classes
-@import "styles/Pixel_Class/_backgrounds.scss";
-@import "styles/Pixel_Class/_borders.scss";
-@import "styles/Pixel_Class/_buttons.scss";
-@import "styles/Pixel_Class/_colors.scss";
-@import "styles/Pixel_Class/_forms.scss";
-@import "styles/Pixel_Class/_layout.scss";
-@import "styles/Pixel_Class/_margin.scss";
-@import "styles/Pixel_Class/_padding.scss";
-@import "styles/Pixel_Class/_typography.scss";
-@import "styles/Pixel_Class/_utils.scss";
-@import "styles/Pixel_Class/_shadows.scss";
+@import "./styles/pixelinsight.config.scss";
+@import "./styles/_mixins.scss";
+@import "./styles/project.scss";
 
 // ? starters and templates need to be imported last
 @import "styles/_starter.scss";

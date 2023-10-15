@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// ! Font pairing
+$f-family-heading: "Work Sans", sans-serif;
+$f-family-body: "Merriweather", sans-serif;
+$f-family-brand: "Iceland", sans-serif;
+
+// ! Breakpoints
+$breakpoint-xs: 350px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1600px;
+
+// ! Colors
+$c-primary: #ef913c;
+$c-secondary: #f2446e;
+$c-accent: #28233b;
+
+$c-text: #f6e6ce;
+$c-body: #0f0713;
+
+$c-error: #d32752;
+$c-warning: #f6c31c;
+$c-info: #17a2b8;
+$c-success: #28a745;
+
+// ! Gradients
+$g-primary: linear-gradient(91deg, #28233b 0%, #150f2f 100%);
+$g-secondary: linear-gradient(91deg, #150f2f 0%, #28233b 100%);
+$g-accent: linear-gradient(91deg, #28233b 0%, #150f2f 100%);
+
+// ! Insert any other styles or variables that may be in figma here
+$header-gradient: linear-gradient(91deg, #28233b 0%, #150f2f 100%);
+
+// * Font Mixins
+// ? See Design system table in Figma for reference
+
+// ! Heading Mixins
+@mixin heading-1 {
+  font-family: $f-family-heading;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.32rem;
+}
+@mixin heading-2 {
+  font-family: $f-family-heading;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.256rem;
+}
+@mixin heading-3 {
+  font-family: $f-family-heading;
+  font-family: Work Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.192rem;
+}
+@mixin heading-4 {
+  font-family: $f-family-heading;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+@mixin heading-5 {
+  font-family: $f-family-heading;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.12rem;
+}
+@mixin heading-6 {
+  font-family: $f-family-heading;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.096rem;
+}
+
+// ! Body Mixins
+@mixin body-1 {
+  font-family: Merriweather Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 2.4rem */
+}
+@mixin body-1B {
+  font-family: Merriweather Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 2.4rem */
+}
+@mixin body-2 {
+  font-family: Merriweather Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 2.1rem */
+}
+@mixin body-2B {
+  font-family: Merriweather Sans;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 2.1rem */
+}
+@mixin body-3 {
+  font-family: Merriweather Sans;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 1.5rem */
+}
+@mixin body-3B {
+  font-family: Merriweather Sans;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+}
+
+// ! Brand Mixins
+@mixin brand-1 {
+  font-family: $f-family-brand;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32rem;
+}
+@mixin brand-2 {
+  font-family: $f-family-brand;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.256rem;
+}
+@mixin brand-3 {
+  font-family: $f-family-brand;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.192rem;
+}
+@mixin brand-4 {
+  font-family: $f-family-brand;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin brand-5 {
+  font-family: $f-family-brand;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.096rem;
+}
+@mixin brand-6 {
+  font-family: $f-family-brand;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.064rem;
+}
