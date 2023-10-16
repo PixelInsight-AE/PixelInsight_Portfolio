@@ -1,85 +1,42 @@
-@mixin fixed-top-left($top, $left) {
-  position: fixed;
-  top: $top;
-  left: $left;
-}
-
-@mixin header__title {
-  font-size: 2.4rem;
-  font-weight: 400;
-  padding-bottom: 0.6rem;
-}
-
-.backdrop {
+.header {
   @include fixed-top-left(0, 0);
-  @include size(100%, 100vh);
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.side-navigation {
-  @include flex(column, center, center);
-  @include size(220px, 100vh);
-  @include fixed-top-left(0, 0);
-  background: linear-gradient(91deg, #28233b 0%, #150f2f 100%);
-  z-index: 2;
+  @include glass-header();
+  width: 100%;
+  padding: 0.8rem 0;
+  box-shadow: $box-shadow;
+  z-index: 5;
 
   &__nav {
-    ul {
-      @include flex(column, center, flex-start);
-    }
-    li {
-      @include margin-y(1rem);
-      position: relative;
-      padding-left: 3.2rem;
-      &:hover {
-        color: $c-primary;
-      }
-      &::before {
-        content: "\2022";
-        background-size: contain;
-        color: #f5f5f5;
-        margin-right: 0.8rem;
-        position: absolute;
-        left: 0;
-      }
-    }
+    @include flex(row, flex-start, center);
   }
-  &__title-wrapper {
-    @include flex(row, center, center);
-    @include fixed-top-left(16px, 16px);
+  &__logo-wrapper {
+    @include flex(row, flex-start, center);
+    padding-left: 1.6rem;
   }
   &__title {
-    @include header__title;
-  }
-}
-
-.header {
-  z-index: 5;
-  @include fixed-top-left(0, 0);
-  width: 100vw;
-  background: linear-gradient(91deg, #28233b 0%, #150f2f 100%);
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
-
-  nav {
-    @include flex(row, flex-start, flex-end);
-  }
-  &__logo {
-    margin: 0.8rem 1.2rem 0rem 1.6rem;
-  }
-  &__title {
-    @include header__title;
+    @include brand-2();
+    color: $c-primary;
+    span {
+      display: none;
+    }
   }
   &__hamburger-menu {
     cursor: pointer;
     margin-left: auto;
-    padding: 0 3.6rem 0.8rem 0;
+    margin-right: 1.6rem;
   }
-  &__navigation {
+  &__ul {
+    @include brand-3();
     display: none;
-    &--contact {
-      margin-right: 2.4rem;
+    li {
+      @include padding-x(1.6rem);
+      &:hover {
+        color: $c-primary;
+      }
     }
+  }
+  &__contact {
+    margin-right: 1.6rem;
   }
 }
 
@@ -88,21 +45,10 @@
     &__hamburger-menu {
       display: none;
     }
-    &__navigation {
+    &__ul {
       @include padding-y(0.8rem);
+      display: flex;
       margin-left: auto;
-      display: block;
-
-      ul {
-        @include flex(row, flex-end, center);
-      }
-      li {
-        letter-spacing: -0.152rem;
-        padding-left: 2.8rem;
-        &:hover {
-          color: $c-primary;
-        }
-      }
     }
   }
 }

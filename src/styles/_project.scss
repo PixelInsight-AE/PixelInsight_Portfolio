@@ -1,0 +1,10 @@
+@mixin glass-header {
+  background: linear-gradient(
+    91deg,
+    rgba(40, 35, 59, 0.85) 0%,
+    rgba(21, 15, 47, 0.75) 100%
+  );
+  border: 1px solid var(--glass-stroke, #fff, 0.5);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+}

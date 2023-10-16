@@ -1,0 +1,55 @@
+.side-navigation {
+  @include flex(column, center, center);
+  @include size(220px, 100vh);
+  @include fixed-top-left(0, 0);
+  @include glass-header();
+  background: $header-gradient;
+  z-index: 10;
+
+  &__nav {
+    @include brand-2();
+    ul {
+      @include flex(column, center, flex-start);
+      li {
+        @include margin-y(1rem);
+        position: relative;
+        padding-left: 3.2rem;
+        &:hover {
+          color: $c-primary;
+        }
+        &::before {
+          content: "\2022";
+          background-size: contain;
+          color: $c-primary;
+          margin-right: 0.8rem;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+  &__title-wrapper {
+    @include flex(row, center, center);
+    @include fixed-top-left(16px, 16px);
+    padding-left: 1.2rem;
+  }
+  &__title {
+    @include brand-2();
+    color: $c-primary;
+    span {
+      display: none;
+    }
+  }
+  &__social-media {
+    position: fixed;
+    bottom: 3.2rem;
+    left: 3.6rem;
+    img {
+      @include size(24px, 24px);
+      @include margin-y(0.8rem);
+      @include margin-x(0.8rem);
+    }
+  }
+}
+
+// ? semi-done get feedback first
