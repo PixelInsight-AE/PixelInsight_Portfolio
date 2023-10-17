@@ -1,45 +1,91 @@
 .hero {
-  padding-top: 4.8rem;
-  @include flex(row, center, center);
-  color: $c-text;
-  font-family: Work Sans;
-  font-size: 2.4rem;
-  text-align: center;
+  @include flex(column, center, center);
+  background:
+    linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
+    url("/assets/images/bg-hero.webp"),
+    lightgray 50% / cover no-repeat;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+
+  &__card {
+    @include margin-y(2.4rem);
+    @include flex(row, center, center);
+    margin-top: 68px;
+    background: linear-gradient(
+      91deg,
+      rgba(40, 35, 59, 0.15) 0%,
+      rgba(21, 15, 47, 0.25) 100%
+    );
+
+    border: 1px solid rgba($c-text, 0.15);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 1.6rem;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    width: 288px;
+  }
 
   &__left-wrapper {
     @include flex(column, center, center);
-    max-width: 266px;
-    margin-top: 4.2rem;
-    padding: 0.8rem;
-
-    p {
-      font-size: 1.6rem;
-      font-weight: 400;
-      letter-spacing: -0.12rem;
-      padding-bottom: 2.4rem;
-    }
-    button {
-      background-color: #f2446e;
-      padding: 0.8rem 1.8rem;
-      @include size(250px, 44px);
-      box-shadow: 0 0 5px 0 rgba(8, 7, 7, 0.8);
-      border: none;
-    }
-    img {
-      padding-bottom: 2.4rem;
-    }
+    padding: 1.6rem;
+    margin: 0 auto;
+    padding: 1.6rem;
+    gap: 2.4rem;
   }
 
+  &__title {
+    @include brand-1();
+  }
+  &__subtitle {
+    @include brand-3();
+  }
+  &__content {
+    @include body-2();
+  }
+  &__call-to-action {
+    @include brand-2();
+  }
+  &__cta-btn {
+    @include brand-2();
+    background-color: $c-secondary;
+    color: $c-text;
+    padding: 0.8rem 3.2rem;
+    border-radius: 0.8rem;
+    border: none;
+    box-shadow: $box-shadow;
+  }
+  &__social-media {
+    @include flex(row, center, center);
+    gap: 1.6rem;
+    img {
+      @include size(24px, 24px);
+    }
+  }
   &__hero-img {
     display: none;
   }
 }
 
+@include media-breakpoint-up(md) {
+  .hero {
+    &__card {
+      width: 600px;
+    }
+  }
+}
+
 @include media-breakpoint-up(lg) {
   .hero {
+    &__card {
+      width: 800px;
+      padding: 2.4rem;
+      gap: 3.2rem;
+    }
     &__hero-img {
       display: block;
-      padding-left: 12.5rem;
+      @include size(400px, 400px);
     }
   }
 }

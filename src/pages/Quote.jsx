@@ -2,7 +2,7 @@ import Footer from "../shared/Footer";
 import { Header } from "../shared/Header";
 import { useState, useEffect } from "react";
 import { emailValidation } from "../utilitys/utilitys";
-import supabase from "../config/supabase";
+//import supabase from "../config/supabase";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 const QuoteForm = () => {

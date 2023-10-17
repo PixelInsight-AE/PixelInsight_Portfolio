@@ -1,41 +1,44 @@
 .tech-expertise {
-  @include flex(column, center, center);
+  @include flex(column, flex-start, center);
 
+  &__header {
+    margin: auto;
+  }
   &__title {
-    width: 100%;
-    font-size: 3.2rem;
-    font-weight: 600;
-    letter-spacing: -0.192rem;
-    text-align: center;
-    margin-bottom: 5.6rem;
+    margin-bottom: 2rem;
+    @include brand-1();
+    margin-top: 7.2rem;
+  }
+  &__subtitle {
+    max-width: 275px;
+    @include body-1();
+    text-shadow: 0px 0px 50px #f2446e;
   }
   &__wrapper {
-    @include flex(column, center, center);
-    width: 100%;
+    margin-top: 4.8rem;
+    padding-left: 2.4rem;
   }
   &__card {
-    @include flex(column, space-between, flex-start);
-    padding: 0 1.6rem 3.2rem 3.2rem;
+    @include flex(column, flex-start, flex-start);
     margin-bottom: 3.2rem;
     max-width: 220px;
+    text-align: left;
     p {
-      padding-bottom: 1.2rem;
-      font-size: 1.6rem;
+      @include body-1();
+      padding-bottom: 0.8rem;
     }
     i {
+      margin-top: auto;
+      @include brand-5();
       color: #a79c9c;
       display: inline-block;
       max-width: 200px;
     }
   }
   &__card-header {
-    @include flex(row, flex-start, center);
-    font-size: 2.8rem;
+    @include flex(row, center, center);
     padding-bottom: 1.2rem;
-    h3 {
-      font-weight: 400;
-      letter-spacing: -0.192rem;
-    }
+    @include brand-2();
     img {
       margin-left: 1.2rem;
     }
@@ -51,8 +54,8 @@
       grid-template-columns: repeat(2, 1fr);
       justify-content: center;
       align-items: center;
-      row-gap: 3.2rem;
-      column-gap: 1.6rem;
+      row-gap: 4.8rem;
+      column-gap: 6.6rem;
       padding-bottom: 5.2rem;
     }
     .left {
@@ -63,19 +66,39 @@
     }
   }
 }
+
 @include media-breakpoint-up(xl) {
   .tech-expertise {
+    background:
+      linear-gradient(0deg, #0f0713 0%, rgba(15, 7, 19, 0) 35.5%),
+      linear-gradient(180deg, #0f0713 0%, rgba(15, 7, 19, 0) 100%),
+      linear-gradient(106deg, #000 0%, rgba(69, 33, 0, 0.25) 44.63%),
+      url(../../assets/images/space_background.png),
+      lightgray 50% / cover no-repeat;
+    &__subtitle {
+      max-width: 575px;
+    }
     &__wrapper {
       grid-template-columns: repeat(4, 1fr);
       row-gap: 3.2rem;
+      column-gap: 2rem;
+      padding-left: 0;
     }
     &__card {
       padding: 3.2rem;
+
+      height: 285px;
+      width: 220px;
+      background: linear-gradient(
+        91deg,
+        rgba(40, 35, 59, 0.15) 0%,
+        rgba(21, 15, 47, 0.25) 100%
+      );
+
+      border: 1px solid rgba($c-text, 0.15);
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.5);
       border-radius: 1.6rem;
-      box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.25);
-      height: 325px;
-      width: 300px;
-      background-color: #1d1f1f;
+      backdrop-filter: blur(8px);
     }
   }
 }

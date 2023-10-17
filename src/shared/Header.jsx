@@ -1,72 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import ReactDOM from "react-dom";
-
-const Backdrop = ({ isOpen, onClick }) => {
-  return ReactDOM.createPortal(
-    <AnimatePresence>
-      {isOpen && (
-        <motion.div
-          key="backdrop"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          className="backdrop"
-          onClick={onClick}
-        ></motion.div>
-      )}
-    </AnimatePresence>,
-    document.getElementById("backdrop-hook")
-  );
-};
-
-const SideNavigation = ({ isOpen, onClick }) => {
-  const content = (
-    <AnimatePresence>
-      {isOpen && (
-        <motion.aside
-          initial={{ x: "-100%" }}
-          animate={{ x: 0 }}
-          exit={{ x: "-100%" }}
-          transition={{ duration: 0.3, type: "tween" }}
-          className="side-navigation"
-          onClick={onClick}
-        >
-          <nav className="side-navigation__nav">
-            <div className="side-navigation__title-wrapper">
-              <img src="/assets/svg/logo-test.svg" alt="" />
-              <h1 className="side-navigation__title">Pixel Insight</h1>
-            </div>
-            <ul>
-              <Link to="/">
-                <li>Home</li>
-              </Link>
-              <Link to="/portfolio">
-                <li>Portfolio</li>
-              </Link>
-              <Link to="/about">
-                <li>About</li>
-              </Link>
-              <Link to="/contact">
-                <li>Contact</li>
-              </Link>
-              <Link to="/quote">
-                <li>Get a Quote</li>
-              </Link>
-            </ul>
-          </nav>
-        </motion.aside>
-      )}
-    </AnimatePresence>
-  );
-
-  return ReactDOM.createPortal(
-    content,
-    document.getElementById("sidenav-hook")
-  );
-};
+import Backdrop from "./Backdrop";
+import SideNavigation from "./SideNavigation";
 
 const Header = () => {
   const [sideNavIsOpen, setSideNavIsOpen] = useState(false);
@@ -80,25 +16,29 @@ const Header = () => {
         <Backdrop isOpen={sideNavIsOpen} onClick={toggleSideNav} />
       )}
       <SideNavigation isOpen={sideNavIsOpen} onClick={toggleSideNav} />
-      <nav>
-        <Link to="/">
+
+      {!sideNavIsOpen && (
+        <motion.nav initial className="header__nav">
+          <Link to="/">
+            <div className="header__logo-wrapper">
+              <img
+                src="/assets/svg/logo_2.svg"
+                alt="Pixel insight logo,  Where Creativity Meets Technology. We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference."
+              />
+              <h1 className="header__title">
+                <span>P</span>ixel Insight
+              </h1>
+            </div>
+          </Link>
+
           <img
-            className="header__logo"
-            src="/assets/svg/logo-test.svg"
-            alt="Pixel insight logo,  Where Creativity Meets Technology. We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference."
+            onClick={toggleSideNav}
+            className="header__hamburger-menu"
+            src="/assets/svg/hamburger.svg"
+            alt=""
           />
-        </Link>
-        <Link to="/">
-          <h1 className="header__title">Pixel Insight</h1>
-        </Link>
-        <img
-          onClick={toggleSideNav}
-          className="header__hamburger-menu"
-          src="/assets/svg/hamburger.svg"
-          alt=""
-        />
-        <section className="header__navigation">
-          <ul>
+
+          <ul className="header__ul">
             <Link to="/quote">
               <li>Get a Quote</li>
             </Link>
@@ -109,11 +49,11 @@ const Header = () => {
               <li>About</li>
             </Link>
             <Link to="/contact">
-              <li className="header__navigation--contact">Contact</li>
+              <li className="header__contact">Contact</li>
             </Link>
           </ul>
-        </section>
-      </nav>
+        </motion.nav>
+      )}
     </header>
   );
 };

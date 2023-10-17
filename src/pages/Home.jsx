@@ -1,12 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import { Header } from "../shared/Header";
 import Hero from "../components/home/Hero";
-import WhatWeDo from "../components/home/WhatWeDo";
 import WhatWeDoCards from "../components/home/WhatWeDoCards";
-import {
-  DiscoverDesignBuildLaunchEnjoy,
-  OurMissionCard,
-} from "../components/home/DiscoverDesignBuildLaunchEnjoy";
+import { DiscoverDesignBuildLaunchEnjoy } from "../components/home/DiscoverDesignBuildLaunchEnjoy";
 import { Scrollbar } from "../components/home/ScrollBar";
 import TechExpertise from "../components/home/TechExpertise";
 import FAQ from "../components/home/FAQ";
@@ -43,10 +39,10 @@ const Home = () => {
       <Header />
       <div className="home">
         <Hero />
-        <WhatWeDo />
+
         <WhatWeDoCards />
         <div className="sub-hero-divider"></div>
-        <OurMissionCard />
+
         <DiscoverDesignBuildLaunchEnjoy />
         <TechExpertise />
         <FAQ />

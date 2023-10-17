@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import React from "react";
-import supabase from "../config/supabase";
+//import supabase from "../config/supabase";
 import { useEffect } from "react";
 import { validateEmail } from "../utilitys/utilitys";
 import { useNavigate } from "react-router-dom";

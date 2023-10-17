@@ -1,0 +1,8 @@
+.backdrop {
+  @include fixed-top-left(0, 0);
+  @include size(100%, 100vh);
+  background: rgba($c-accent, 0.75);
+  z-index: 1;
+}
+
+// ? YAY or NAY?

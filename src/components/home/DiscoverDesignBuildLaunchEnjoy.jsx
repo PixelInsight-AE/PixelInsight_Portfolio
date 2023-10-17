@@ -1,80 +1,70 @@
 import React from "react";
 import { Scrollbar } from "./ScrollBar";
 
-const OurMissionCard = () => {
-  return (
-    <article className="our-mission-card">
-      <h2>Our Mission</h2>
-      <p>
-        We're on a mission to bring your digital dreams to life. Whether you're
-        seeking web development wizardry, marketing magic, or design that
-        dazzles, we've got you covered.
-      </p>
-    </article>
-  );
-};
-
 const DiscoverDesignBuildLaunchEnjoy = () => {
   return (
-    <>
-      <section className="our-mission">
+    <section className="discover-design-build">
+      <article className="discover-design-build__heading">
+        <h2>Your Journey with Us</h2>
+        <p>
+          Your path to digital excellence starts here. We're excited to be your
+          guides, helping you navigate the complexities of the online world and
+          transforming your ideas into reality.
+        </p>
+      </article>
+      <section className="discover-design-build__wrapper">
         <Scrollbar />
-        <article className="our-mission__discover main-wrapper">
-          <div className="our-mission__discover--color main-wrapper--color"></div>
-          <div className=" main-wrapper--content">
+        <article className="discover-design-build__card-outer left discover">
+          <div className="discover-design-build__card-inner">
             <h2>Discover</h2>
             <p>
-              Uncover the essence of your vision and project goals. We will be
-              your compass in the digital landscape.
+              The 'Discover' phase marks the beginning of our journey together.
+              We explore your ideas, define project goals, and chart a clear
+              roadmap.
             </p>
           </div>
         </article>
-        <article className="our-mission__design main-wrapper">
-          <div className="our-mission__design--color main-wrapper--color"></div>
-          <div className="main-wrapper--content">
+        <article className="discover-design-build__card-outer right design">
+          <div className="discover-design-build__card-inner">
             <h2>Design</h2>
             <p>
-              Crafting engaging and visually stunning experiences. Our designs
-              captivate and convert, turning concepts into pixel-perfect
-              realities.
+              Our 'Design' phase is about more than aesthetics; it's about
+              creating delightful user experiences to ensure your audience's
+              journey is intuitive and engaging."
             </p>
           </div>
         </article>
-        <article className="our-mission__build main-wrapper">
-          <div className="our-mission__build--color main-wrapper--color"></div>
-          <div className=" main-wrapper--content">
+        <article className="discover-design-build__card-outer left build">
+          <div className="discover-design-build__card-inner">
             <h2>Build</h2>
             <p>
-              Bringing your concepts to life with cutting-edge technology.
-              Coding, testing, and refining for flawless functionality – one
-              line of code at a time.
+              The 'Build' phase is where your digital vision takes its first
+              breath. Our expert developers ensure your project becomes a
+              functional reality.
             </p>
           </div>
         </article>
-        <article className="our-mission__launch main-wrapper">
-          <div className="our-mission__launch--color main-wrapper--color"></div>
-          <div className=" main-wrapper--content">
+        <article className="discover-design-build__card-outer right launch">
+          <div className="discover-design-build__card-inner">
             <h2>Launch</h2>
             <p>
-              Prepare for liftoff: the world is about to meet your project. We
-              ensure a seamless and confident project launch, as your journey
-              begins.
+              In 'Launch,' We conduct rigorous testing and fine-tuning to ensure
+              that your web or mobile solution is primed for success.
             </p>
           </div>
         </article>
-        <article className="our-mission__enjoy main-wrapper">
-          <div className="our-mission__enjoy--color main-wrapper--color"></div>
-          <div className="main-wrapper--content">
+        <article className="discover-design-build__card-outer left enjoy">
+          <div className="discover-design-build__card-inner">
             <h2>Enjoy</h2>
             <p>
-              Sit back, relax, and watch your project shine. Embrace the
-              results, celebrate success, and make your journey a memorable
-              experience.
+              In the 'Enjoy' phase, your web presence is fully functional, and
+              we provide ongoing support to ensure a long-term and happy
+              relationship.
             </p>
           </div>
         </article>
       </section>
-    </>
+    </section>
   );
 };
-export { DiscoverDesignBuildLaunchEnjoy, OurMissionCard };
+export { DiscoverDesignBuildLaunchEnjoy };
