@@ -11,7 +11,7 @@
   }
   &__subtitle {
     max-width: 275px;
-    @include body-2();
+    @include body-1();
     text-shadow: 0px 0px 50px #f2446e;
   }
   &__wrapper {
@@ -24,7 +24,7 @@
     max-width: 220px;
     text-align: left;
     p {
-      @include body-2();
+      @include body-1();
       padding-bottom: 0.8rem;
     }
     i {
