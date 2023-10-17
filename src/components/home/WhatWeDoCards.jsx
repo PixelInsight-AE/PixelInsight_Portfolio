@@ -5,46 +5,39 @@ const WhatWeDoCards = () => {
         <article className="what-we-do-cards__card webdev">
           <h2>Web Development</h2>
           <p>
-            Unlocking the Power of Web Development: Crafting Digital Experiences
-            That Inspire. At Pixel Insight, we're all about turning your unique
-            ideas into captivating websites and applications.
+            Ready to elevate your web presence? Pixel Insight is your partner
+            for creative web solutions. From new websites to custom development,
+            we blend innovation and expertise to captivate your audience and
+            achieve results. Contact us today to bring your digital vision to
+            life.
           </p>
-          <img src="assets/images/design_light.webp" alt="" />
         </article>
         <article className="what-we-do-cards__card odd design">
           <h2>Design</h2>
           <p>
-            Bringing Your App Ideas to Life. From Concept to Download, We're
-            Your Trusted Mobile Solution. At Pixel Insight, we specialize in
-            crafting user-friendly and visually captivating mobile applications
-            that cater to your unique needs. Our team is dedicated to turning
-            your mobile app dreams into reality, one line of code at a time.
+            At Pixel Insight, we're all about exceptional web design. Whether
+            you're starting fresh or need a design revamp, our team specializes
+            in creating visually stunning and user-friendly websites. Let us
+            bring your digital vision to life, get a free quote today!
           </p>
-          <img src="assets/images/backend_pic.webp" alt="" />
         </article>
         <article className="what-we-do-cards__card">
-          <h2>Mobile Development</h2>
+          <h2>Mobile Friendly</h2>
           <p>
-            Elevate your mobile presence with our expert mobile app development
-            solutions. Whether it's iOS or Android, we're here to transform your
-            app ideas into user-friendly and high-performance applications. From
-            concept to download, we craft digital magic that resonates with your
-            audience, one download at a time.
+            Mobile presence is no longer an option; it's a necessity in today's
+            digital landscape. Let's make your brand accessible on every device,
+            ensuring ultimate convenience and engagement for your users.
           </p>
-          <img src="assets/images/web_apps.webp" alt="" />
         </article>
         <article className="what-we-do-cards__card odd">
           <h2>Back-end Development</h2>
           <p>
-            {" "}
-            Behind every captivating front-end, there's a powerful backend
-            ensuring seamless functionality and security. At Pixel Insight, our
-            expertise in backend development forms the robust foundation that
-            supports your digital presence. From data management to server-side
-            logic, we enhance the performance and reliability of your online
-            solutions.
+            Behind every great application is powerful engine driving it –
+            that's where our backend development expertise comes in. At Pixel
+            Insight, we specialize in handling data, security, and the
+            functionality that makes everything work seamlessly. Lets make your
+            digital world work flawlessly.
           </p>
-          <img src="assets/images/backend_code.webp" alt="" />
         </article>
       </div>
     </section>

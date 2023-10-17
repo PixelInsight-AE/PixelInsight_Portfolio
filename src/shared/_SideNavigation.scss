@@ -3,7 +3,6 @@
   @include size(220px, 100vh);
   @include fixed-top-left(0, 0);
   @include glass-header();
-  background: $header-gradient;
   z-index: 10;
 
   &__nav {

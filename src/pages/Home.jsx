@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Header } from "../shared/Header";
 import Hero from "../components/home/Hero";
-import WhatWeDo from "../components/home/WhatWeDo";
 import WhatWeDoCards from "../components/home/WhatWeDoCards";
 import {
   DiscoverDesignBuildLaunchEnjoy,
@@ -43,7 +42,7 @@ const Home = () => {
       <Header />
       <div className="home">
         <Hero />
-        <WhatWeDo />
+
         <WhatWeDoCards />
         <div className="sub-hero-divider"></div>
         <OurMissionCard />
