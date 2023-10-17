@@ -70,6 +70,15 @@
 
 @include media-breakpoint-up(md) {
   .hero {
+    &__subtitle {
+      @include brand-2();
+    }
+    &__content {
+      @include body-2();
+    }
+    &__call-to-action {
+      @include brand-1();
+    }
     &__card {
       width: 600px;
     }

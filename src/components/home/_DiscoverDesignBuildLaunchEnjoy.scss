@@ -59,6 +59,8 @@
 
 @include media-breakpoint-up(md) {
   .discover-design-build {
+    @include body-2();
+
     width: 100%;
     &__wrapper {
       .left {
