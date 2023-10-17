@@ -17,7 +17,7 @@
       border-radius: 8px;
       background: linear-gradient(91deg, #28233b 0%, #150f2f 100%);
       border: 1px solid rgba($c-text, 0.1);
-
+      width: 288px;
       img {
         padding: 0.8rem;
       }
@@ -38,10 +38,16 @@
 
 @include media-breakpoint-up(md) {
   .why-choose-pixel {
-    max-width: 680px;
+    max-width: 750px;
     margin: auto;
     .scrollbar {
       margin-top: 8rem;
+    }
+    &__card {
+      max-width: 300px;
+      &--header {
+        width: 300px;
+      }
     }
 
     &__title {
@@ -63,8 +69,15 @@
 }
 @include media-breakpoint-up(lg) {
   .why-choose-pixel {
+    max-width: 880px;
     .lg {
       display: block;
+    }
+    &__card {
+      max-width: 400px;
+      &--header {
+        width: 400px;
+      }
     }
     p {
       @include body-1();

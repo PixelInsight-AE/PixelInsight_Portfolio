@@ -53,26 +53,6 @@ const ScrollAnimationWhyChoose = () => {
         }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.3, type: "spring", bounce: 0.5 }}
-        className="dot lg"
-      ></motion.div>
-      <motion.div
-        initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
-        whileInView={{
-          backgroundColor: "#ef913c",
-          scale: [1.5, 1, 1.5, 1],
-        }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.3, type: "spring", bounce: 0.5 }}
-        className="dot lg"
-      ></motion.div>
-      <motion.div
-        initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
-        whileInView={{
-          backgroundColor: "#ef913c",
-          scale: [1.5, 1, 1.5, 1],
-        }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.3, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -173,26 +153,6 @@ const ScrollAnimationWhyChoose = () => {
         src="/assets/svg/unlit_hex.svg"
         className="hex"
       />
-      <motion.div
-        initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
-        whileInView={{
-          backgroundColor: "#ef913c",
-          scale: [1.5, 1, 1.5, 1],
-        }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.3, type: "spring", bounce: 0.5 }}
-        className="dot lg"
-      ></motion.div>{" "}
-      <motion.div
-        initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
-        whileInView={{
-          backgroundColor: "#ef913c",
-          scale: [1.5, 1, 1.5, 1],
-        }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.3, type: "spring", bounce: 0.5 }}
-        className="dot lg"
-      ></motion.div>{" "}
       <motion.div
         initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
         whileInView={{
@@ -311,16 +271,6 @@ const ScrollAnimationWhyChoose = () => {
         transition={{ duration: 1, delay: 0.3, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
-      <motion.div
-        initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
-        whileInView={{
-          backgroundColor: "#ef913c",
-          scale: [1.5, 1, 1.5, 1],
-        }}
-        viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.3, type: "spring", bounce: 0.5 }}
-        className="dot lg"
-      ></motion.div>{" "}
       <motion.div
         initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
         whileInView={{

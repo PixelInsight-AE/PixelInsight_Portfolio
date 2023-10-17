@@ -48,13 +48,7 @@
     @include brand-2();
   }
   &__cta-btn {
-    @include brand-2();
-    background-color: $c-secondary;
-    color: $c-text;
-    padding: 0.8rem 3.2rem;
-    border-radius: 0.8rem;
-    border: none;
-    box-shadow: $box-shadow;
+    @include cta-button();
   }
   &__social-media {
     @include flex(row, center, center);
