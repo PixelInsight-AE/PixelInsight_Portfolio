@@ -22,7 +22,7 @@ const Header = () => {
           <Link to="/">
             <div className="header__logo-wrapper">
               <img
-                src="/assets/svg/logo_2.svg"
+                src="/assets/svg/pforpixel.svg"
                 alt="Pixel insight logo,  Where Creativity Meets Technology. We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference."
               />
               <h1 className="header__title">
