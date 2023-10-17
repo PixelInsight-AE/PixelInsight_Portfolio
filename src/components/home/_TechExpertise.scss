@@ -75,6 +75,9 @@
       linear-gradient(106deg, #000 0%, rgba(69, 33, 0, 0.25) 44.63%),
       url(../../assets/images/space_background.png),
       lightgray 50% / cover no-repeat;
+    &__subtitle {
+      max-width: 575px;
+    }
     &__wrapper {
       grid-template-columns: repeat(4, 1fr);
       row-gap: 3.2rem;
