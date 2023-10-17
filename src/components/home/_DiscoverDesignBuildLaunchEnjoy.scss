@@ -1,0 +1,73 @@
+.discover-design-build {
+  @include flex(column, center, center);
+  @include body-2();
+  margin: auto;
+  padding: 1.6rem;
+  width: 280px;
+
+  &__heading {
+    margin-bottom: 2.4rem;
+    max-width: 400px;
+    h2 {
+      @include brand-1();
+      padding-bottom: 1.2rem;
+    }
+  }
+
+  &__wrapper {
+    @include flex(column, center, center);
+    gap: 2.4rem;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  &__card-outer {
+    @include size(266px, 170px);
+    @include flex(column, center, center);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__card-inner {
+    @include glass-card();
+    @include size(244px, 150px);
+    @include flex(column, center, center);
+    position: relative;
+    z-index: 2;
+    margin: 1.6rem;
+    h2 {
+      @include brand-2();
+      padding-bottom: 1.2rem;
+    }
+  }
+
+  .discover {
+    background-image: url("/assets/images/bg-discover.webp");
+  }
+  .design {
+    background-image: url("/assets/images/bg-design.webp");
+  }
+  .build {
+    background-image: url("/assets/images/bg-build.webp");
+  }
+  .launch {
+    background-image: url("/assets/images/bg-launch.webp");
+  }
+  .enjoy {
+    background-image: url("/assets/images/bg-enjoy.webp");
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .discover-design-build {
+    width: 100%;
+    &__wrapper {
+      .left {
+        align-self: flex-start;
+      }
+      .right {
+        align-self: flex-end;
+      }
+    }
+  }
+}

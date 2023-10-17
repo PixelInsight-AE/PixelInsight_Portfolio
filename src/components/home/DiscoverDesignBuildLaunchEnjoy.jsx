@@ -4,8 +4,8 @@ import { Scrollbar } from "./ScrollBar";
 const DiscoverDesignBuildLaunchEnjoy = () => {
   return (
     <section className="discover-design-build">
-      <article>
-        <h2 className="discover-design-build__title">Your Journey with Us</h2>
+      <article className="discover-design-build__heading">
+        <h2>Your Journey with Us</h2>
         <p>
           Your path to digital excellence starts here. We're excited to be your
           guides, helping you navigate the complexities of the online world and
@@ -14,7 +14,7 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
       </article>
       <section className="discover-design-build__wrapper">
         <Scrollbar />
-        <article className="discover-design-build__card-outer discover">
+        <article className="discover-design-build__card-outer left discover">
           <div className="discover-design-build__card-inner">
             <h2>Discover</h2>
             <p>
@@ -24,7 +24,7 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
             </p>
           </div>
         </article>
-        <article className="discover-design-build__card-outer design">
+        <article className="discover-design-build__card-outer right design">
           <div className="discover-design-build__card-inner">
             <h2>Design</h2>
             <p>
@@ -34,7 +34,7 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
             </p>
           </div>
         </article>
-        <article className="discover-design-build__card-outer build">
+        <article className="discover-design-build__card-outer left build">
           <div className="discover-design-build__card-inner">
             <h2>Build</h2>
             <p>
@@ -44,7 +44,7 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
             </p>
           </div>
         </article>
-        <article className="discover-design-build__card-outer launch">
+        <article className="discover-design-build__card-outer right launch">
           <div className="discover-design-build__card-inner">
             <h2>Launch</h2>
             <p>
@@ -53,7 +53,7 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
             </p>
           </div>
         </article>
-        <article className="discover-design-build__card-outer enjoy">
+        <article className="discover-design-build__card-outer left enjoy">
           <div className="discover-design-build__card-inner">
             <h2>Enjoy</h2>
             <p>
