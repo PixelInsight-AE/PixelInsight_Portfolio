@@ -124,7 +124,7 @@ const SmallDots = () => {
         transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
-      {/*       <motion.div
+      <motion.div
         initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
         whileInView={{
           backgroundColor: "#ef913c",
@@ -132,8 +132,48 @@ const SmallDots = () => {
         }}
         viewport={{ once: true }}
         transition={{ duration: 1, type: "spring", bounce: 0.5 }}
-        className="dot"
-      ></motion.div> */}
+        className="dot lg"
+      ></motion.div>
+      <motion.div
+        initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
+        whileInView={{
+          backgroundColor: "#ef913c",
+          scale: [1.5, 1, 1.5, 1],
+        }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
+        className="dot lg"
+      ></motion.div>
+      <motion.div
+        initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
+        whileInView={{
+          backgroundColor: "#ef913c",
+          scale: [1.5, 1, 1.5, 1],
+        }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
+        className="dot lg"
+      ></motion.div>
+      <motion.div
+        initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
+        whileInView={{
+          backgroundColor: "#ef913c",
+          scale: [1.5, 1, 1.5, 1],
+        }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
+        className="dot lg"
+      ></motion.div>
+      <motion.div
+        initial={{ backgroundColor: "#1d1f1f", scale: 1 }}
+        whileInView={{
+          backgroundColor: "#ef913c",
+          scale: [1.5, 1, 1.5, 1],
+        }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
+        className="dot lg"
+      ></motion.div>
     </>
   );
 };

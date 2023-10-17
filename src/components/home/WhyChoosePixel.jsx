@@ -21,7 +21,7 @@ const WhyChoosePixel = () => {
           </p>
         </article>
         <article className="why-choose-pixel__card right">
-          <section className="why-choose-pixel__card--header">
+          <section className="why-choose-pixel__card--header reverse">
             <h2 className="why-choose-pixel__card--title">
               Client-Centric Approach
             </h2>
@@ -45,17 +45,7 @@ const WhyChoosePixel = () => {
           </p>
         </article>
         <article className="why-choose-pixel__card right">
-          <section className="why-choose-pixel__card--header">
-            <h2 className="why-choose-pixel__card--title">Results Driven</h2>
-            <img src="/assets/svg/results_driven.svg" alt="" />
-          </section>
-          <p>
-            We measure our success by your satisfaction and the positive impact
-            our solutions bring
-          </p>
-        </article>
-        <article className="why-choose-pixel__card left">
-          <section className="why-choose-pixel__card--header">
+          <section className="why-choose-pixel__card--header reverse">
             <img src="/assets/svg/collaborative.svg" alt="" />
             <h2 className="why-choose-pixel__card--title">
               Collaborative Spirit
@@ -64,6 +54,16 @@ const WhyChoosePixel = () => {
           <p>
             Your ideas and our expertise create a harmonious symphony of
             collaboration.
+          </p>
+        </article>
+        <article className="why-choose-pixel__card left">
+          <section className="why-choose-pixel__card--header">
+            <h2 className="why-choose-pixel__card--title">Results Driven</h2>
+            <img src="/assets/svg/results_driven.svg" alt="" />
+          </section>
+          <p>
+            We measure our success by your satisfaction and the positive impact
+            our solutions bring
           </p>
         </article>
       </div>

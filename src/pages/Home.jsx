@@ -5,7 +5,7 @@ import WhatWeDoCards from "../components/home/WhatWeDoCards";
 import { DiscoverDesignBuildLaunchEnjoy } from "../components/home/DiscoverDesignBuildLaunchEnjoy";
 import { Scrollbar } from "../components/home/ScrollBar";
 import TechExpertise from "../components/home/TechExpertise";
-import FAQ from "../components/home/FAQ";
+
 import WhyChoosePixel from "../components/home/WhyChoosePixel";
 import ContactForm from "../shared/ContactForm";
 import GetAQuote from "../shared/GetAQuote";
@@ -45,7 +45,6 @@ const Home = () => {
 
         <DiscoverDesignBuildLaunchEnjoy />
         <TechExpertise />
-        <FAQ />
         <WhyChoosePixel />
         <ContactForm />
         <GetAQuote />

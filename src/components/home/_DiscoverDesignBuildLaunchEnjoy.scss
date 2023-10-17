@@ -17,7 +17,7 @@
     @include flex(column, center, center);
     gap: 2.4rem;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
   }
 
   &__card-outer {
@@ -37,6 +37,9 @@
     h2 {
       @include brand-2();
       padding-bottom: 1.2rem;
+    }
+    p {
+      padding: 1.2rem;
     }
   }
 
@@ -59,16 +62,31 @@
 
 @include media-breakpoint-up(md) {
   .discover-design-build {
-    @include body-2();
-
     width: 100%;
     &__wrapper {
+      max-width: 600px;
       .left {
         align-self: flex-start;
       }
       .right {
         align-self: flex-end;
       }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .discover-design-build {
+    @include body-1();
+    &__wrapper {
+      max-width: 800px;
+    }
+    &__card-inner {
+      @include size(324px, 200px);
+    }
+    &__card-outer {
+      @include size(350px, 250px);
+      border-radius: 1.6rem;
     }
   }
 }

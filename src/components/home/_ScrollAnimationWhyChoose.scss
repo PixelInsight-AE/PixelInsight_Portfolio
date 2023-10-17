@@ -38,3 +38,8 @@
     transform: translateX(-50%);
   }
 }
+@include media-breakpoint-up(lg) {
+  .scroll-animation-why-choose {
+    margin-top: 6rem;
+  }
+}

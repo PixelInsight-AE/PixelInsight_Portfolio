@@ -11,7 +11,7 @@
   }
   &__subtitle {
     max-width: 275px;
-    @include body-1();
+    @include body-2();
     text-shadow: 0px 0px 50px #f2446e;
   }
   &__wrapper {
@@ -24,7 +24,7 @@
     max-width: 220px;
     text-align: left;
     p {
-      @include body-1();
+      @include body-2();
       padding-bottom: 0.8rem;
     }
     i {
@@ -52,8 +52,7 @@
     &__wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       row-gap: 4.8rem;
       column-gap: 6.6rem;
       padding-bottom: 5.2rem;
@@ -63,6 +62,18 @@
     }
     .right {
       margin-right: auto;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .tech-expertise {
+    &__subtitle {
+      @include body-1();
+    }
+    &__card {
+      p {
+        @include body-1();
+      }
     }
   }
 }
