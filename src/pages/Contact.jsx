@@ -39,11 +39,27 @@ const Contact = () => {
             <h1>Contact</h1>
             <h2>Connect with us! Your Questions, Our Answers!</h2>
             <section className="contact__social-media">
-              <img src="/assets/svg/twitter.svg" alt="" />
-              <img src="/assets/svg/facebook.svg" alt="" />
-              <img src="/assets/svg/github.svg" alt="" />
-              <img src="/assets/svg/instagram.svg" alt="" />
-              <img src="/assets/svg/linkedin.svg" alt="" />
+              <a href="https://github.com/PixelInsight-AE" target="_blank">
+                <img src="/assets/svg/github.svg" alt="" />
+              </a>
+              <a href="https://twitter.com/pixel_insight" target="_blank">
+                <img src="/assets/svg/x.svg" alt="" />
+              </a>
+              <a
+                href="https://www.facebook.com/PixelInsightAE/"
+                target="_blank"
+              >
+                <img src="/assets/svg/meta.svg" alt="" />
+              </a>
+              <a href="https://github.com/PixelInsight-AE" target="_blank">
+                <img src="/assets/svg/linkedin.svg" alt="" />
+              </a>
+              <a
+                href="https://www.instagram.com/pixel_insight_ae/"
+                target="_blank"
+              >
+                <img src="/assets/svg/instagram.svg" alt="" />
+              </a>
             </section>
           </div>
         </div>

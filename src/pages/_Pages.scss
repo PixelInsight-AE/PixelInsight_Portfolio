@@ -82,21 +82,23 @@
 .contact {
   @include flex(column, center, center);
   &__header-background {
-    background-image: url("/assets/images/contact_background.png");
-    background-size: cover;
+    background:
+      linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
+      url("/assets/images/bg-hero.webp"),
+      lightgray 50% / cover no-repeat;
+    background-position: right center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
   }
   &__header {
     margin: auto;
     margin-top: 8rem;
     width: 285px;
+    @include glass-card();
     @include flex(column, center, center);
-    border-radius: 1.2rem;
-    border: 1px solid var(--glass-stroke, #fff);
-    /* Glass/Blur */
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
     h1 {
       @include brand-1();
       padding: 1.6rem 0;
