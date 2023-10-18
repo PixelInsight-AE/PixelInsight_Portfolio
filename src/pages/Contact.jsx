@@ -34,22 +34,36 @@ const Contact = () => {
       </Helmet>
       <Header />
       <div className="contact">
-        <div className="contact__top-wrapper">
-          <h1>Connect with Pixel Insight: Your Questions, Our Answers!</h1>
-          <img
-            className="contact__phone-mobile"
-            src="/assets/svg/phone.svg"
-            alt=""
-          />
+        <div className="contact__header-background">
+          <div className="contact__header">
+            <h1>Contact</h1>
+            <h2>Connect with us! Your Questions, Our Answers!</h2>
+            <section className="contact__social-media">
+              <a href="https://github.com/PixelInsight-AE" target="_blank">
+                <img src="/assets/svg/github.svg" alt="" />
+              </a>
+              <a href="https://twitter.com/pixel_insight" target="_blank">
+                <img src="/assets/svg/x.svg" alt="" />
+              </a>
+              <a
+                href="https://www.facebook.com/PixelInsightAE/"
+                target="_blank"
+              >
+                <img src="/assets/svg/meta.svg" alt="" />
+              </a>
+              <a href="https://github.com/PixelInsight-AE" target="_blank">
+                <img src="/assets/svg/linkedin.svg" alt="" />
+              </a>
+              <a
+                href="https://www.instagram.com/pixel_insight_ae/"
+                target="_blank"
+              >
+                <img src="/assets/svg/instagram.svg" alt="" />
+              </a>
+            </section>
+          </div>
         </div>
-        <div className="contact__form-wrapper">
-          <ContactForm />
-          <img
-            className="contact__phone-desktop"
-            src="/assets/svg/phone.svg"
-            alt=""
-          />
-        </div>
+
         <p className="contact__text">
           At Pixel Insight, we value your input, questions, and feedback.
           Whether you're interested in our services, have inquiries about
@@ -60,9 +74,10 @@ const Contact = () => {
           We look forward to connecting with you and exploring the exciting
           possibilities ahead.
         </p>
+        <ContactForm />
         <GetAQuote />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
