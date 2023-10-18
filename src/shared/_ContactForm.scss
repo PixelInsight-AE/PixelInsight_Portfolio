@@ -3,7 +3,8 @@
   @include flex(column, center, center);
 
   form {
-    @include flex(column, flex-start, flex-start);
+    width: 800px;
+    @include flex(column, center, center);
     color: #f5f5f5;
 
     h2 {
@@ -37,13 +38,22 @@
   }
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(sm) {
   .contact-form {
     form {
       input,
       textarea {
-        width: 480px;
+        width: 450px;
       }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .contact-form {
+    input,
+    textarea {
+      max-width: 480px;
     }
   }
 }
