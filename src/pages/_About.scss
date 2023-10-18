@@ -1,0 +1,169 @@
+.about {
+  @include flex(column, center, center);
+  @include body-2();
+  padding-top: 6.8rem;
+
+  h2 {
+    @include brand-2();
+  }
+  &__header {
+    @include flex(column, center, center);
+    max-width: 275px;
+    margin-bottom: 1.6rem;
+    gap: 2rem;
+    h1 {
+      @include brand-1();
+    }
+    p {
+      text-shadow: 0px 0px 50px $c-secondary;
+    }
+  }
+
+  &__socials {
+    @include flex(row, center, center);
+    gap: 1.6rem;
+  }
+
+  &__bg-our-vision {
+    @include flex(column, center, center);
+    @include size(100vw, 200px);
+    background-image: url("/assets/images/bg-our-vision.webp");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__our-vision {
+    @include glass-card();
+    @include flex(column, center, center);
+    gap: 0.8rem;
+    padding: 1.6rem;
+    width: 26rem;
+  }
+
+  &__team-members-wrapper {
+    @include flex(column, center, center);
+  }
+  &__team-member-card {
+    @include flex(column, flex-start, center);
+    background: $header-gradient;
+    width: 256px;
+    border-radius: 1.6rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+
+    &--header {
+      @include flex(row, space-around, center);
+      width: 100%;
+      padding-bottom: 1.2rem;
+      img {
+        @include size(80px, 80px);
+        border-radius: 50%;
+      }
+      h3 {
+        @include brand-3();
+      }
+    }
+  }
+  &__img-emily {
+    border: 3px solid $c-secondary;
+  }
+  &__img-arno {
+    border: 3px solid $c-primary;
+  }
+  &__our-story {
+    @include flex(column, center, center);
+    padding: 1.6rem;
+    max-width: 400px;
+    gap: 2rem;
+  }
+  &__bg-conclusion {
+    @include flex(column, center, center);
+    @include size(100vw, 320px);
+    background-image: url("/assets/images/bg-create-together.webp");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__conclusion {
+    @include glass-card();
+    @include flex(column, center, center);
+    gap: 0.8rem;
+    padding: 2rem;
+    width: 24rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .about {
+    @include body-1();
+    h2 {
+      @include brand-1();
+    }
+    &__header {
+      margin-top: 3.2rem;
+    }
+    &__bg-our-vision {
+      @include size(100vw, 400px);
+      h2 {
+        @include brand-1();
+      }
+    }
+    &__our-vision {
+      @include size(44rem, 20rem);
+    }
+    &__team-members-wrapper {
+      @include flex(row, center, center);
+      gap: 1.6rem;
+    }
+    &__team-member-card {
+      width: 300px;
+      height: 780px;
+      padding: 2.4rem;
+      &--header {
+        h3 {
+          @include brand-1();
+        }
+      }
+    }
+    &__our-story {
+      @include size(580px, 400px);
+      max-width: 580px;
+    }
+    &__bg-conclusion {
+      @include size(100vw, 500px);
+    }
+    &__conclusion {
+      @include size(580px, 280px);
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .about {
+    &__header {
+      margin-top: 3.2rem;
+      max-width: 440px;
+
+      h1 {
+        font-family: $f-family-brand;
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.32rem;
+      }
+      p {
+        font-size: 2rem;
+        text-shadow: 0px 0px 50px rgba(242, 68, 110, 0.3);
+      }
+    }
+    &__team-member-card {
+      width: 400px;
+      height: 650px;
+      padding: 2.4rem;
+    }
+  }
+}

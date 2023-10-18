@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import ReactDOM from "react-dom";
+import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Header } from "../shared/Header";
 import Footer from "../shared/Footer";
-import GetAQuote from "../shared/GetAQuote";
+//import GetAQuote from "../shared/GetAQuote";
 import ContactForm from "../shared/ContactForm";
+import SocialMediaIcons from "../shared/SocialMediaIcons";
+
 const About = () => {
   return (
     <>
@@ -36,42 +38,43 @@ const About = () => {
       <Header />
       <div className="about">
         <section className="about__header">
-          <h1>
-            <blockquote>"The pixel Insight Journey."</blockquote>
-          </h1>
-          <article className="about__about">
-            <h2>About Us:</h2>
-            <p>
-              At Pixel Insight, we're passionate about crafting digital
-              experiences that leave a lasting impact. Our journey began with a
-              simple yet powerful idea: that pixels have the potential to
-              transform the way we interact with the digital world.
-            </p>
-          </article>
+          <h1>The pixel Insight Journey.</h1>
+          <p>
+            At Pixel Insight, we're passionate about crafting digital
+            experiences that leave a lasting impact. Our journey began with a
+            simple yet powerful idea: that pixels have the potential to
+            transform the way we interact with the digital world.
+          </p>
+          <SocialMediaIcons className={"about__socials"} />
         </section>
-        <article className="about__mission dark">
-          <h2>Our Mission:</h2>
-          <p>
-            Our mission is clear: to bring your digital dreams to life. Whether
-            it's designing a captivating website, developing a user-friendly
-            mobile app, or boosting your online presence through digital
-            marketing, we're your partners every step of the way.
-          </p>
-        </article>
-        <article className="about__vision light">
-          <h2>Our Vision</h2>
-          <p>
-            Our vision is to be a driving force in the digital realm, where
-            creativity knows no bounds, and innovation is our daily bread. We
-            believe that every pixel tells a story, and we're here to help you
-            tell yours.
-          </p>
-        </article>
-        <section className="about__meet-us-wrapper">
-          <article className="about__team">
-            <section className="about__team--wrapper">
+
+        <section className="about__bg-our-vision">
+          <motion.article
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: [1, 1.05, 1] }}
+            transition={{ duration: 1, type: "tween" }}
+            className="about__our-vision"
+          >
+            <h2>Our Vision</h2>
+            <p>
+              Our vision is to be a driving force in the digital realm, where
+              creativity knows no bounds, and innovation is our daily bread. We
+              believe that every pixel tells a story, and we're here to help you
+              tell yours.
+            </p>
+          </motion.article>
+        </section>
+
+        <section className="about__team-members-wrapper">
+          <motion.article
+            initial={{ opacity: 0, x: "-5vw" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, type: "tween", delay: 1.25 }}
+            className="about__team-member-card"
+          >
+            <section className="about__team-member-card--header">
               <img
-                className="about__team--emily"
+                className="about__img-emily"
                 src="/assets/images/hottt.webp"
                 alt=""
               />
@@ -104,12 +107,17 @@ const About = () => {
               go-to partner. She's the driving force behind our technical
               excellence and the sunshine in our office.
             </p>
-          </article>
+          </motion.article>
 
-          <article className="about__team">
-            <section className="about__team--wrapper">
+          <motion.article
+            initial={{ opacity: 0, x: "5vw" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, type: "tween", delay: 1.25 }}
+            className="about__team-member-card"
+          >
+            <section className="about__team-member-card--header">
               <img
-                className="about__team--arno"
+                className="about__img-arno"
                 src="/assets/images/arnoo.webp"
                 alt=""
               />
@@ -144,10 +152,16 @@ const About = () => {
               the driving force behind turning ideas into visually captivating
               digital realities."
             </p>
-          </article>
+          </motion.article>
         </section>
 
-        <article className="about__story light">
+        <motion.article
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, type: "tween" }}
+          viewport={{ once: true }}
+          className="about__our-story"
+        >
           <h2>Our Story</h2>
           <p>
             Our journey commenced serendipitously through the Altcademy Full
@@ -169,23 +183,33 @@ const About = () => {
             chance, has evolved into a thriving venture, driven by our
             unwavering commitment to excellence and innovation.
           </p>
-        </article>
-        <article className="about__conclusion dark">
-          <h2>Lets Create Together!</h2>
-          <p>
-            Where your vision meets our expertise. At Pixel Insight, we believe
-            that the most exceptional digital solutions emerge from
-            collaborative journeys. Your ideas are the seeds, and we're here to
-            nurture them into vibrant realities. Together, we'll embark on an
-            exciting adventure, blending creativity, innovation, and technology.
-            With your unique perspective and our technical prowess, there's no
-            limit to what we can achieve. So, let's join forces, dream big, and
-            craft digital wonders that leave a lasting impact.
-          </p>
-        </article>
+        </motion.article>
+
+        <section className="about__bg-conclusion">
+          <motion.article
+            initial={{ opacity: 0, scale: 1 }}
+            whileInView={{ opacity: 1, scale: [1, 1.05, 1] }}
+            transition={{ duration: 2, type: "tween", delay: 0.5 }}
+            viewport={{ once: true }}
+            className="about__conclusion"
+          >
+            <h2>Lets Create Together!</h2>
+            <p>
+              Where your vision meets our expertise. At Pixel Insight, we
+              believe that the most exceptional digital solutions emerge from
+              collaborative journeys. Your ideas are the seeds, and we're here
+              to nurture them into vibrant realities. Together, we'll embark on
+              an exciting adventure, blending creativity, innovation, and
+              technology. With your unique perspective and our technical
+              prowess, there's no limit to what we can achieve. So, let's join
+              forces, dream big, and craft digital wonders that leave a lasting
+              impact.
+            </p>
+          </motion.article>
+        </section>
         <ContactForm />
       </div>
-      <GetAQuote />
+      {/*  <GetAQuote /> */}
       <Footer />
     </>
   );
