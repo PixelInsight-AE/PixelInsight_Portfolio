@@ -60,8 +60,8 @@ const Contact = () => {
         </p>
         <ContactForm />
         <GetAQuote />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
