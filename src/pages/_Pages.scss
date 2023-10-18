@@ -80,36 +80,54 @@
 }
 
 .contact {
-  padding-top: 4.2rem;
-  &__top-wrapper {
-    @include flex(row, center, center);
-    margin-bottom: 3.2rem;
+  @include flex(column, center, center);
+  &__header-background {
+    background:
+      linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
+      url("/assets/images/bg-hero.webp"),
+      lightgray 50% / cover no-repeat;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+  }
+  &__header {
+    margin: auto;
+    margin-top: 8rem;
+    width: 285px;
+    @include glass-card();
+    @include flex(column, center, center);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
     h1 {
-      font-size: 2.4rem;
-      padding-top: 3.2rem;
-      max-width: 200px;
-      text-align: center;
-      margin-right: 0.8rem;
+      @include brand-1();
+      padding: 1.6rem 0;
+    }
+    h2 {
+      @include brand-3();
+      width: 260px;
     }
     img {
       @include size(68px, 68px);
     }
   }
-  &__phone-desktop {
-    display: none;
+
+  &__social-media {
+    width: 205px;
+    @include flex(row, space-between, center);
+    padding: 1.6rem 0;
+    img {
+      @include size(24px, 24px);
+    }
   }
 
   &__text {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    margin-bottom: 3.2rem;
-    max-width: 286px;
-    text-align: center;
-    margin: auto;
-    padding-top: 4.8rem;
-    margin-bottom: 6rem;
+    @include body-2();
+    max-width: 232px;
+    margin-top: 4.8rem;
   }
 }
+
 
 @include media-breakpoint-up(md) {
   .home {
@@ -177,18 +195,14 @@
   }
 
   .contact {
-    &__top-wrapper {
-      h1 {
-        font-size: 3.2rem;
-        font-weight: 600;
-        letter-spacing: -0.256rem;
-        max-width: 350px;
-      }
+    &__header {
+      width: 320px;
     }
-
-    input,
-    textarea {
-      max-width: 300px;
+    form {
+      input,
+      textarea {
+        width: 600px;
+      }
     }
     &__phone-mobile {
       display: none;
@@ -204,6 +218,7 @@
     }
     &__text {
       max-width: 520px;
+      @include body-1();
     }
   }
 }
