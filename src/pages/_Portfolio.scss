@@ -1,26 +1,46 @@
 .portfolio {
-  border-bottom: 2px solid $c-primary;
-  background:
-    linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
-    url("/assets/images/bg-hero.webp"),
-    lightgray 50% / cover no-repeat;
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 0 0 5px 5px rgba(239, 145, 60, 0.17);
   width: 100%;
-  padding-top: 8rem;
-  button {
-    @include button($c-primary);
-    padding: 0.8rem;
-    width: 88px;
-    border-radius: 8px;
-    align-items: flex-end;
-    align-self: flex-end;
-    margin-left: 64%;
-    justify-content: flex-end;
-    margin-bottom: 4.8rem;
+  .swiper-prev {
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
+  .swiper-next {
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    background: none;
+    border: none;
+  }
+  &__carousel {
+    position: relative;
+    padding-top: 8rem;
+    background:
+      linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
+      url("/assets/images/bg-hero.webp"),
+      lightgray 50% / cover no-repeat;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__button-wrapper {
+    @include flex(row, flex-end, center);
+    border-bottom: 2px solid $c-primary;
+    margin: 1.6rem;
+    button {
+      @include button($c-primary);
+      @include brand-4();
+      padding: 0.8rem 3.2rem;
+      border-radius: 8px;
+    }
+  }
+
   &__piece-carousel {
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(
@@ -51,19 +71,19 @@
   &__intro {
     @include flex(column, flex-start, flex-start);
     text-align: left;
-    padding: 0 4rem;
+    padding: 0 2.4rem;
     h3 {
       @include brand-2();
       padding: 1.2rem 0;
     }
     p {
       @include body-2();
-      width: 200px;
+      //width: 200px;
     }
     margin-bottom: 2.4rem;
   }
-  &__piece-wrapper {
-    padding: 0 4rem;
+  &__pieces-wrapper {
+    @include flex(column, flex-start, center);
   }
   &__piece-card {
     border: 1px solid rgba(255, 255, 255, 0.2);
