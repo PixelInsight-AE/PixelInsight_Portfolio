@@ -30,12 +30,10 @@
 @include media-breakpoint-up(md) {
   .scrollbar {
     left: 50%;
-    transform: translateX(-50%);
   }
 }
 @include media-breakpoint-up(lg) {
   .scrollbar {
-    top: 175%;
     .lg {
       display: block;
     }
