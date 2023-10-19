@@ -8,7 +8,10 @@ const WhyChoosePixel = () => {
       <div className="why-choose-pixel__stagger-box">
         <article className="why-choose-pixel__card left">
           <section className="why-choose-pixel__card--header">
-            <img src="/assets/svg/creative_tech.svg" alt="" />
+            <img
+              src="/assets/svg/creative_tech.svg"
+              alt="Why choose Pixel Insight. Creativity meets Technology"
+            />
             <h2 className="why-choose-pixel__card--title">
               Creativity Meets Technology
             </h2>
@@ -25,7 +28,10 @@ const WhyChoosePixel = () => {
             <h2 className="why-choose-pixel__card--title">
               Client-Centric Approach
             </h2>
-            <img src="/assets/svg/client-approach.svg" alt="" />
+            <img
+              src="/assets/svg/client-approach.svg"
+              alt="Why choose Pixel Insight. Client-centric Approach"
+            />
           </section>
           <p>
             Our client-centric approach means your satisfaction and success are
@@ -34,7 +40,10 @@ const WhyChoosePixel = () => {
         </article>
         <article className="why-choose-pixel__card left">
           <section className="why-choose-pixel__card--header">
-            <img src="/assets/svg/expertise.svg" alt="" />
+            <img
+              src="/assets/svg/expertise.svg"
+              alt="Why choose Pixel Insight. Expertise that Counts."
+            />
             <h2 className="why-choose-pixel__card--title">
               Expertise That Counts
             </h2>
@@ -46,7 +55,10 @@ const WhyChoosePixel = () => {
         </article>
         <article className="why-choose-pixel__card right">
           <section className="why-choose-pixel__card--header reverse">
-            <img src="/assets/svg/collaborative.svg" alt="" />
+            <img
+              src="/assets/svg/collaborative.svg"
+              alt="Why choose Pixel Insight. Collaborative Spirit."
+            />
             <h2 className="why-choose-pixel__card--title">
               Collaborative Spirit
             </h2>
@@ -59,7 +71,10 @@ const WhyChoosePixel = () => {
         <article className="why-choose-pixel__card left">
           <section className="why-choose-pixel__card--header">
             <h2 className="why-choose-pixel__card--title">Results Driven</h2>
-            <img src="/assets/svg/results_driven.svg" alt="" />
+            <img
+              src="/assets/svg/results_driven.svg"
+              alt="Why choose Pixel Insight. Results Driven"
+            />
           </section>
           <p>
             We measure our success by your satisfaction and the positive impact

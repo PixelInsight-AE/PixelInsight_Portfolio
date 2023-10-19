@@ -76,7 +76,7 @@ const About = () => {
               <img
                 className="about__img-emily"
                 src="/assets/images/hottt.webp"
-                alt=""
+                alt="An avatar image for Emily."
               />
               <h3>Emily L</h3>
             </section>
@@ -119,7 +119,7 @@ const About = () => {
               <img
                 className="about__img-arno"
                 src="/assets/images/arnoo.webp"
-                alt=""
+                alt="An avatar image for Arno, the creative co-founder of Pixel Insight"
               />
               <h3>Arno L</h3>
             </section>

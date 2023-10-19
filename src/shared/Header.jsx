@@ -35,7 +35,7 @@ const Header = () => {
             onClick={toggleSideNav}
             className="header__hamburger-menu"
             src="/assets/svg/hamburger.svg"
-            alt=""
+            alt="hamburger menu"
           />
 
           <ul className="header__ul">

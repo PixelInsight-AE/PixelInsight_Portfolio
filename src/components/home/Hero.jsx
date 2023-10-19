@@ -23,22 +23,37 @@ const Hero = () => {
           </Link>
           <section className="hero__social-media">
             <a href="https://github.com/PixelInsight-AE" target="_blank">
-              <img src="/assets/svg/github.svg" alt="" />
+              <img
+                src="/assets/svg/github.svg"
+                alt="social media icons to pixel insight github"
+              />
             </a>
             <a href="https://twitter.com/pixel_insight" target="_blank">
-              <img src="/assets/svg/x.svg" alt="" />
+              <img
+                src="/assets/svg/x.svg"
+                alt="social media icons to pixel insight twitter"
+              />
             </a>
             <a href="https://www.facebook.com/PixelInsightAE/" target="_blank">
-              <img src="/assets/svg/meta.svg" alt="" />
+              <img
+                src="/assets/svg/meta.svg"
+                alt="social media icon for pixel insight facebook"
+              />
             </a>
             <a href="https://github.com/PixelInsight-AE" target="_blank">
-              <img src="/assets/svg/linkedin.svg" alt="" />
+              <img
+                src="/assets/svg/linkedin.svg"
+                alt="social media icon for pixel insght linkedin"
+              />
             </a>
             <a
               href="https://www.instagram.com/pixel_insight_ae/"
               target="_blank"
             >
-              <img src="/assets/svg/instagram.svg" alt="" />
+              <img
+                src="/assets/svg/instagram.svg"
+                alt="social media icons for pixel insight instagram"
+              />
             </a>
           </section>
         </div>

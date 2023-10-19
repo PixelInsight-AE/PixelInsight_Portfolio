@@ -12,7 +12,10 @@ const TechExpertise = () => {
         <article className="tech-expertise__card left">
           <section className="tech-expertise__card-header">
             <h2>Front-end</h2>
-            <img src="/assets/svg/circle.svg" alt="" />
+            <img
+              src="/assets/svg/circle.svg"
+              alt="Pixel insight Technology expertise front end development."
+            />
           </section>
           <p>
             Elevate your online presence with our friendly interfaces that
@@ -26,7 +29,10 @@ const TechExpertise = () => {
         <article className="tech-expertise__card right">
           <section className="tech-expertise__card-header">
             <h2>Back-end</h2>
-            <img src="/assets/svg/triangle.svg" alt="" />
+            <img
+              src="/assets/svg/triangle.svg"
+              alt="Pixel Insight technology expertise back end development"
+            />
           </section>
           <p>
             Powerful backend solutions for seamless performance and security.
@@ -41,7 +47,10 @@ const TechExpertise = () => {
         <article className="tech-expertise__card left">
           <section className="tech-expertise__card-header">
             <h2>Design</h2>
-            <img src="/assets/svg/square.svg" alt="" />
+            <img
+              src="/assets/svg/square.svg"
+              alt="Pixel Insight technology expertise design"
+            />
           </section>
           <p>
             Blend creativity and functionality to craft visually stunning,
@@ -52,7 +61,10 @@ const TechExpertise = () => {
         <article className="tech-expertise__card right">
           <section className="tech-expertise__card-header">
             <h2>App Dev</h2>
-            <img src="/assets/svg/star.svg" alt="" />
+            <img
+              src="/assets/svg/star.svg"
+              alt="Pixel Insight technology expertise app development "
+            />
           </section>
           <p>
             Cross platform app development. We create digital magic that

@@ -4,17 +4,17 @@ const WhatWeDo = () => {
       <img
         className="what-we-do__header-image--mobile"
         src="assets/svg/whatWeDo_mobile.svg"
-        alt=""
+        alt="What we do mobile image"
       />
       <img
         className="what-we-do__header-image--medium"
         src="assets/svg/WhatWeDo_medium.svg"
-        alt=""
+        alt="What we do medium image"
       />
       <img
         className="what-we-do__header-image--large"
         src="assets/svg/WhatWeDo_large.svg"
-        alt=""
+        alt="What we do large image"
       />
     </div>
   );

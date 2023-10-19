@@ -6,12 +6,27 @@
     padding: 0.8rem;
     margin-top: 4px;
   }
+  &__socials {
+    display: none;
+    gap: 8px;
+  }
   p {
     margin-right: auto;
   }
   section {
     img {
       @include margin-x(8px);
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .footer {
+    &__logo {
+      @include size(24px, 24px);
+    }
+    &__socials {
+      @include flex(row, center, center);
     }
   }
 }

@@ -16,7 +16,10 @@ const SlideNextButton = () => {
 
   return (
     <button className="swiper-next" onClick={() => swiper.slideNext()}>
-      <img src="/assets/svg/right.svg" alt="" />
+      <img
+        src="/assets/svg/right.svg"
+        alt="Button for next button on carousel for pixel insight portfolio"
+      />
     </button>
   );
 };
@@ -24,7 +27,11 @@ const SlidePrevButton = () => {
   const swiper = useSwiper();
   return (
     <button className="swiper-prev" onClick={() => swiper.slidePrev()}>
-      <img src="/assets/svg/left.svg" onClick={() => swiper.slidePrev()} />
+      <img
+        src="/assets/svg/left.svg"
+        alt="Button for previous button on carousel for pixel insight portfolio"
+        onClick={() => swiper.slidePrev()}
+      />
     </button>
   );
 };
