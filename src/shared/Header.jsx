@@ -39,9 +39,9 @@ const Header = () => {
           />
 
           <ul className="header__ul">
-            <Link to="/quote">
+            {/* <Link to="/quote">
               <li>Get a Quote</li>
-            </Link>
+            </Link> */}
             <Link to="/portfolio">
               <li>Portfolio</li>
             </Link>
