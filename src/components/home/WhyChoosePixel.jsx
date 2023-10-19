@@ -57,7 +57,7 @@ const WhyChoosePixel = () => {
           </p>
         </article>
         <article className="why-choose-pixel__card left">
-          <section className="why-choose-pixel__card--header"></section>
+          <section className="why-choose-pixel__card--header">
             <h2 className="why-choose-pixel__card--title">Results Driven</h2>
             <img src="/assets/svg/results_driven.svg" alt="" />
           </section>

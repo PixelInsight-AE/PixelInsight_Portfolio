@@ -25,18 +25,18 @@ const SideNavigation = ({ isOpen, onClick }) => {
               <Link to="/">
                 <li>Home</li>
               </Link>
-              <Link to="/portfolio">
+              {/*               <Link to="/portfolio">
                 <li>Portfolio</li>
-              </Link>
+              </Link> */}
               <Link to="/about">
                 <li>About</li>
               </Link>
               <Link to="/contact">
                 <li>Contact</li>
               </Link>
-              <Link to="/quote">
+              {/*               <Link to="/quote">
                 <li>Get a Quote</li>
-              </Link>
+              </Link> */}
             </ul>
           </nav>
           <section className="side-navigation__social-media">
