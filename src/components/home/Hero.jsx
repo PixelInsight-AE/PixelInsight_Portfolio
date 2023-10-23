@@ -18,7 +18,7 @@ const Hero = () => {
           <h3 className="hero__call-to-action">
             let's build something great together
           </h3>
-          <Link to="/quote">
+          <Link to="/contact">
             <button className="hero__cta-btn">Get a free quote!</button>
           </Link>
           <section className="hero__social-media">

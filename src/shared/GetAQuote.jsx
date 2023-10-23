@@ -35,7 +35,7 @@ const GetAQuote = () => {
         Ready to dive in? Join us on this pixelated journey and let's make the
         digital world yours.
       </p>
-      <Link to="/quote">
+      <Link to="/contact">
         <button>Get a free quote!</button>
       </Link>
     </div>
