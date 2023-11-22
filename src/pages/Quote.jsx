@@ -5,7 +5,8 @@ import { emailValidation } from "../utilitys/utilitys";
 //import supabase from "../config/supabase";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-const QuoteForm = () => {
+
+export const QuoteForm = () => {
   const [isValid, setIsValid] = useState(false);
   const [formError, setFormError] = useState(null); // [1
   const navigate = useNavigate();
@@ -70,28 +71,6 @@ const QuoteForm = () => {
 
   return (
     <>
-      <Helmet>
-        <meta name="author" content="Pixel Insight" />
-        <meta property="og:image" content="https://i.imgur.com/LOFe11P.png" />
-        <meta property="og:title" content="Pixel Insight" />
-        <meta
-          name="description"
-          content="Pixel Insight: Get your Free Quote today! We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference"
-        />
-
-        <meta property="og:url" content="https://pixel-insight.com/quote" />
-        <meta property="og:type" content="website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="twitter:card" content="https://i.imgur.com/LOFe11P.png" />
-        <meta name="twitter:site" content="@Pixel-Insight" />
-        <meta name="twitter:title" content="Pixel Insight" />
-        <meta
-          name="twitter:description"
-          content="Pixel Insight: Get your Free Quote today! We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference"
-        />
-        <meta name="twitter:image" content="https://i.imgur.com/LOFe11P.png" />
-        <title>Get a Free Quote</title>
-      </Helmet>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -202,6 +181,28 @@ const QuoteForm = () => {
 const Quote = () => {
   return (
     <>
+      <Helmet>
+        <meta name="author" content="Pixel Insight" />
+        <meta property="og:image" content="https://i.imgur.com/LOFe11P.png" />
+        <meta property="og:title" content="Pixel Insight" />
+        <meta
+          name="description"
+          content="Pixel Insight: Get your Free Quote today! We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference"
+        />
+
+        <meta property="og:url" content="https://pixel-insight.com/quote" />
+        <meta property="og:type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="twitter:card" content="https://i.imgur.com/LOFe11P.png" />
+        <meta name="twitter:site" content="@Pixel-Insight" />
+        <meta name="twitter:title" content="Pixel Insight" />
+        <meta
+          name="twitter:description"
+          content="Pixel Insight: Get your Free Quote today! We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference"
+        />
+        <meta name="twitter:image" content="https://i.imgur.com/LOFe11P.png" />
+        <title>Get a Free Quote</title>
+      </Helmet>
       <Header />
       <div className="quote">
         <section className="quote__header">
@@ -218,4 +219,5 @@ const Quote = () => {
     </>
   );
 };
+
 export default Quote;

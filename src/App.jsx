@@ -7,6 +7,8 @@ import Quote from "./pages/Quote";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import QuoteSuccess from "./pages/QuoteSuccess";
+import Services from "./pages/Services";
+import StarterPackage from "./pages/StarterPackage";
 function App() {
   const location = useLocation();
   useEffect(() => {
@@ -18,9 +20,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        {/*         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/quote" element={<Quote />} />
-        <Route path="/quote-success" element={<QuoteSuccess />} /> */}
+        <Route path="/quote-success" element={<QuoteSuccess />} />
+        <Route path="/services" element={<Services />} />
+        {/* <Route path="/starter-package" element={<StarterPackage />} /> */}
         <Route path="/*" element={<Home />} />
       </Routes>
     </>

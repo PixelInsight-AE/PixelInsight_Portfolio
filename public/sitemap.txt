@@ -1,6 +1,11 @@
 https://www.pixel-insight.com
 https://www.pixel-insight.com/about
 https://www.pixel-insight.com/contact
-https://www.pixel-insight.com/quote
-https://www.pixel-insight.com/portfolio
+https://www.pixel-insight.com/services
+https://www.pixel-insight.com/starter-package
+https://www.pixel-insight.com/standard-package
+https://www.pixel-insight.com/premium-package
+https://www.pixel-insight.com/showcase
+https://www.pixel-insight.com/quote-success
+
 

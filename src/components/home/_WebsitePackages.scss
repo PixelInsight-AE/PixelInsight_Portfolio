@@ -1,0 +1,125 @@
+.website-packages {
+  padding-top: 4rem;
+  @include flex(column, center, center);
+  gap: 1.6rem;
+  background: linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
+    url("/assets/images/packages_background.webp");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__tagline {
+    padding-top: 7.2rem;
+
+    @include brand-2;
+  }
+  &__card-wrapper {
+    @include flex(column, center, center);
+    gap: 1.6rem;
+  }
+  &__card {
+    @include glass-card;
+    @include flex(column, space-between, center);
+    border: 1px solid rgba($c-text, 0.5);
+    box-shadow: $box-shadow;
+    width: 25rem;
+    min-height: 30rem;
+    padding: 2rem 1.6rem;
+    gap: 1.6rem;
+    h2 {
+      @include brand-1;
+    }
+    ul {
+      overflow-y: scroll;
+      max-height: 14rem;
+      @include body-1;
+      text-align: start;
+      padding: 1.6rem;
+      list-style: "✓";
+      box-shadow: $box-shadow;
+      border-bottom: 1px solid rgba($c-text, 0.2);
+    }
+    li {
+      margin: 0 0 0.8rem 0;
+    }
+  }
+  &__card-top {
+    @include flex(column, center, center);
+    gap: 1rem;
+  }
+  &__button {
+    @include cta-button;
+  }
+  &__disclaimer {
+    @include body-2;
+    text-align: center;
+    margin-top: 1.6rem;
+    max-width: 250px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .website-packages {
+    &__card {
+      @include size(280px, 500px);
+    }
+    &__card-top {
+      ul {
+        max-height: 18rem;
+      }
+    }
+    &__price {
+      font-size: 4.8rem;
+    }
+    .taller {
+      @include size(280px, 540px);
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .website-packages {
+    &__card-wrapper {
+      @include flex(row, center, center);
+      gap: 1.6rem;
+    }
+
+    &__card {
+      @include size(200px, 500px);
+      ul {
+        list-style: "✓";
+      }
+    }
+    &__price {
+      @include brand-1;
+      font-size: 4.8rem;
+    }
+    &__disclaimer {
+      max-width: 600px;
+    }
+    .taller {
+      @include size(200px, 540px);
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .website-packages {
+    &__card {
+      @include size(280px, 480px);
+    }
+    &__card-top {
+      ul {
+        max-height: 18rem;
+      }
+    }
+    &__price {
+      font-size: 5.6rem;
+    }
+    .taller {
+      @include size(280px, 540px);
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+}

@@ -28,6 +28,15 @@ const QuoteSuccess = () => {
           content="Pixel Insight: Where Creativity Meets Technology. We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference."
         />
         <meta name="twitter:image" content="https://i.imgur.com/LOFe11P.png" />
+
+        <script>
+          gtag('event', 'manual_conversion_SUBMIT_LEAD_FORM',{" "}
+          {
+            // <event_parameters>
+          }
+          );
+        </script>
+
         <title>Thank you!</title>
       </Helmet>
       <Header />

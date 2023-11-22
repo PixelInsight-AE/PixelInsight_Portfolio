@@ -59,7 +59,7 @@ const Hero = () => {
         </div>
         <img
           className="hero__hero-img"
-          src="/assets/images/hero-img.webp"
+          src="/assets/images/p_for_pixel.webp"
           alt="color wheel image"
         />
       </article>

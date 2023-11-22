@@ -1,0 +1,56 @@
+.starter-package {
+  &__title {
+    @include brand-1;
+  }
+  &__tagline {
+    @include brand-2;
+  }
+
+  &__hero {
+    //@include flex(column, center, center);
+    @include flex(row, center, center);
+    background:
+      linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
+      url("/assets/images/bg-hero.webp"),
+      lightgray 50% / cover no-repeat;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__card {
+    @include glass-card;
+    @include flex(column, space-between, center);
+    @include size(240px, 400px);
+    padding: 1.6rem;
+
+    ul {
+      text-align: left;
+      li {
+        @include body-2;
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+  &__hero-text {
+    h3 {
+      @include brand-2;
+    }
+    max-width: 400px;
+  }
+  &__card-top {
+    h2 {
+      @include brand-1;
+    }
+    h3 {
+      @include brand-2;
+    }
+  }
+  button {
+    @include cta-button;
+  }
+
+  &__features {
+    @include flex(column, center, center);
+    text-align: left;
+  }
+}

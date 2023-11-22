@@ -10,6 +10,7 @@ import WhyChoosePixel from "../components/home/WhyChoosePixel";
 import ContactForm from "../shared/ContactForm";
 import GetAQuote from "../shared/GetAQuote";
 import Footer from "../shared/Footer";
+import WebsitePackages from "../components/home/WebsitePackages";
 
 const Home = () => {
   return (
@@ -39,13 +40,13 @@ const Home = () => {
       <Header />
       <div className="home">
         <Hero />
-
-        <WhatWeDoCards />
+        <WhyChoosePixel />
+        <WebsitePackages />
+        {/* <WhatWeDoCards /> */}
         <div className="sub-hero-divider"></div>
 
         <DiscoverDesignBuildLaunchEnjoy />
         <TechExpertise />
-        <WhyChoosePixel />
         <ContactForm />
         <GetAQuote />
       </div>
