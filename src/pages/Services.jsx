@@ -93,7 +93,7 @@ const PremiumPackageCard = ({ setSelectedPackage }) => {
             Ultimate Brand Elevation - Bespoke, expansive design with advanced
             features.
           </h3>
-          <h4>Ready to Rumble</h4>
+          <h4>The Ultimate Package!</h4>
         </div>
         <ul>
           <li>15+ Pages of Custom, High-Quality Design</li>
@@ -164,7 +164,7 @@ const Services = () => {
   const [error, setError] = useState(null);
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState(null);
+  const [phone, setPhone] = useState("");
   const [description, setDescription] = useState("");
   const [selectedPackage, setSelectedPackage] = useState("starter");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

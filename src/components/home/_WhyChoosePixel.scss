@@ -1,5 +1,9 @@
 .why-choose-pixel {
   @include flex(column, center, center);
+  background: url("../../assets/images/why_pixel.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
   .lg {
     display: none;
   }

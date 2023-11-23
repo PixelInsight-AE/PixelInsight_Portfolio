@@ -1,4 +1,5 @@
 import { ScrollAnimationWhyChoose } from "./ScrollAnimationWhyChoose";
+import { motion } from "framer-motion";
 
 const WhyChoosePixel = () => {
   return (

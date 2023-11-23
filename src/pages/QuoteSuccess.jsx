@@ -29,14 +29,6 @@ const QuoteSuccess = () => {
         />
         <meta name="twitter:image" content="https://i.imgur.com/LOFe11P.png" />
 
-        <script>
-          gtag('event', 'manual_conversion_SUBMIT_LEAD_FORM',{" "}
-          {
-            // <event_parameters>
-          }
-          );
-        </script>
-
         <title>Thank you!</title>
       </Helmet>
       <Header />

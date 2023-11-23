@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const TechExpertise = () => {
   return (
     <section className="tech-expertise">
@@ -9,7 +11,13 @@ const TechExpertise = () => {
         </p>
       </section>
       <div className="tech-expertise__wrapper">
-        <article className="tech-expertise__card left">
+        <motion.article
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="tech-expertise__card left"
+        >
           <section className="tech-expertise__card-header">
             <h2>Front-end</h2>
             <img
@@ -25,7 +33,7 @@ const TechExpertise = () => {
             HTML, CSS, Sass, React, Redux, JavaScript, Bootstrap, FrameWorks,
             Responsive Designs, PWA, API Integration, Testing & Debugging
           </i>
-        </article>
+        </motion.article>
         <article className="tech-expertise__card right">
           <section className="tech-expertise__card-header">
             <h2>Back-end</h2>

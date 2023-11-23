@@ -1,5 +1,6 @@
 .hero {
   @include flex(column, center, center);
+  height: 70vh;
   background:
     linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
     url("/assets/images/bg-hero.webp"),
@@ -7,8 +8,19 @@
   background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
-  // width: 100vw;
-
+  padding-top: 4.8rem;
+  &__title {
+    @include brand-1();
+    font-size: 70px;
+    background: linear-gradient(
+      92deg,
+      rgba(255, 255, 255, 0.69) 12.85%,
+      rgba(217, 217, 217, 0.69) 88.38%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   &__card {
     @include margin-y(2.4rem);
     @include flex(row, center, center);
@@ -35,11 +47,20 @@
     gap: 2.4rem;
   }
 
-  &__title {
+  /*   &__title {
     @include brand-1();
-  }
+  } */
   &__subtitle {
     @include brand-3();
+    font-size: 24px;
+    background: linear-gradient(
+      92deg,
+      rgba(255, 255, 255, 0.69) 12.85%,
+      rgba(217, 217, 217, 0.69) 88.38%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   &__content {
     @include body-2();
@@ -55,6 +76,8 @@
     gap: 1.6rem;
     img {
       @include size(24px, 24px);
+      //add opacity
+      opacity: 0.5;
     }
   }
   &__hero-img {
@@ -64,8 +87,11 @@
 
 @include media-breakpoint-up(md) {
   .hero {
+    &__title {
+      font-size: 125px;
+    }
     &__subtitle {
-      @include brand-2();
+      @include brand-1();
     }
     &__content {
       @include body-2();
@@ -81,6 +107,21 @@
 
 @include media-breakpoint-up(lg) {
   .hero {
+    &__title {
+      @include brand-1();
+      font-size: 150px;
+      background: linear-gradient(
+        92deg,
+        rgba(255, 255, 255, 0.69) 12.85%,
+        rgba(217, 217, 217, 0.69) 88.38%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &__subtitle {
+      font-size: 48px;
+    }
     &__card {
       width: 800px;
       padding: 2.4rem;
@@ -90,6 +131,13 @@
     &__hero-img {
       display: block;
       @include size(400px, 400px);
+    }
+    &__social-media {
+      img {
+        @include size(32px, 32px);
+      }
+
+      gap: 3.2rem;
     }
   }
 }

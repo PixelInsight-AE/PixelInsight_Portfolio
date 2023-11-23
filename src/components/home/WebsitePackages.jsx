@@ -1,5 +1,6 @@
 import { Tilt } from "react-tilt";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
   const defaultOptions = {
@@ -24,7 +25,10 @@ const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
           options={defaultOptions}
           className="website-packages__card-wrapper"
         >
-          <article
+          <motion.article
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             onClick={() => setSelectedPackage("starter")}
             className="website-packages__card starter-data"
           >
@@ -61,13 +65,16 @@ const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
                 <button className="website-packages__button">Order Now</button>
               </Link>
             )}
-          </article>
+          </motion.article>
         </Tilt>
         <Tilt
           options={defaultOptions}
           className="website-packages__card-wrapper"
         >
-          <article
+          <motion.article
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             onClick={() => setSelectedPackage("standard")}
             className="website-packages__card taller"
           >
@@ -106,13 +113,16 @@ const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
                 <button className="website-packages__button">Order Now</button>
               </Link>
             )}
-          </article>
+          </motion.article>
         </Tilt>
         <Tilt
           options={defaultOptions}
           className="website-packages__card-wrapper"
         >
-          <article
+          <motion.article
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             onClick={() => setSelectedPackage("premium")}
             className="website-packages__card premium premium-data"
           >
@@ -122,7 +132,7 @@ const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
                 Ultimate Brand Elevation - Bespoke, expansive design with
                 advanced features.
               </h3>
-              <h4>Ready to Rubmle!</h4>
+              <h4>The Ultimate Package!</h4>
             </div>
             <ul>
               <li>15+ Pages of Custom, High-Quality Design</li>
@@ -154,7 +164,7 @@ const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
                 <button className="website-packages__button">Order Now</button>
               </Link>
             )}
-          </article>
+          </motion.article>
         </Tilt>
       </div>
       {/* {window.location.pathname === "/services" ? null : (

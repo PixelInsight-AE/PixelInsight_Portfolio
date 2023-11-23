@@ -4,7 +4,7 @@
   gap: 1.6rem;
   background: linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
     url("/assets/images/packages_background.webp");
-  background-position: right center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   &__tagline {
@@ -71,7 +71,7 @@
       font-size: 4.8rem;
     }
     .taller {
-      @include size(280px, 540px);
+      @include size(300px, 540px);
     }
   }
 }
@@ -97,7 +97,7 @@
       max-width: 600px;
     }
     .taller {
-      @include size(200px, 540px);
+      @include size(220px, 540px);
     }
   }
 }
@@ -116,7 +116,7 @@
       font-size: 5.6rem;
     }
     .taller {
-      @include size(280px, 540px);
+      @include size(300px, 540px);
     }
   }
 }

@@ -25,20 +25,20 @@ const SideNavigation = ({ isOpen, onClick }) => {
               </h1>
             </div>
             <ul>
-              <Link to="/">
-                <li>Home</li>
-              </Link>
-              {/*               <Link to="/portfolio">
-                <li>Portfolio</li>
-              </Link> */}
               <Link to="/about">
                 <li>About</li>
               </Link>
               <Link to="/contact">
                 <li>Contact</li>
               </Link>
+              <Link to="/">
+                <li>Home</li>
+              </Link>
               <Link to="/services">
                 <li>Services</li>
+              </Link>
+              <Link to="/showcase">
+                <li>Showcase</li>
               </Link>
               {/*               <Link to="/quote">
                 <li>Get a Quote</li>

@@ -11,6 +11,7 @@ import ContactForm from "../shared/ContactForm";
 import GetAQuote from "../shared/GetAQuote";
 import Footer from "../shared/Footer";
 import WebsitePackages from "../components/home/WebsitePackages";
+import Subhero from "../components/home/Subhero";
 
 const Home = () => {
   return (
@@ -40,14 +41,16 @@ const Home = () => {
       <Header />
       <div className="home">
         <Hero />
-        <WhyChoosePixel />
+        <Subhero />
+
         <WebsitePackages />
+        <WhyChoosePixel />
         {/* <WhatWeDoCards /> */}
         <div className="sub-hero-divider"></div>
 
-        <DiscoverDesignBuildLaunchEnjoy />
         <TechExpertise />
-        <ContactForm />
+        <DiscoverDesignBuildLaunchEnjoy />
+        {/* <ContactForm /> */}
         <GetAQuote />
       </div>
       <Footer />
