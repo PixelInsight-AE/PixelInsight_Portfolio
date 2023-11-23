@@ -231,6 +231,28 @@ const Services = () => {
   const swiper = useSwiper();
   return (
     <>
+      <Helmet>
+        <meta name="author" content="Pixel Insight" />
+        <meta property="og:image" content="https://i.imgur.com/LOFe11P.png" />
+        <meta property="og:title" content="Pixel Insight - Services" />
+        <meta
+          name="description"
+          content="Pixel Insight: Explore our packages and discover how we can bring your digital vision to life. With Pixel Insight, your website will be more than just an online space;"
+        />
+
+        <meta property="og:url" content="https://pixel-insight.com/services" />
+        <meta property="og:type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="twitter:card" content="https://i.imgur.com/LOFe11P.png" />
+        <meta name="twitter:site" content="@Pixel-Insight" />
+        <meta name="twitter:title" content="Pixel Insight" />
+        <meta
+          name="twitter:description"
+          content="Pixel Insight: Explore our packages and discover how we can bring your digital vision to life. With Pixel Insight, your website will be more than just an online space;"
+        />
+        <meta name="twitter:image" content="https://i.imgur.com/LOFe11P.png" />
+        <title>Pixel - Packages</title>
+      </Helmet>
       <Header />
       <div className="services">
         {windowWidth <= 768 && (
