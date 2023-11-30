@@ -26,10 +26,7 @@ const validateEmail = async (email) => {
       return false;
     }
   } catch (err) {
-    return {
-      error: err,
-      valid: false,
-    };
+    return false;
   }
 };
 

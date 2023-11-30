@@ -183,7 +183,7 @@ const Services = () => {
     e.preventDefault();
 
     const isValid = await validateEmail(email);
-    if (!isValid) {
+    if (isValid === false) {
       return;
     }
     const { error } = await supabase
