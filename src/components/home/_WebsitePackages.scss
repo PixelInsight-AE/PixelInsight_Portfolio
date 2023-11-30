@@ -1,5 +1,6 @@
 .website-packages {
   padding-top: 4rem;
+  margin-bottom: 4rem;
   @include flex(column, center, center);
   gap: 1.6rem;
   background: linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
@@ -50,7 +51,7 @@
     @include cta-button;
   }
   &__disclaimer {
-    @include body-2;
+    @include brand-4;
     text-align: center;
     margin-top: 1.6rem;
     max-width: 250px;

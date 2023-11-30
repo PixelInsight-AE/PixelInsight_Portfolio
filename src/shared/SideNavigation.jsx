@@ -31,15 +31,13 @@ const SideNavigation = ({ isOpen, onClick }) => {
               <Link to="/contact">
                 <li>Contact</li>
               </Link>
-              <Link to="/">
-                <li>Home</li>
-              </Link>
+
               <Link to="/services">
-                <li>Services</li>
+                <li>Packages</li>
               </Link>
-              <Link to="/showcase">
+              {/* <Link to="/showcase">
                 <li>Showcase</li>
-              </Link>
+              </Link> */}
               {/*               <Link to="/quote">
                 <li>Get a Quote</li>
               </Link> */}

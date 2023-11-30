@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import React from "react";
-//import supabase from "../config/supabase";
+import supabase from "../config/supabase";
 import { useEffect } from "react";
 import { validateEmail } from "../utilitys/utilitys";
 import { useNavigate } from "react-router-dom";
@@ -10,7 +10,7 @@ const ContactForm = () => {
     name: "",
     email: "",
     phone: "",
-    message: "",
+    description: "",
     newsletter: "",
   });
 
@@ -19,16 +19,11 @@ const ContactForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   const handleSubmit = async (e) => {
-    if (!validateEmail(formData.email)) {
-      setFormError("Please enter a valid email address");
-      return;
-    }
-
     if (formData.name === "") {
       setFormError("Please enter your name");
       return;
     }
-    if (formData.message === "") {
+    if (formData.description === "") {
       setFormError("Please enter a message");
       return;
     }
@@ -36,22 +31,27 @@ const ContactForm = () => {
       setFormError("Please enter your email");
       return;
     }
-
+    const isValid = await validateEmail(formData.email);
+    if (!isValid) {
+      setFormError("Please enter a valid email");
+      return;
+    }
     const { data, error } = await supabase
       .from("pixel_quotes")
       .insert({
-        contact_form: formData,
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        description: formData.description,
+        newsletter: formData.newsletter,
       })
       .select("*");
     if (error) {
-      console.log(error);
+      setFormError(error.message);
       return;
     }
-
     setFormError("");
     navigate("/quote-success");
-
-    console.log(data);
   };
 
   return (
@@ -86,7 +86,7 @@ const ContactForm = () => {
           placeholder="Phone"
         />
         <textarea
-          name="message"
+          name="description"
           id=""
           cols="30"
           rows="10"

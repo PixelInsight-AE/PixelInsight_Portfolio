@@ -11,7 +11,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -21,7 +21,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -31,7 +31,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -41,7 +41,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -51,7 +51,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -61,7 +61,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -71,7 +71,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -81,7 +81,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -91,7 +91,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -101,7 +101,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -111,7 +111,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -121,7 +121,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot"
       ></motion.div>
       <motion.div
@@ -131,7 +131,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot lg"
       ></motion.div>
       <motion.div
@@ -141,7 +141,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot lg"
       ></motion.div>
       <motion.div
@@ -151,7 +151,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot lg"
       ></motion.div>
       <motion.div
@@ -161,7 +161,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot lg"
       ></motion.div>
       <motion.div
@@ -171,7 +171,7 @@ const SmallDots = () => {
           scale: [1.5, 1, 1.5, 1],
         }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
         className="dot lg"
       ></motion.div>
     </>

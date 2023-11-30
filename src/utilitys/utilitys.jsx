@@ -1,21 +1,36 @@
-const validateEmail = (email) => {
-  var re = /\S+@\S+\.\S+/;
-  return re.test(email);
+const getAPIkey = async () => {
+  const { data, error } = await supabase.rpc("fn_mailer_check_key");
+  if (error) return setError(error.message);
+  return data;
+};
+const validateEmail = async (email) => {
+  try {
+    const apiKey = await getAPIkey();
+    const response = await fetch(
+      `https://app.mailercheck.com/api/check/single`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({ email: email }),
+      }
+    );
+    const result = await response.json();
+    console.log(result, "mailer check results");
+    if (result.status === "valid") {
+      return true;
+    } else {
+      alert("Please enter a valid email");
+      return false;
+    }
+  } catch (err) {
+    return {
+      error: err,
+      valid: false,
+    };
+  }
 };
 
-const emailValidation = async (email) => {
-  let emailValid = false;
-
-  const options = { method: "GET" };
-
-  fetch(
-    `https://emailvalidation.abstractapi.com/v1?api_key=542f3202b0b5453486ba8ab9447c1c1f&email=${email}`,
-    options
-  )
-    .then((response) => response.json())
-    .then((response) => console.log(response))
-    .catch((err) => console.error(err));
-  return emailValid;
-};
-
-export { validateEmail, emailValidation };
+export { validateEmail };

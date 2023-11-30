@@ -4,7 +4,7 @@ import { motion, AnimatePresence, useScroll } from "framer-motion";
 const ScrollAnimationWhyChoose = () => {
   return (
     <section className="scroll-animation-why-choose">
-      <motion.img
+      {/*  <motion.img
         initial={{ rotate: 0, scale: 1 }}
         whileInView={{
           scale: [1.25, 1],
@@ -496,7 +496,7 @@ const ScrollAnimationWhyChoose = () => {
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.3, type: "spring", bounce: 0.5 }}
         className="dot"
-      ></motion.div>
+      ></motion.div> */}
     </section>
   );
 };

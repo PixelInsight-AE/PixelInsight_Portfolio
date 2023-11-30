@@ -73,6 +73,20 @@ const SmokeShop = () => {
         <img src="/assets/svg/react.svg" alt="" />
         <img src="/assets/svg/ruby.svg" alt="" />
       </section>
+      <h2>SmokeShop</h2>
+      <img src="/assets/images/example.png" alt="" />
+      <section>
+        <img src="/assets/svg/supabase.svg" alt="" />
+        <img src="/assets/svg/react.svg" alt="" />
+        <img src="/assets/svg/ruby.svg" alt="" />
+      </section>
+      <h2>SmokeShop</h2>
+      <img src="/assets/images/example.png" alt="" />
+      <section>
+        <img src="/assets/svg/supabase.svg" alt="" />
+        <img src="/assets/svg/react.svg" alt="" />
+        <img src="/assets/svg/ruby.svg" alt="" />
+      </section>
     </div>
   );
 };

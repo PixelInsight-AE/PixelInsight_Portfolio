@@ -14,9 +14,9 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
         </p>
       </article>
       <section className="discover-design-build__wrapper">
-        <Scrollbar />
+        {/*      <Scrollbar /> */}
         <motion.article
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
@@ -32,7 +32,7 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
           </div>
         </motion.article>
         <motion.article
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
@@ -48,7 +48,7 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
           </div>
         </motion.article>
         <motion.article
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
@@ -64,7 +64,7 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
           </div>
         </motion.article>
         <motion.article
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
@@ -79,7 +79,7 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
           </div>
         </motion.article>
         <motion.article
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}

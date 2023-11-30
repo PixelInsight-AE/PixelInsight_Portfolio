@@ -9,8 +9,9 @@ import { Navigation, Pagination } from "swiper/modules";
 import WebsitePackages from "../components/home/WebsitePackages";
 
 import supabase from "../config/supabase";
+import { validateEmail } from "../utilitys/utilitys";
 
-const StandardPackageCard = ({ setSelectedPackage }) => {
+export const StandardPackageCard = ({ setSelectedPackage }) => {
   return (
     <div className="website-packages__card-wrapper">
       <article className="website-packages__card taller">
@@ -47,7 +48,7 @@ const StandardPackageCard = ({ setSelectedPackage }) => {
   );
 };
 
-const StarterPackageCard = ({ setSelectedPackage }) => {
+export const StarterPackageCard = ({ setSelectedPackage }) => {
   return (
     <div className="website-packages__card-wrapper">
       <article className="website-packages__card starter-data">
@@ -83,7 +84,7 @@ const StarterPackageCard = ({ setSelectedPackage }) => {
     </div>
   );
 };
-const PremiumPackageCard = ({ setSelectedPackage }) => {
+export const PremiumPackageCard = ({ setSelectedPackage }) => {
   return (
     <div className="website-packages__card-wrapper">
       <article className="website-packages__card premium premium-data">
@@ -170,9 +171,6 @@ const Services = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleSubmit = async (e) => {
-    if (!name || !email || !phone || !description || !selectedPackage)
-      return setError("Please fill out all fields");
-
     let formData = {
       name: name,
       email: email,
@@ -180,9 +178,10 @@ const Services = () => {
       description: description,
       services: selectedPackage,
     };
-
+    if (!name || !email || !phone || !description || !selectedPackage)
+      return setError("Please fill out all fields");
     e.preventDefault();
-    console.log("submit");
+
     const isValid = await validateEmail(email);
     if (!isValid) {
       return;
@@ -193,27 +192,6 @@ const Services = () => {
       .select("*");
     if (error) return setError(error.message);
     navigate("/quote-success");
-  };
-
-  const validateEmail = async (email) => {
-    try {
-      const response = await fetch(
-        `https://emailvalidation.abstractapi.com/v1?api_key=542f3202b0b5453486ba8ab9447c1c1f&email=${email}`,
-        { method: "GET" }
-      );
-      const result = await response.json();
-      console.log(result);
-      if (result.deliverability === "DELIVERABLE") {
-        return true;
-      } else {
-        setError("Please enter a valid email");
-        alert("Please enter a valid email");
-        return false;
-      }
-    } catch (err) {
-      console.error(err);
-      return false;
-    }
   };
 
   useEffect(() => {
@@ -228,7 +206,6 @@ const Services = () => {
     };
   }, []);
 
-  const swiper = useSwiper();
   return (
     <>
       <Helmet>

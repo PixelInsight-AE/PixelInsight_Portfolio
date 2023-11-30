@@ -33,12 +33,15 @@ const QuoteSuccess = () => {
       </Helmet>
       <Header />
       <div className="quote-success">
-        <h1>Thank You, We will be in contact soon!</h1>
-        <p>Please Check your Email for confirmation.</p>
-        <Link to="/">
-          <button>Return Home</button>
-        </Link>
-        <img src="/assets/images/quote_img.webp" alt="" />
+        <h1>Pixel Insight</h1>
+        <div className="quote-success__card">
+          <h2>Thank You,</h2>
+          <h3> We will be in contact soon!</h3>
+          <p>Please Check your Email for confirmation.</p>
+          <Link to="/">
+            <button>Return Home</button>
+          </Link>
+        </div>
       </div>
       {/* <Footer /> */}
     </>

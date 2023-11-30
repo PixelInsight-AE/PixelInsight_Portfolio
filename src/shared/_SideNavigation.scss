@@ -28,6 +28,7 @@
     }
   }
   &__title-wrapper {
+    cursor: pointer;
     @include flex(row, center, center);
     @include fixed-top-left(16px, 16px);
     padding-left: 1.2rem;

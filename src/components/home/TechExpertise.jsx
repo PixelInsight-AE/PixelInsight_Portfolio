@@ -34,7 +34,13 @@ const TechExpertise = () => {
             Responsive Designs, PWA, API Integration, Testing & Debugging
           </i>
         </motion.article>
-        <article className="tech-expertise__card right">
+        <motion.article
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="tech-expertise__card right"
+        >
           <section className="tech-expertise__card-header">
             <h2>Back-end</h2>
             <img
@@ -51,8 +57,14 @@ const TechExpertise = () => {
             Management, RESTful API’s, Dev Ops, Ruby/Rails, Node, Python,
             SQL/Postgres
           </i>
-        </article>
-        <article className="tech-expertise__card left">
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="tech-expertise__card left"
+        >
           <section className="tech-expertise__card-header">
             <h2>Design</h2>
             <img
@@ -65,8 +77,14 @@ const TechExpertise = () => {
             user-friendly designs that captivate and engage.
           </p>
           <i>Figma, Illustrator, Photoshop</i>
-        </article>
-        <article className="tech-expertise__card right">
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="tech-expertise__card right"
+        >
           <section className="tech-expertise__card-header">
             <h2>App Dev</h2>
             <img
@@ -79,7 +97,7 @@ const TechExpertise = () => {
             resonates with your audience, one download at a time.
           </p>
           <i>React Native, Flutter</i>
-        </article>
+        </motion.article>
       </div>
     </section>
   );
