@@ -1,0 +1,2 @@
+User-agent: *
+sitemap: https://www.pixel-insight.com/sitemap.xml

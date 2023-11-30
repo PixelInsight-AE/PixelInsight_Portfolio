@@ -1,6 +1,44 @@
+.progress-bar {
+  position: fixed;
+  top: 54px;
+  @include media-breakpoint-up(md) {
+    top: 60px;
+  }
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: $c-primary;
+  z-index: 6;
+  transform-origin: 0;
+  backdrop-filter: blur(5px);
+  // box-shadow: 0 0 10px rgba($c-body, 0.2);
+  border-radius: 0 5px 5px 0;
+}
+
 .home {
+  .bbb {
+    background:
+      linear-gradient(0deg, #0f0713 0%, rgba(15, 7, 19, 0) 35.5%),
+      linear-gradient(180deg, #0f0713 0%, rgba(15, 7, 19, 0) 100%),
+      linear-gradient(106deg, #000 0%, rgba(69, 33, 0, 0.25) 44.63%),
+      url(../../assets/images/bbb_1.webp),
+      lightgray 50% / cover no-repeat;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .why-choose-bg {
+    background:
+      linear-gradient(0deg, #0f0713 0%, rgba(15, 7, 19, 0) 35.5%),
+      linear-gradient(180deg, #0f0713 0%, rgba(15, 7, 19, 0) 100%),
+      linear-gradient(106deg, #000 0%, rgba(69, 33, 0, 0.25) 44.63%),
+      url(../../assets/images/why_choose_bg.webp),
+      lightgray 50% / cover no-repeat;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   //max-width: 1200px;
-  margin: auto;
   .sub-hero-divider {
     width: 288px;
     margin: auto;
@@ -8,25 +46,60 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: linear-gradient(180deg, #ef913c 0%, #f2446e 100%);
-    margin-top: 4.8rem;
-    margin-bottom: 3.6rem;
+    //margin-top: 4.8rem;
+    //margin-bottom: 3.6rem;
   }
 }
 .quote-success {
-  // height: 80vh;
-  padding-top: 12.8rem;
+  background:
+    linear-gradient(0deg, #0f0713 0%, rgba(15, 7, 19, 0) 35.5%),
+    linear-gradient(180deg, #0f0713 0%, rgba(15, 7, 19, 0) 100%),
+    linear-gradient(106deg, #000 0%, rgba(69, 33, 0, 0.25) 44.63%),
+    url(../../assets/images/why_choose_bg.webp),
+    lightgray 50% / cover no-repeat;
+  height: 100vh;
+  &__card {
+    @include glass-card();
+    padding: 2rem 0.5rem;
+    max-width: 300px;
+  }
   @include flex(column, center, center);
   h1 {
-    text-align: center;
-    font-size: 3.6rem;
+    @include brand-1();
     padding-bottom: 2.4rem;
-    width: 280px;
-    font-weight: 400;
+    font-size: 6rem;
+    background: linear-gradient(
+      92deg,
+      rgba(255, 255, 255, 0.69) 12.85%,
+      rgba(217, 217, 217, 0.69) 88.38%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(md) {
+      font-size: 9.6rem;
+    }
   }
+  h2 {
+    text-align: center;
+    width: 280px;
+    @include brand-2();
+  }
+  h3 {
+    @include brand-4();
+    padding-bottom: 2.4rem;
+  }
+  p {
+    @include brand-5();
+  }
+
   button {
     @include button(#f2446e);
+    @include brand-4();
+
     padding: 0.8rem;
-    width: 268px;
+    width: 175px;
     border-radius: 8px;
     // margin-bottom: 4.8rem;
   }
@@ -81,30 +154,39 @@
 
 .contact {
   @include flex(column, center, center);
+  background:
+    linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
+    url("/assets/images/bg-hero.webp"),
+    lightgray 50% / cover no-repeat;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
   &__header-background {
-    background:
-      linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
-      url("/assets/images/bg-hero.webp"),
-      lightgray 50% / cover no-repeat;
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100vw;
   }
   &__header {
     margin: auto;
     margin-top: 8rem;
     width: 285px;
-    @include glass-card();
+    //@include glass-card();
     @include flex(column, center, center);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    //border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(
+      92deg,
+      rgba(255, 255, 255, 0.69) 12.85%,
+      rgba(217, 217, 217, 0.69) 88.38%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     h1 {
       @include brand-1();
       padding: 1.6rem 0;
     }
     h2 {
-      @include brand-3();
+      @include brand-1();
+
       width: 260px;
     }
     img {
@@ -122,12 +204,13 @@
   }
 
   &__text {
+    @include glass-card();
     @include body-2();
+    padding: 1.6rem;
     max-width: 232px;
     margin-top: 4.8rem;
   }
 }
-
 
 @include media-breakpoint-up(md) {
   .home {
@@ -193,10 +276,36 @@
       }
     }
   }
+  .quote-success {
+    &__card {
+      padding: 3.2rem 2.4rem;
+      @include flex(column, center, center);
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 9.6rem;
+    }
+    h2 {
+      font-size: 4.8rem;
+    }
+    h3 {
+      font-size: 3.6rem;
+    }
+    p {
+      font-size: 2.8rem;
+    }
+    button {
+      @include brand-3();
+      margin-top: 2rem;
+    }
+  }
 
   .contact {
     &__header {
-      width: 320px;
+      width: 420px;
+      h1 {
+        font-size: 5rem;
+      }
     }
     form {
       input,

@@ -1,14 +1,23 @@
 import { ScrollAnimationWhyChoose } from "./ScrollAnimationWhyChoose";
+import { motion } from "framer-motion";
 
 const WhyChoosePixel = () => {
   return (
     <section className="why-choose-pixel">
-      <ScrollAnimationWhyChoose />
       <h2 className="why-choose-pixel__title">Why Choose Pixel Insight?</h2>
       <div className="why-choose-pixel__stagger-box">
-        <article className="why-choose-pixel__card left">
+        <motion.article
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="why-choose-pixel__card left"
+        >
           <section className="why-choose-pixel__card--header">
-            <img src="/assets/svg/creative_tech.svg" alt="" />
+            <img
+              src="/assets/svg/creative_tech.svg"
+              alt="Why choose Pixel Insight. Creativity meets Technology"
+            />
             <h2 className="why-choose-pixel__card--title">
               Creativity Meets Technology
             </h2>
@@ -19,53 +28,94 @@ const WhyChoosePixel = () => {
             creativity and technology is the key to achieving extraordinary
             results.
           </p>
-        </article>
-        <article className="why-choose-pixel__card right">
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="why-choose-pixel__card right"
+        >
           <section className="why-choose-pixel__card--header reverse">
             <h2 className="why-choose-pixel__card--title">
               Client-Centric Approach
             </h2>
-            <img src="/assets/svg/client-approach.svg" alt="" />
+            <img
+              src="/assets/svg/client-approach.svg"
+              alt="Why choose Pixel Insight. Client-centric Approach"
+            />
           </section>
           <p>
             Our client-centric approach means your satisfaction and success are
-            our top priorities.
+            our top priorities. At Pixel our commitment goes beyond just
+            crafting websites; we're dedicated to providing a truly unique
+            experience.
           </p>
-        </article>
-        <article className="why-choose-pixel__card left">
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="why-choose-pixel__card left"
+        >
           <section className="why-choose-pixel__card--header">
-            <img src="/assets/svg/expertise.svg" alt="" />
+            <img
+              src="/assets/svg/expertise.svg"
+              alt="Why choose Pixel Insight. Expertise that Counts."
+            />
             <h2 className="why-choose-pixel__card--title">
               Expertise That Counts
             </h2>
           </section>
           <p>
             We're at the forefront of the industry, leveraging our expertise to
-            drive innovation in every project.
+            drive innovation in every project. Our Expertise ensures robust
+            functionality and a stunning user experience.
           </p>
-        </article>
-        <article className="why-choose-pixel__card right">
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="why-choose-pixel__card right"
+        >
           <section className="why-choose-pixel__card--header reverse">
-            <img src="/assets/svg/collaborative.svg" alt="" />
+            <img
+              src="/assets/svg/collaborative.svg"
+              alt="Why choose Pixel Insight. Collaborative Spirit."
+            />
             <h2 className="why-choose-pixel__card--title">
               Collaborative Spirit
             </h2>
           </section>
           <p>
-            Your ideas and our expertise create a harmonious symphony of
-            collaboration.
+            With Pixel, it's not just about creating a website; it's about
+            co-creating a digital masterpiece that reflects your business
+            essence and values. We work closely with you to ensure your vision
           </p>
-        </article>
-        <article className="why-choose-pixel__card left">
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="why-choose-pixel__card left"
+        >
           <section className="why-choose-pixel__card--header">
             <h2 className="why-choose-pixel__card--title">Results Driven</h2>
-            <img src="/assets/svg/results_driven.svg" alt="" />
+            <img
+              src="/assets/svg/results_driven.svg"
+              alt="Why choose Pixel Insight. Results Driven"
+            />
           </section>
           <p>
-            We measure our success by your satisfaction and the positive impact
-            our solutions bring
+            Join us in this collaborative adventure, where your satisfaction is
+            our top priority. Let's transform your web presence into something
+            extraordinary!
           </p>
-        </article>
+        </motion.article>
       </div>
     </section>
   );

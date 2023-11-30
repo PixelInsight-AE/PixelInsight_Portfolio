@@ -35,22 +35,22 @@ const Header = () => {
             onClick={toggleSideNav}
             className="header__hamburger-menu"
             src="/assets/svg/hamburger.svg"
-            alt=""
+            alt="hamburger menu"
           />
 
           <ul className="header__ul">
-            <Link to="/quote">
-              <li>Get a Quote</li>
-            </Link>
-            <Link to="/portfolio">
-              <li>Portfolio</li>
-            </Link>
             <Link to="/about">
               <li>About</li>
             </Link>
             <Link to="/contact">
               <li className="header__contact">Contact</li>
             </Link>
+            <Link to="/services">
+              <li>Packages</li>
+            </Link>
+            {/* <Link to="/showcase">
+              <li>Showcase</li>
+            </Link> */}
           </ul>
         </motion.nav>
       )}

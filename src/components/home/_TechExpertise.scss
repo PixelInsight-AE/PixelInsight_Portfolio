@@ -65,6 +65,18 @@
     }
   }
 }
+
+@include media-breakpoint-up(md) {
+  .tech-expertise {
+    &__title {
+      font-size: 5.2rem;
+    }
+    &__subtitle {
+      @include body-1();
+      max-width: 400px;
+    }
+  }
+}
 @include media-breakpoint-up(lg) {
   .tech-expertise {
     &__subtitle {
@@ -86,8 +98,17 @@
       linear-gradient(106deg, #000 0%, rgba(69, 33, 0, 0.25) 44.63%),
       url(../../assets/images/space_background.png),
       lightgray 50% / cover no-repeat;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+      font-size: 7.2rem;
+    }
+
     &__subtitle {
       max-width: 575px;
+      @include brand-3();
     }
     &__wrapper {
       grid-template-columns: repeat(4, 1fr);

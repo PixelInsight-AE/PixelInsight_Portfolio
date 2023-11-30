@@ -1,5 +1,6 @@
 import React from "react";
 import { Scrollbar } from "./ScrollBar";
+import { motion } from "framer-motion";
 
 const DiscoverDesignBuildLaunchEnjoy = () => {
   return (
@@ -13,8 +14,14 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
         </p>
       </article>
       <section className="discover-design-build__wrapper">
-        <Scrollbar />
-        <article className="discover-design-build__card-outer left discover">
+        {/*      <Scrollbar /> */}
+        <motion.article
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="discover-design-build__card-outer left discover"
+        >
           <div className="discover-design-build__card-inner">
             <h2>Discover</h2>
             <p>
@@ -23,8 +30,14 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
               roadmap.
             </p>
           </div>
-        </article>
-        <article className="discover-design-build__card-outer right design">
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="discover-design-build__card-outer right design"
+        >
           <div className="discover-design-build__card-inner">
             <h2>Design</h2>
             <p>
@@ -33,8 +46,14 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
               journey is intuitive and engaging."
             </p>
           </div>
-        </article>
-        <article className="discover-design-build__card-outer left build">
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="discover-design-build__card-outer left build"
+        >
           <div className="discover-design-build__card-inner">
             <h2>Build</h2>
             <p>
@@ -43,8 +62,14 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
               functional reality.
             </p>
           </div>
-        </article>
-        <article className="discover-design-build__card-outer right launch">
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="discover-design-build__card-outer right launch"
+        >
           <div className="discover-design-build__card-inner">
             <h2>Launch</h2>
             <p>
@@ -52,8 +77,14 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
               that your web or mobile solution is primed for success.
             </p>
           </div>
-        </article>
-        <article className="discover-design-build__card-outer left enjoy">
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="discover-design-build__card-outer left enjoy"
+        >
           <div className="discover-design-build__card-inner">
             <h2>Enjoy</h2>
             <p>
@@ -62,7 +93,7 @@ const DiscoverDesignBuildLaunchEnjoy = () => {
               relationship.
             </p>
           </div>
-        </article>
+        </motion.article>
       </section>
     </section>
   );

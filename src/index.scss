@@ -10,6 +10,9 @@
 @import "pages/_Pages.scss";
 @import "pages/_Portfolio";
 @import "pages/_About.scss";
+@import "pages/_Services.scss";
+@import "pages/_StarterPackage.scss";
+@import "pages/_StandardPackage.scss";
 
 @import "shared/_Header.scss";
 @import "shared/_ContactForm.scss";
@@ -21,9 +24,11 @@
 @import "components/home/_Hero.scss";
 @import "components/home/_WhatWeDo.scss";
 @import "components/home/_WhatWeDoCards.scss";
+@import "components/home/_Subhero.scss";
 @import "components/home/_DiscoverDesignBuildLaunchEnjoy.scss";
 @import "components/home/_Scrollbar.scss";
 @import "components/home/_ScrollAnimationWhyChoose.scss";
 @import "components/home/_TechExpertise.scss";
 @import "components/home/_FAQ.scss";
 @import "components/home/_WhyChoosePixel.scss";
+@import "components/home/_WebsitePackages.scss";

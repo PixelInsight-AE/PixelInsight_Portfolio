@@ -16,47 +16,66 @@ const SideNavigation = ({ isOpen, onClick }) => {
         >
           <nav className="side-navigation__nav">
             <div className="side-navigation__title-wrapper">
-              <img src="/assets/svg/logo_2.svg" alt="" />
+              <img
+                src="/assets/svg/logo_2.svg"
+                alt="The Pixel Insight logo, showing the letter P in a pixel art style"
+              />
               <h1 className="side-navigation__title">
                 <span>P</span>ixel Insight
               </h1>
             </div>
             <ul>
-              <Link to="/">
-                <li>Home</li>
-              </Link>
-              <Link to="/portfolio">
-                <li>Portfolio</li>
-              </Link>
               <Link to="/about">
                 <li>About</li>
               </Link>
               <Link to="/contact">
                 <li>Contact</li>
               </Link>
-              <Link to="/quote">
-                <li>Get a Quote</li>
+
+              <Link to="/services">
+                <li>Packages</li>
               </Link>
+              {/* <Link to="/showcase">
+                <li>Showcase</li>
+              </Link> */}
+              {/*               <Link to="/quote">
+                <li>Get a Quote</li>
+              </Link> */}
             </ul>
           </nav>
           <section className="side-navigation__social-media">
             <a href="https://github.com/PixelInsight-AE" target="_blank">
-              <img src="/assets/svg/github.svg" alt="" />
+              <img
+                src="/assets/svg/github.svg"
+                alt="A button showing the GitHub logo"
+              />
             </a>
             <a href="https://twitter.com/pixel_insight" target="_blank">
-              <img src="/assets/svg/twitter.svg" alt="" />
+              <img
+                src="/assets/svg/twitter.svg"
+                alt="A button showing the X logo"
+              />
             </a>
             <a href="https://www.facebook.com/PixelInsightAE/" target="_blank">
-              <img src="/assets/svg/facebook.svg" alt="" />
+              <img
+                src="/assets/svg/facebook.svg"
+                alt="A button showing the Meta logo"
+              />
             </a>
             <a href="https://github.com/PixelInsight-AE" target="_blank">
-              <img src="/assets/svg/linkedin.svg" alt="" />
+              <img
+                src="/assets/svg/linkedin.svg"
+                alt="A button showing the LinkedIn logo"
+              />
             </a>
             <a
               href="https://www.instagram.com/pixel_insight_ae/"
               target="_blank"
             >
-              <img src="/assets/svg/instagram.svg" alt="" />
+              <img
+                src="/assets/svg/instagram.svg"
+                alt="A button showing the instagram logo"
+              />
             </a>
           </section>
         </motion.aside>

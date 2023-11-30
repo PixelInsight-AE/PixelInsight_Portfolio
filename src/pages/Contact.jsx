@@ -7,6 +7,8 @@ import { Header } from "../shared/Header";
 import Footer from "../shared/Footer";
 import ContactForm from "../shared/ContactForm";
 import GetAQuote from "../shared/GetAQuote";
+import SocialMediaIcons from "../shared/SocialMediaIcons";
+
 const Contact = () => {
   return (
     <>
@@ -34,37 +36,59 @@ const Contact = () => {
       </Helmet>
       <Header />
       <div className="contact">
-        <div className="contact__header-background">
+        <motion.div
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="contact__header-background"
+        >
           <div className="contact__header">
-            <h1>Contact</h1>
-            <h2>Connect with us! Your Questions, Our Answers!</h2>
-            <section className="contact__social-media">
-              <a href="https://github.com/PixelInsight-AE" target="_blank">
-                <img src="/assets/svg/github.svg" alt="" />
-              </a>
-              <a href="https://twitter.com/pixel_insight" target="_blank">
-                <img src="/assets/svg/x.svg" alt="" />
-              </a>
-              <a
-                href="https://www.facebook.com/PixelInsightAE/"
-                target="_blank"
-              >
-                <img src="/assets/svg/meta.svg" alt="" />
-              </a>
-              <a href="https://github.com/PixelInsight-AE" target="_blank">
-                <img src="/assets/svg/linkedin.svg" alt="" />
-              </a>
-              <a
-                href="https://www.instagram.com/pixel_insight_ae/"
-                target="_blank"
-              >
-                <img src="/assets/svg/instagram.svg" alt="" />
-              </a>
-            </section>
+            <h1>Connect with us! Your Questions, Our Answers!</h1>
           </div>
-        </div>
-
-        <p className="contact__text">
+        </motion.div>
+        <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2, delay: 0.2 }}
+          className="hero__social-media"
+        >
+          <a href="https://github.com/PixelInsight-AE" target="_blank">
+            <img
+              src="/assets/svg/github.svg"
+              alt="social media icons to pixel insight github"
+            />
+          </a>
+          <a href="https://twitter.com/pixel_insight" target="_blank">
+            <img
+              src="/assets/svg/x.svg"
+              alt="social media icons to pixel insight twitter"
+            />
+          </a>
+          <a href="https://www.facebook.com/PixelInsightAE/" target="_blank">
+            <img
+              src="/assets/svg/meta.svg"
+              alt="social media icon for pixel insight facebook"
+            />
+          </a>
+          <a href="https://github.com/PixelInsight-AE" target="_blank">
+            <img
+              src="/assets/svg/linkedin.svg"
+              alt="social media icon for pixel insght linkedin"
+            />
+          </a>
+          <a href="https://www.instagram.com/pixel_insight_ae/" target="_blank">
+            <img
+              src="/assets/svg/instagram.svg"
+              alt="social media icons for pixel insight instagram"
+            />
+          </a>
+        </motion.section>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          className="contact__text"
+        >
           At Pixel Insight, we value your input, questions, and feedback.
           Whether you're interested in our services, have inquiries about
           ongoing projects, or simply want to say hello, we're here to listen
@@ -73,10 +97,9 @@ const Contact = () => {
           out the form below or reach out through our provided contact details.
           We look forward to connecting with you and exploring the exciting
           possibilities ahead.
-        </p>
-        <ContactForm />
-        <GetAQuote />
+        </motion.p>
       </div>
+      <ContactForm />
       <Footer />
     </>
   );

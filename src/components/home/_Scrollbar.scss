@@ -2,7 +2,6 @@
   margin-top: 7.2rem;
   @include flex(column, center, center);
   position: absolute;
-  left: 5px;
   // top: -10px;
   .dot {
     @include size(8px, 8px);
@@ -30,12 +29,10 @@
 @include media-breakpoint-up(md) {
   .scrollbar {
     left: 50%;
-    transform: translateX(-50%);
   }
 }
 @include media-breakpoint-up(lg) {
   .scrollbar {
-    top: 175%;
     .lg {
       display: block;
     }

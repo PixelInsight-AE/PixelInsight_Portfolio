@@ -1,0 +1,14 @@
+.subhero {
+  @include flex(column, center, center);
+  max-width: 600px;
+  gap: 1.6rem;
+  margin: 0 auto;
+  h2 {
+    @include brand-2;
+    padding: 1.6rem;
+  }
+  p {
+    @include body-1;
+    padding: 3.2rem;
+  }
+}
