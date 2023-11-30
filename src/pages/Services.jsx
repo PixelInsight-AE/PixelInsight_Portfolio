@@ -184,7 +184,7 @@ const Services = () => {
 
     const isValid = await validateEmail(email);
     if (isValid === false) {
-      return;
+      return setError("Please enter a valid email");
     }
     const { error } = await supabase
       .from("pixel_quotes")
@@ -273,6 +273,7 @@ const Services = () => {
           className="services__form"
         >
           <h3>Initial Consultation is Free</h3>
+          {error && <p className="form-error">{error}</p>}
           <section className="services__form-top">
             <div className="services__form-top-inputs">
               <input
