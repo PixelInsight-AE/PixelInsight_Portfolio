@@ -5,23 +5,7 @@ import { Helmet } from "react-helmet-async";
 const QuoteSuccess = () => {
   return (
     <>
-      <Helmet
-        script={() => {
-          <>
-            <script
-              async
-              src="https://www.googletagmanager.com/gtag/js?id=G-8ZQZQZQZQZ"
-            ></script>
-            <script>
-              gtag('event', 'manual_conversion_REQUEST_QUOTE_1',{" "}
-              {
-                // <event_parameters>
-              }
-              );
-            </script>
-          </>;
-        }}
-      >
+      <Helmet>
         <meta name="author" content="Pixel Insight" />
         <meta property="og:image" content="https://i.imgur.com/Owid3YP.png" />
         <meta property="og:title" content="Pixel Insight" />
