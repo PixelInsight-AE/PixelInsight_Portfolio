@@ -1,8 +1,8 @@
 .progress-bar {
   position: fixed;
-  top: 54px;
+  top: 46px;
   @include media-breakpoint-up(md) {
-    top: 60px;
+    top: 54px;
   }
   left: 0;
   right: 0;
