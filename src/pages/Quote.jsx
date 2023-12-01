@@ -183,7 +183,7 @@ const Quote = () => {
     <>
       <Helmet>
         <meta name="author" content="Pixel Insight" />
-        <meta property="og:image" content="https://i.imgur.com/LOFe11P.png" />
+        <meta property="og:image" content="https://i.imgur.com/Owid3YP.png" />
         <meta property="og:title" content="Pixel Insight" />
         <meta
           name="description"
@@ -200,7 +200,7 @@ const Quote = () => {
           name="twitter:description"
           content="Pixel Insight: Get your Free Quote today! We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference"
         />
-        <meta name="twitter:image" content="https://i.imgur.com/LOFe11P.png" />
+        <meta name="twitter:image" content="https://i.imgur.com/Owid3YP.png" />
         <title>Get a Free Quote</title>
       </Helmet>
       <Header />
