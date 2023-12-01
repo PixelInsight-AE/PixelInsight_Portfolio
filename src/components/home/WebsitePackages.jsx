@@ -29,7 +29,6 @@ const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            onClick={() => setSelectedPackage("starter")}
             className="website-packages__card starter-data"
           >
             <div className="website-packages__card-top">
@@ -52,6 +51,7 @@ const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
             {window.location.pathname === "/services" ? (
               <button
                 onClick={() => {
+                  setSelectedPackage("starter");
                   document
                     .getElementById("service-form")
                     .scrollIntoView({ behavior: "smooth" });
@@ -75,7 +75,6 @@ const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            onClick={() => setSelectedPackage("standard")}
             className="website-packages__card taller"
           >
             <div className="website-packages__card-top">
@@ -100,6 +99,7 @@ const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
             {window.location.pathname === "/services" ? (
               <button
                 onClick={() => {
+                  setSelectedPackage("standard");
                   document
                     .getElementById("service-form")
                     .scrollIntoView({ behavior: "smooth" });
@@ -123,7 +123,6 @@ const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            onClick={() => setSelectedPackage("premium")}
             className="website-packages__card premium premium-data"
           >
             <div className="website-packages__card-top">
@@ -151,6 +150,7 @@ const WebsitePackages = ({ selectedPackage, setSelectedPackage }) => {
             {window.location.pathname === "/services" ? (
               <button
                 onClick={() => {
+                  setSelectedPackage("premium");
                   document
                     .getElementById("service-form")
                     .scrollIntoView({ behavior: "smooth" });

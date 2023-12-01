@@ -1,7 +1,6 @@
 .why-choose-pixel {
   @include flex(column, center, center);
 
-  width: 100vw;
   padding-bottom: 4rem;
   .lg {
     display: none;

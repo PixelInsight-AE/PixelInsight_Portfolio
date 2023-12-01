@@ -1,3 +1,5 @@
+import supabase from "../config/supabase";
+
 const getAPIkey = async () => {
   const { data, error } = await supabase.rpc("fn_mailer_check_key");
   if (error) return setError(error.message);
@@ -22,10 +24,13 @@ const validateEmail = async (email) => {
     if (result.status === "valid") {
       return true;
     } else {
-      alert("Please enter a valid email");
+      console.log(result, "mailer check results");
+      console.log(error, "error");
+
       return false;
     }
   } catch (err) {
+    console.log(err);
     return false;
   }
 };

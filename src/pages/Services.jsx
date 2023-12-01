@@ -298,7 +298,7 @@ const Services = () => {
               />
               <h4>Package Selected</h4>
               <select
-                onChange={(e) => selectedPackage(e.target.value)}
+                onChange={(e) => setSelectedPackage(e.target.value)}
                 name="selected-package"
                 id=""
                 value={selectedPackage}

@@ -7,7 +7,7 @@ const WhyChoosePixel = () => {
       <h2 className="why-choose-pixel__title">Why Choose Pixel Insight?</h2>
       <div className="why-choose-pixel__stagger-box">
         <motion.article
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
@@ -30,7 +30,7 @@ const WhyChoosePixel = () => {
           </p>
         </motion.article>
         <motion.article
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
@@ -53,7 +53,7 @@ const WhyChoosePixel = () => {
           </p>
         </motion.article>
         <motion.article
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
@@ -75,7 +75,7 @@ const WhyChoosePixel = () => {
           </p>
         </motion.article>
         <motion.article
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
@@ -97,7 +97,7 @@ const WhyChoosePixel = () => {
           </p>
         </motion.article>
         <motion.article
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}

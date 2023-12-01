@@ -73,7 +73,7 @@ const Home = () => {
     <>
       <Helmet>
         <meta name="author" content="Pixel Insight" />
-        <meta property="og:image" content="https://i.imgur.com/Owid3YP.png" />
+        <meta property="og:image" content="https://i.imgur.com/LOFe11P.png" />
         <meta property="og:title" content="Pixel Insight" />
         <meta
           name="description"
@@ -94,10 +94,6 @@ const Home = () => {
         <title>Pixel Insight</title>
       </Helmet>
       <Header />
-      <motion.div
-        className="progress-bar"
-        style={{ scaleX: scrollYProgress }}
-      />
 
       <div className="home">
         <Hero />

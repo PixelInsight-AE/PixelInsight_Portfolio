@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <HelmetProvider>
       <BrowserRouter>
         <CookieConsent
-          loaction="bottom"
+          location="bottom"
           style={{
             background:
               "linear-gradient(91deg,rgba(40,35,59,0.85) 0%, rgba(21,15,47,0.75)100%)",

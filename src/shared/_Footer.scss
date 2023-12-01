@@ -1,6 +1,7 @@
 .footer {
   @include flex(row, space-between, center);
   background-color: #28233b;
+  width: 100%;
   &__logo {
     @include size(16px, 16px);
     padding: 0.8rem;
