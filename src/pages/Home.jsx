@@ -97,7 +97,7 @@ const Home = () => {
 
       <div className="home">
         <Hero />
-        {/* <Subhero /> */}
+        <Subhero />
 
         {windowWidth <= 768 && (
           <Swiper
@@ -125,9 +125,9 @@ const Home = () => {
         )}
 
         {windowWidth > 768 && <WebsitePackages />}
-        <div className="why-choose-bg">
+        {/*        <div className="why-choose-bg">
           <WhyChoosePixel />
-        </div>
+        </div> */}
         {/* <WhatWeDoCards /> */}
         <div className="sub-hero-divider"></div>
 
