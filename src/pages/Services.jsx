@@ -12,6 +12,16 @@ import supabase from "../config/supabase";
 import { validateEmail } from "../utilitys/utilitys";
 
 export const StandardPackageCard = ({ setSelectedPackage }) => {
+  const navigate = useNavigate();
+  const isHomePage = () => {
+    navigate("/services");
+  };
+  const isServicesPage = () => {
+    setSelectedPackage("standard");
+    document
+      .getElementById("service-form")
+      .scrollIntoView({ behavior: "smooth", bottom: 0 }, 1000);
+  };
   return (
     <div className="website-packages__card-wrapper">
       <article className="website-packages__card taller">
@@ -34,12 +44,9 @@ export const StandardPackageCard = ({ setSelectedPackage }) => {
         <h2 className="website-packages__price">$1999</h2>
         <button
           className="cta-button"
-          onClick={() => {
-            setSelectedPackage("standard");
-            document
-              .getElementById("service-form")
-              .scrollIntoView({ behavior: "smooth", bottom: 0 }, 1000);
-          }}
+          onClick={
+            window.location.pathname === "/" ? isHomePage : isServicesPage
+          }
         >
           Select
         </button>
@@ -49,6 +56,16 @@ export const StandardPackageCard = ({ setSelectedPackage }) => {
 };
 
 export const StarterPackageCard = ({ setSelectedPackage }) => {
+  const navigate = useNavigate();
+  const isHomePage = () => {
+    navigate("/services");
+  };
+  const isServicesPage = () => {
+    setSelectedPackage("starter");
+    document
+      .getElementById("service-form")
+      .scrollIntoView({ behavior: "smooth", bottom: 0 }, 1000);
+  };
   return (
     <div className="website-packages__card-wrapper">
       <article className="website-packages__card starter-data">
@@ -71,12 +88,9 @@ export const StarterPackageCard = ({ setSelectedPackage }) => {
         <h2 className="website-packages__price">$999</h2>
         <button
           className="cta-button"
-          onClick={() => {
-            setSelectedPackage("starter");
-            document
-              .getElementById("service-form")
-              .scrollIntoView({ behavior: "smooth", bottom: 0 }, 1000);
-          }}
+          onClick={
+            window.location.pathname === "/" ? isHomePage : isServicesPage
+          }
         >
           Select
         </button>
@@ -85,6 +99,16 @@ export const StarterPackageCard = ({ setSelectedPackage }) => {
   );
 };
 export const PremiumPackageCard = ({ setSelectedPackage }) => {
+  const navigate = useNavigate();
+  const isHomePage = () => {
+    navigate("/services");
+  };
+  const isServicesPage = () => {
+    setSelectedPackage("starter");
+    document
+      .getElementById("service-form")
+      .scrollIntoView({ behavior: "smooth", bottom: 0 }, 1000);
+  };
   return (
     <div className="website-packages__card-wrapper">
       <article className="website-packages__card premium premium-data">
@@ -112,12 +136,9 @@ export const PremiumPackageCard = ({ setSelectedPackage }) => {
         <button
           className="cta-button"
           style={{ color: "white" }}
-          onClick={() => {
-            document
-              .getElementById("service-form")
-              .scrollIntoView({ behavior: "smooth", bottom: 0 }, 1000);
-            setSelectedPackage("premium");
-          }}
+          onClick={
+            window.location.pathname === "/" ? isHomePage : isServicesPage
+          }
         >
           Select
         </button>

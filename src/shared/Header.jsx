@@ -50,9 +50,9 @@ const Header = () => {
               <Link to="/services">
                 <li>Packages</li>
               </Link>
-              {/* <Link to="/showcase">
-              <li>Showcase</li>
-            </Link> */}
+              <Link to="/showcase">
+                <li>Showcase</li>
+              </Link>
             </ul>
           </motion.nav>
         )}

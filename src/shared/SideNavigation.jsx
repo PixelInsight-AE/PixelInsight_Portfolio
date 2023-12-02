@@ -35,9 +35,9 @@ const SideNavigation = ({ isOpen, onClick }) => {
               <Link to="/services">
                 <li>Packages</li>
               </Link>
-              {/* <Link to="/showcase">
+              <Link to="/showcase">
                 <li>Showcase</li>
-              </Link> */}
+              </Link>
               {/*               <Link to="/quote">
                 <li>Get a Quote</li>
               </Link> */}

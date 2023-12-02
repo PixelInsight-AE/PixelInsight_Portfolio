@@ -1,4 +1,18 @@
 .portfolio {
+  .showcase {
+    &__image {
+      width: 80%;
+      height: 100%;
+      border-radius: 12px;
+      @include media-breakpoint-up(lg) {
+        max-width: 55%;
+      }
+    }
+    h3 {
+      @include brand-2();
+      padding: 1.2rem 0;
+    }
+  }
   width: 100%;
   .swiper-prev {
     z-index: 100;
@@ -18,16 +32,45 @@
     background: none;
     border: none;
   }
+  .portfolio-intro {
+    @include glass-card();
+    @include flex(column, center, center);
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0.8rem 0;
+    margin-bottom: 3.2rem;
+
+    @include media-breakpoint-up(md) {
+      max-width: 80%;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 55%;
+    }
+
+    h3 {
+      @include brand-1();
+      font-size: 4rem;
+      letter-spacing: 0.25px;
+      padding: 1.2rem 0;
+      @include media-breakpoint-up(md) {
+        font-size: 6rem;
+      }
+    }
+    p {
+      @include body-1();
+      width: 600px;
+    }
+  }
   &__carousel {
-    position: relative;
-    padding-top: 8rem;
     background:
       linear-gradient(353deg, #0f0713 13.79%, rgba(48, 23, 0, 0) 78.44%),
-      url("/assets/images/bg-hero.webp"),
+      url("/assets/images/why_choose_abstract.webp"),
       lightgray 50% / cover no-repeat;
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    padding-top: 8rem;
   }
   &__button-wrapper {
     @include flex(row, flex-end, center);
@@ -93,5 +136,47 @@
       rgba(242, 68, 110, 0.1) 101.17%
     );
     border-radius: 16px;
+  }
+  &__tech-stack-wrapper {
+    @include flex(column, center, center);
+    h2 {
+      @include brand-2();
+      padding: 1.2rem 0;
+    }
+    padding-bottom: 3.2rem;
+  }
+  .portfolio-piece-image {
+    max-width: 80%;
+
+    @include media-breakpoint-up(md) {
+      max-width: 55%;
+    }
+  }
+  // .chatwave {
+  //   width: 80%;
+  // }
+  .portfolio-info {
+    @include brand-4();
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2.4rem 0;
+    @include media-breakpoint-up(md) {
+      max-width: 450px;
+      @include brand-3();
+    }
+  }
+  &__tech-stack {
+    @include flex(row, center, center);
+    li {
+      @include flex(column, space-evenly, center);
+      height: 150px;
+      width: 250px;
+      @include brand-4();
+      margin: 0 0.8rem;
+      padding: 0.8rem 0.4rem;
+      border-radius: 12px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      @include glass-card();
+    }
   }
 }
