@@ -1,3 +1,5 @@
+import Senmpai from "../components/portfolio/SENMPAI";
+import RateMyLoaf from "../components/portfolio/RateMyLoaf";
 import FakeFlorist from "../components/portfolio/FakeFlorist";
 import ChatWave from "../components/portfolio/Chatwave";
 import FoodDeliveryWebsite from "../components/portfolio/FastBites";
@@ -28,8 +30,12 @@ const PortfolioConditional = ({ state }) => {
       return <FoodDeliveryWebsite />;
     case "FakeFlorist":
       return <FakeFlorist />;
+    case "RateMyLoaf":
+      return <RateMyLoaf />;
+    case "Senmpai":
+      return <Senmpai />;
     default:
-      return <ChatWave />;
+      return <RateMyLoaf />;
   }
 };
 
@@ -81,6 +87,25 @@ const Portfolio = () => {
             <SwiperSlide className="showcase">
               <img
                 onClick={() => {
+                  setPiece("Senmpai");
+                  document.getElementById("piece").scrollIntoView(
+                    {
+                      behavior: "smooth",
+                      bottom: 0,
+                    },
+
+                    { duration: 1000 }
+                  );
+                }}
+                className="showcase__image"
+                src="/assets/images/senpa.webp"
+                alt="south east new mexico podiatry"
+              />
+              <h3>South East New Mexico Podiatry</h3>
+            </SwiperSlide>
+            <SwiperSlide className="showcase">
+              <img
+                onClick={() => {
                   setPiece("ChatWave");
                   document.getElementById("piece").scrollIntoView(
                     {
@@ -96,6 +121,24 @@ const Portfolio = () => {
                 alt=""
               />
               <h3>Chat Wave by: Pixel</h3>
+            </SwiperSlide>
+            <SwiperSlide className="showcase">
+              <img
+                onClick={() => {
+                  setPiece("RateMyLoaf");
+                  document
+                    .getElementById("piece")
+                    .scrollIntoView(
+                      { behavior: "smooth", bottom: 0 },
+                      { duration: 1000 }
+                    );
+                }}
+                className="showcase__image"
+                style={{ border: "15px solid black" }}
+                src="/assets/images/rml.webp"
+                alt="Rate My Loaf"
+              />
+              <h3>Rate My Loaf</h3>
             </SwiperSlide>
             <SwiperSlide className="showcase">
               <img
