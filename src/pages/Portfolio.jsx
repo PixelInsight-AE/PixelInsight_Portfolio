@@ -40,7 +40,7 @@ const PortfolioConditional = ({ state }) => {
 };
 
 const Portfolio = () => {
-  const [piece, setPiece] = useState("ChatWave");
+  const [piece, setPiece] = useState("RateMyLoaf");
 
   return (
     <>
@@ -87,6 +87,24 @@ const Portfolio = () => {
             <SwiperSlide className="showcase">
               <img
                 onClick={() => {
+                  setPiece("RateMyLoaf");
+                  document
+                    .getElementById("piece")
+                    .scrollIntoView(
+                      { behavior: "smooth", bottom: 0 },
+                      { duration: 1000 }
+                    );
+                }}
+                className="showcase__image"
+                style={{ border: "15px solid black" }}
+                src="/assets/images/rml.webp"
+                alt="Rate My Loaf"
+              />
+              <h3>Rate My Loaf</h3>
+            </SwiperSlide>
+            <SwiperSlide className="showcase">
+              <img
+                onClick={() => {
                   setPiece("Senmpai");
                   document.getElementById("piece").scrollIntoView(
                     {
@@ -122,24 +140,7 @@ const Portfolio = () => {
               />
               <h3>Chat Wave by: Pixel</h3>
             </SwiperSlide>
-            <SwiperSlide className="showcase">
-              <img
-                onClick={() => {
-                  setPiece("RateMyLoaf");
-                  document
-                    .getElementById("piece")
-                    .scrollIntoView(
-                      { behavior: "smooth", bottom: 0 },
-                      { duration: 1000 }
-                    );
-                }}
-                className="showcase__image"
-                style={{ border: "15px solid black" }}
-                src="/assets/images/rml.webp"
-                alt="Rate My Loaf"
-              />
-              <h3>Rate My Loaf</h3>
-            </SwiperSlide>
+
             <SwiperSlide className="showcase">
               <img
                 onClick={() => {
