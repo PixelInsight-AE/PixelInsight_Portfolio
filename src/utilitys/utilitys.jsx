@@ -2,7 +2,7 @@ import supabase from "../config/supabase";
 
 const getAPIkey = async () => {
   const { data, error } = await supabase.rpc("fn_mailer_check_key");
-  if (error) return setError(error.message);
+  if (error) return error.message;
   return data;
 };
 const validateEmail = async (email) => {
