@@ -152,6 +152,31 @@
       max-width: 55%;
     }
   }
+  .rate-my-loaf {
+    @include flex(column, center, center);
+    &__qr-codes {
+      max-width: 320px;
+      margin: 2rem auto;
+      img {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .rate-my-loaf {
+      &__qr-codes {
+        @include flex(row, space-evenly, center);
+        max-width: 600px;
+      }
+      &__qr-wrapper {
+        h3 {
+          @include brand-2();
+          padding: 1.2rem 0;
+        }
+        margin-left: 1.2rem;
+      }
+    }
+  }
   .chatwave {
     max-width: 35%;
     @include media-breakpoint-up(md) {

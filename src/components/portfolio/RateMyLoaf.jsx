@@ -12,18 +12,24 @@ const RateMyLoaf = () => {
       </p>
       <YouTube videoId="bp5BBvlBLYA" opts={options} />
       <section className="rate-my-loaf__qr-codes">
-        <a href="https://play.google.com/store/apps/details?id=com.pixelinsight.rml&hl=en_US&gl=US">
-          <img
-            src="/assets/images/androidQR.webp"
-            alt="google play store QR code"
-          />
-        </a>
-        <a href="https://apps.apple.com/ca/app/rate-my-loaf/id6476428013">
-          <img
-            src="/assets/images/androidQR.webp"
-            alt="apple app store QR code"
-          />
-        </a>
+        <section className="rate-my-loaf__qr-wrapper">
+          <h3>Google Play Store</h3>
+          <a href="https://play.google.com/store/apps/details?id=com.pixelinsight.rml&hl=en_US&gl=US">
+            <img
+              src="/assets/images/androidQR3.png"
+              alt="google play store QR code"
+            />
+          </a>
+        </section>
+        <section className="rate-my-loaf__qr-wrapper">
+          <h3>Apple App Store</h3>
+          <a href="https://apps.apple.com/ca/app/rate-my-loaf/id6476428013">
+            <img
+              src="/assets/images/appleQR1.png"
+              alt="apple app store QR code"
+            />
+          </a>
+        </section>
       </section>
       <section>
         <section className="portfolio__tech-stack-wrapper">
