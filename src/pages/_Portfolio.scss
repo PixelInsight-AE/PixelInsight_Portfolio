@@ -155,6 +155,10 @@
   .rate-my-loaf {
     @include flex(column, center, center);
     &__qr-codes {
+      h3 {
+        @include brand-2();
+        padding: 1.2rem 0;
+      }
       max-width: 320px;
       margin: 2rem auto;
       img {
@@ -167,12 +171,12 @@
       &__qr-codes {
         @include flex(row, space-evenly, center);
         max-width: 600px;
-      }
-      &__qr-wrapper {
         h3 {
           @include brand-2();
           padding: 1.2rem 0;
         }
+      }
+      &__qr-wrapper {
         margin-left: 1.2rem;
       }
     }

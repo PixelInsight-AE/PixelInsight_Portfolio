@@ -1,8 +1,13 @@
 import YouTube from "react-youtube";
+import { useState } from "react";
 const RateMyLoaf = () => {
+  const [selected, setSelected] = useState("google");
   const options = {
     height: "750",
     width: "385",
+  };
+  const blurStyle = {
+    filter: "blur(8px)",
   };
   return (
     <div>
@@ -12,23 +17,75 @@ const RateMyLoaf = () => {
       </p>
       <YouTube videoId="bp5BBvlBLYA" opts={options} />
       <section className="rate-my-loaf__qr-codes">
-        <section className="rate-my-loaf__qr-wrapper">
-          <h3>Google Play Store</h3>
-          <a href="https://play.google.com/store/apps/details?id=com.pixelinsight.rml&hl=en_US&gl=US">
-            <img
-              src="/assets/images/androidQR3.png"
-              alt="google play store QR code"
-            />
-          </a>
+        <section
+          onClick={() => setSelected("google")}
+          className="rate-my-loaf__qr-wrapper"
+        >
+          <h3
+            style={
+              selected === "google"
+                ? {
+                    border: "2px solid white",
+                    padding: "10px",
+                    borderRadius: "12px",
+                    marginBottom: "10px",
+                  }
+                : null
+            }
+          >
+            Google Play Store
+          </h3>
+          {selected === "google" ? (
+            <a href="https://play.google.com/store/apps/details?id=com.pixelinsight.rml&hl=en_US&gl=US">
+              <img
+                src="/assets/images/androidQR3.png"
+                alt="google play store QR code"
+              />
+            </a>
+          ) : (
+            <div>
+              <img
+                style={selected === "apple" ? blurStyle : {}}
+                src="/assets/images/androidQR3.png"
+                alt="google play store QR code"
+              />
+            </div>
+          )}
         </section>
-        <section className="rate-my-loaf__qr-wrapper">
-          <h3>Apple App Store</h3>
-          <a href="https://apps.apple.com/ca/app/rate-my-loaf/id6476428013">
-            <img
-              src="/assets/images/appleQR1.png"
-              alt="apple app store QR code"
-            />
-          </a>
+        <section
+          onClick={() => setSelected("apple")}
+          className="rate-my-loaf__qr-wrapper"
+        >
+          <h3
+            style={
+              selected === "apple"
+                ? {
+                    border: "2px solid white",
+                    padding: "10px",
+                    borderRadius: "12px",
+                    marginBottom: "10px",
+                  }
+                : null
+            }
+          >
+            Apple App Store
+          </h3>
+          {selected === "apple" ? (
+            <a href="https://apps.apple.com/ca/app/rate-my-loaf/id6476428013">
+              <img
+                src="/assets/images/appleQR1.png"
+                alt="apple app store QR code"
+              />
+            </a>
+          ) : (
+            <div>
+              <img
+                style={selected === "google" ? blurStyle : {}}
+                src="/assets/images/appleQR1.png"
+                alt="apple app store QR code"
+              />
+            </div>
+          )}
         </section>
       </section>
       <section>
