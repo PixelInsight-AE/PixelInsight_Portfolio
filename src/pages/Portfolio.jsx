@@ -1,4 +1,3 @@
-import Senmpai from "../components/portfolio/SENMPAI";
 import RateMyLoaf from "../components/portfolio/RateMyLoaf";
 import FakeFlorist from "../components/portfolio/FakeFlorist";
 import ChatWave from "../components/portfolio/Chatwave";
@@ -11,6 +10,7 @@ import { Helmet } from "react-helmet-async";
 import { Header } from "../shared/Header";
 import Footer from "../shared/Footer";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import Senmpai from "../components/portfolio/Senmpai.jsx";
 import {
   Navigation,
   Pagination,
