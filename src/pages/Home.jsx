@@ -77,7 +77,7 @@ const Home = () => {
         <meta property="og:title" content="Pixel Insight" />
         <meta
           name="description"
-          content="Pixel Insight: Where Creativity Meets Technology. We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference."
+          content="Pixel Insight: Where Creativity Meets Technology. We specialize in web and mobile app development, design, and digital marketing. Explore our digital solutions that make a difference. Serving Carlsbad NM, Locally and the World Globally."
         />
 
         <meta property="og:url" content="https://pixel-insight.com" />
@@ -99,7 +99,7 @@ const Home = () => {
         <Hero />
         <Subhero />
 
-        {windowWidth <= 768 && (
+        {/* {windowWidth <= 768 && (
           <Swiper
             modules={[Navigation, Pagination]}
             slidesPerView={1}
@@ -124,7 +124,7 @@ const Home = () => {
           </Swiper>
         )}
 
-        {windowWidth > 768 && <WebsitePackages />}
+        {windowWidth > 768 && <WebsitePackages />} */}
         {/*        <div className="why-choose-bg">
           <WhyChoosePixel />
         </div> */}
