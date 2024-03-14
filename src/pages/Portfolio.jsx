@@ -2,6 +2,7 @@ import RateMyLoaf from "../components/portfolio/RateMyLoaf";
 import FakeFlorist from "../components/portfolio/FakeFlorist";
 import ChatWave from "../components/portfolio/Chatwave";
 import FoodDeliveryWebsite from "../components/portfolio/FastBites";
+import AxieHomelandWiki from "../components/portfolio/AxieHomelandWiki";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -34,8 +35,10 @@ const PortfolioConditional = ({ state }) => {
       return <RateMyLoaf />;
     case "Senmpai":
       return <Senmpai />;
+    case "AxieHomelandWiki":
+      return <AxieHomelandWiki />;
     default:
-      return <RateMyLoaf />;
+      return <AxieHomelandWiki />;
   }
 };
 
@@ -135,7 +138,7 @@ const Portfolio = () => {
                   );
                 }}
                 className="showcase__image"
-                src="/assets/images/senpa.webp"
+                src="/assets/images/senpa.png"
                 alt="south east new mexico podiatry"
               />
               <h3>South East New Mexico Podiatry</h3>
@@ -195,6 +198,25 @@ const Portfolio = () => {
                 alt=""
               />
               <h3>FastBites Food Delivery</h3>
+            </SwiperSlide>
+            <SwiperSlide className="showcase">
+              <img
+                onClick={() => {
+                  setPiece("AxieHomelandWiki");
+                  document.getElementById("piece").scrollIntoView(
+                    {
+                      behavior: "smooth",
+                      top: 0,
+                    },
+
+                    { duration: 1000 }
+                  );
+                }}
+                className="showcase__image"
+                src="/assets/images/axie-homeland.png"
+                alt=""
+              />
+              <h3>Axie Homeland Wiki</h3>
             </SwiperSlide>
           </Swiper>
         </section>
