@@ -3,6 +3,7 @@ import RateMyLoaf from "../components/portfolio/RateMyLoaf";
 import FakeFlorist from "../components/portfolio/FakeFlorist";
 import ChatWave from "../components/portfolio/Chatwave";
 import FoodDeliveryWebsite from "../components/portfolio/FastBites";
+import AxieHomelandWiki from "../components/portfolio/AxieHomelandWiki";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -11,12 +12,7 @@ import { Helmet } from "react-helmet-async";
 import { Header } from "../shared/Header";
 import Footer from "../shared/Footer";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  EffectCoverflow,
-  Autoplay,
-} from "swiper/modules";
+import { Navigation, Pagination, EffectCoverflow, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
@@ -34,8 +30,10 @@ const PortfolioConditional = ({ state }) => {
       return <RateMyLoaf />;
     case "Senmpai":
       return <Senmpai />;
+    case "AxieHomelandWiki":
+      return <AxieHomelandWiki />;
     default:
-      return <RateMyLoaf />;
+      return <AxieHomelandWiki />;
   }
 };
 
@@ -88,12 +86,7 @@ const Portfolio = () => {
               <img
                 onClick={() => {
                   setPiece("RateMyLoaf");
-                  document
-                    .getElementById("piece")
-                    .scrollIntoView(
-                      { behavior: "smooth", bottom: 0 },
-                      { duration: 1000 }
-                    );
+                  document.getElementById("piece").scrollIntoView({ behavior: "smooth", bottom: 0 }, { duration: 1000 });
                 }}
                 className="showcase__image"
                 style={{ border: "15px solid black" }}
@@ -116,7 +109,7 @@ const Portfolio = () => {
                   );
                 }}
                 className="showcase__image"
-                src="/assets/images/senpa.webp"
+                src="/assets/images/senpa.png"
                 alt="south east new mexico podiatry"
               />
               <h3>South East New Mexico Podiatry</h3>
@@ -145,12 +138,7 @@ const Portfolio = () => {
               <img
                 onClick={() => {
                   setPiece("FakeFlorist");
-                  document
-                    .getElementById("piece")
-                    .scrollIntoView(
-                      { behavior: "smooth", bottom: 0 },
-                      { duration: 1000 }
-                    );
+                  document.getElementById("piece").scrollIntoView({ behavior: "smooth", bottom: 0 }, { duration: 1000 });
                 }}
                 className="showcase__image"
                 src="/assets/images/chic_cozy.webp"
@@ -176,6 +164,25 @@ const Portfolio = () => {
                 alt=""
               />
               <h3>FastBites Food Delivery</h3>
+            </SwiperSlide>
+            <SwiperSlide className="showcase">
+              <img
+                onClick={() => {
+                  setPiece("AxieHomelandWiki");
+                  document.getElementById("piece").scrollIntoView(
+                    {
+                      behavior: "smooth",
+                      top: 0,
+                    },
+
+                    { duration: 1000 }
+                  );
+                }}
+                className="showcase__image"
+                src="/assets/images/axie-homeland.png"
+                alt=""
+              />
+              <h3>Axie Homeland Wiki</h3>
             </SwiperSlide>
           </Swiper>
         </section>
